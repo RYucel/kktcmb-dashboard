@@ -10,7 +10,10 @@ sayfalarından **Mevduat** ve **Krediler** istatistiklerini toplayıp, tek dosya
 |---|---|
 | `scrape.py` | MB sitesinden verileri toplar → `data/kktcmb.csv` (+ `data/scrape_meta.json`) |
 | `build_dashboard.py` | CSV verisinden dashboard üretir → `output/kktcmb_dashboard.html` |
+| `guncelle.ps1` | Topla + build + commit + push (Görev Zamanlayıcı'nın çalıştırdığı script) |
+| `gorev-kur.ps1` | İki haftalık Windows Görev Zamanlayıcı görevini kurar / kaldırır |
 | `template.html` | Dashboard'un HTML/CSS/JS şablonu (PlaceHolder'lı) |
+| `.github/workflows/update.yml` | Commit'lenmiş CSV'den dashboard üretip Vercel'e yayınlar |
 | `assets/fonts/` | Wix Madefor woff2 alt kümeleri (build sırasında base64 gömülür) |
 | `site/index.html` | Dashboard'un yayına hazır kopyası (build otomatik üretir) |
 | `data/raw/` | İndirilen ham sayfalar (cache) |
@@ -19,9 +22,10 @@ sayfalarından **Mevduat** ve **Krediler** istatistiklerini toplayıp, tek dosya
 
 ## Kullanım
 
-```bash
-python scrape.py              # verileri topla / güncelle (cache'li)
-python build_dashboard.py     # dashboard'u yeniden üret
+```powershell
+.\guncelle.ps1                # topla + build + commit + push (tam akış)
+python scrape.py              # sadece veri topla / güncelle (cache'li)
+python build_dashboard.py     # sadece dashboard'u yeniden üret
 ```
 
 Çıktı `output/kktcmb_dashboard.html` tek bir dosyadır; Plotly.js, veri ve
@@ -60,33 +64,59 @@ Yalnızca `site/` klasörü yüklenir; scraper kodu ve ham veri depoya girmez.
 Alternatif bedava servisler de aynı klasörle çalışır (Netlify Drop, GitHub Pages,
 Cloudflare Pages — hepsi `site/index.html` statik dosyasını servis eder).
 
-### Otomatik güncelleme (GitHub Actions)
+### Otomatik güncelleme (iki haftada bir)
 
-`.github/workflows/update.yml` veriyi **ayın 1'i ve 15'inde** (06:00 UTC) toplar,
-değişiklik varsa dashboard'u üretip Vercel'e yayınlar. Cron "iki haftada bir"
-ifadesini desteklemediği için 1 + 15 kullanılır; bu pratikte 14-16 gün aralık verir.
+Toplama ile yayın **iki ayrı yerde** çalışır. Sebebi ölçülmüş bir kısıt:
+MB sunucusu (`mb.gov.ct.tr` → 185.64.80.30) GitHub runner'larının IP'lerini ağ
+seviyesinde düşürüyor — DNS çözülüyor ama TCP 80/443 timeout, ping yok.
+Bu yüzden Actions içinde `scrape.py` çalıştırılamaz.
 
-Depoya eklenmesi gereken secret'lar (Settings → Secrets and variables → Actions):
+| Adım | Nerede | Ne yapar |
+|---|---|---|
+| 1. Toplama | Kendi makineniz — Görev Zamanlayıcı → `guncelle.ps1` | `scrape.py` + `build_dashboard.py`; veri değiştiyse `data/` commit + push |
+| 2. Yayın | GitHub Actions → `.github/workflows/update.yml` | Commit'lenmiş CSV'den dashboard'u üretir, Vercel'e yayınlar |
 
-| Secret | Nereden |
-|---|---|
-| `VERCEL_TOKEN` | vercel.com/account/tokens |
-| `VERCEL_ORG_ID` | `vercel link` sonrası `.vercel/project.json` → `orgId` |
-| `VERCEL_PROJECT_ID` | aynı dosya → `projectId` |
+**Kurulum (bir kez):**
+
+```powershell
+.\gorev-kur.ps1              # ayın 1'i ve 15'i, 10:00 (parola sorulmaz)
+.\gorev-kur.ps1 -Saat 08:30  # farklı saat
+.\gorev-kur.ps1 -Kaldir      # görevi sil
+```
+
+Görev `S4U` (oturum açık olmasa da çalış) modunda kurulur ve
+`StartWhenAvailable` ile bilgisayar kapalıysa açılışta telafi edilir.
+
+**Elle çalıştırma:**
+
+```powershell
+.\guncelle.ps1               # topla + build + commit + push
+.\guncelle.ps1 -Force        # önbelleği yok say
+.\guncelle.ps1 -NoPush       # sadece topla + build (deneme)
+.\guncelle.ps1 -Deploy       # push'a ek olarak yerel Vercel yayını da yap
+```
 
 Davranış:
 
-- `data/kktcmb.csv` parmak izi (sha256) değişmediyse build ve deploy atlanır;
-  yeni ay veya revizyon varsa yayınlanır.
-- `data/kktcmb.csv` ve `data/scrape_meta.json` commit edilir. Bu hem veri geçmişi
-  bırakır hem de GitHub'ın "60 gün hareketsizlikte zamanlanmış işi kapatma"
-  kuralını engeller.
-- `site/` ve `output/` `.gitignore` içindedir; 5 MB'lık HTML repoya girmez,
-  Vercel'e CLI ile yüklenir.
-- İlk çalıştırmayı Actions sekmesinden **Run workflow** ile elle tetikleyin.
-  MB sitesi GitHub runner IP'lerini engellerse `scrape.py` hata verir; o durumda
-  iş kendi makinenizde veya TR'deki bir VPS'te çalıştırılmalıdır.
-- Başarısız koşularda GitHub e-posta bildirimi gönderir.
+- `data/kktcmb.csv` parmak izi (sha256) değişmediyse build ve push atlanır.
+- Değişiklik varsa `data/kktcmb.csv` + `data/scrape_meta.json` commit edilir
+  (veri geçmişi) ve `main`'e push edilir → Actions yayını tetiklenir.
+- `site/` ve `output/` `.gitignore` içindedir; 5 MB'lık HTML repoya girmez.
+- Loglar: `output/logs/guncelle-YYYYMMDD-HHmmss.log`.
+- Actions'ta başarısız koşu olursa GitHub e-posta bildirimi gönderir; yerel
+  yayın için `-Deploy` kullanılabilir.
+
+**Actions secret'ları** (Settings → Secrets and variables → Actions):
+
+| Secret | Nereden |
+|---|---|
+| `VERCEL_TOKEN` | `vercel tokens create <ad>` (hesap geneli) |
+| `VERCEL_ORG_ID` | `vercel link` sonrası `.vercel/project.json` → `orgId` |
+| `VERCEL_PROJECT_ID` | aynı dosya → `projectId` |
+
+> **Not:** `.github/workflows/erisim-testi.yml` yalnızca elle çalışan bir tanı
+> aracıdır (kontrol siteleri + DNS + TCP 80/443 + MB URL'leri). Erişim engeli
+> kalkarsa toplama tekrar Actions'a taşınabilir.
 
 ### scrape.py seçenekleri
 

@@ -1,23 +1,33 @@
-name: Veriyi güncelle
+name: Dashboard'u yayınla
 
-# Ayda iki kez: ayın 1'i ve 15'i, 06:00 UTC (KKTC saatiyle 09:00).
-# Cron "iki haftada bir" ifadesini desteklemez; 1 + 15 pratikte 14-16 gün aralık verir.
+# Bu iş akışı VERİ TOPLAMAZ. MB sunucusu GitHub runner'larının IP'lerini
+# ağ seviyesinde düşürüyor (TCP 80/443 timeout), bu yüzden toplama yerelde
+# `guncelle.ps1` ile yapılır ve veri repoya push edilir.
+# Burada yalnızca commit'lenmiş CSV'den dashboard üretilip Vercel'e yayınlanır.
+
 on:
-  schedule:
-    - cron: "0 6 1,15 * *"
+  push:
+    branches: [main]
+    paths:
+      - "data/kktcmb.csv"
+      - "data/scrape_meta.json"
+      - "build_dashboard.py"
+      - "template.html"
+      - "_fonts.py"
+      - "_palette.py"
   workflow_dispatch: {}
 
 permissions:
-  contents: write
+  contents: read
 
 concurrency:
-  group: veri-guncelle
+  group: veri-yayinla
   cancel-in-progress: false
 
 jobs:
-  guncelle:
+  yayinla:
     runs-on: ubuntu-latest
-    timeout-minutes: 40
+    timeout-minutes: 20
     steps:
       - uses: actions/checkout@v4
 
@@ -29,68 +39,29 @@ jobs:
       - name: Bağımlılıklar
         run: pip install -r requirements.txt
 
-      - name: Ham sayfa önbelleği
-        uses: actions/cache@v4
-        with:
-          path: data/raw
-          key: mb-raw-${{ github.run_id }}
-          restore-keys: mb-raw-
-
-      - name: Önceki veri parmak izi
-        id: once
+      - name: Son veri ayı
+        id: veri
         run: |
-          if [ -f data/kktcmb.csv ]; then
-            echo "hash=$(sha256sum data/kktcmb.csv | cut -d' ' -f1)" >> "$GITHUB_OUTPUT"
-          else
-            echo "hash=yok" >> "$GITHUB_OUTPUT"
-          fi
-
-      - name: Veriyi topla
-        run: python scrape.py
-
-      - name: Yeni veri parmak izi ve son ay
-        id: sonra
-        run: |
-          echo "hash=$(sha256sum data/kktcmb.csv | cut -d' ' -f1)" >> "$GITHUB_OUTPUT"
           python - <<'PY' >> "$GITHUB_OUTPUT"
           import csv
           with open("data/kktcmb.csv", encoding="utf-8") as f:
-              ay = max(r["tarih"] for r in csv.DictReader(f) if r["deger"].strip())[:7]
-          print("ay=" + ay)
+              satir = [r for r in csv.DictReader(f) if r["deger"].strip()]
+          print("ay=" + max(r["tarih"] for r in satir)[:7])
+          print("nokta=" + str(len(satir)))
           PY
 
-      - name: Değişiklik var mı
-        id: fark
-        run: |
-          if [ "${{ steps.once.outputs.hash }}" = "${{ steps.sonra.outputs.hash }}" ]; then
-            echo "var=false" >> "$GITHUB_OUTPUT"
-            echo "Veri değişmedi, yayın atlandı."
-          else
-            echo "var=true" >> "$GITHUB_OUTPUT"
-            echo "Yeni veri var, son ay: ${{ steps.sonra.outputs.ay }}"
-          fi
-
       - name: Dashboard üret
-        if: steps.fark.outputs.var == 'true'
         run: python build_dashboard.py
 
       - name: Vercel'e yayınla
-        if: steps.fark.outputs.var == 'true'
         env:
           VERCEL_TOKEN: ${{ secrets.VERCEL_TOKEN }}
           VERCEL_ORG_ID: ${{ secrets.VERCEL_ORG_ID }}
           VERCEL_PROJECT_ID: ${{ secrets.VERCEL_PROJECT_ID }}
         run: npx --yes vercel@latest deploy site --prod --yes --project kktcmb-dashboard --token "$VERCEL_TOKEN"
 
-      - name: Veri izini commit et
-        if: steps.fark.outputs.var == 'true'
+      - name: Özet
         run: |
-          git config user.name "kktcmb-bot"
-          git config user.email "bot@users.noreply.github.com"
-          git add data/kktcmb.csv data/scrape_meta.json
-          if git diff --cached --quiet; then
-            echo "Commit edilecek değişiklik yok."
-          else
-            git commit -m "veri: ${{ steps.sonra.outputs.ay }}"
-            git push
-          fi
+          echo "Son veri ayı: ${{ steps.veri.outputs.ay }}"
+          echo "Veri noktası: ${{ steps.veri.outputs.nokta }}"
+          echo "Yayın: https://kktcmb-dashboard.vercel.app"

@@ -1,9 +1,9 @@
 {
-  "scrape_zamani": "2026-11-09T10:34:38",
+  "scrape_zamani": "2026-11-10T09:57:51",
   "kaynak": "https://mb.gov.ct.tr/tr/veriler/istatistikiveriler/para-banka-eski",
   "istatistik": {
-    "fetched": 190,
-    "from_cache": 0,
+    "fetched": 0,
+    "from_cache": 190,
     "skipped_offline": 0,
     "failed": 0
   },
