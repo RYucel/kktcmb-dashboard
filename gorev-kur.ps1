@@ -41,45 +41,83 @@ if ($Kaldir) {
 $script = Join-Path $PSScriptRoot 'guncelle.ps1'
 if (-not (Test-Path -LiteralPath $script)) { throw "guncelle.ps1 bulunamadi: $script" }
 
-$action = New-ScheduledTaskAction `
-    -Execute 'powershell.exe' `
-    -Argument ('-NoProfile -ExecutionPolicy Bypass -File "{0}"' -f $script) `
-    -WorkingDirectory $PSScriptRoot
-
-# Ayin 1'i ve 15'i -- cron'un "iki haftada bir" icin pratikteki en yakin karsiligi
-$trigger = New-ScheduledTaskTrigger -Monthly -DaysOfMonth 1, 15 -At $Saat
-
-$settings = New-ScheduledTaskSettingsSet `
-    -StartWhenAvailable `
-    -RunOnlyIfNetworkAvailable `
-    -AllowStartIfOnBatteries `
-    -DontStopIfGoingOnBatteries `
-    -MultipleInstances IgnoreNew `
-    -ExecutionTimeLimit (New-TimeSpan -Hours 3)
-
+$arguman = '-NoProfile -ExecutionPolicy Bypass -File "{0}"' -f $script
 $kullanici = if ($env:USERDOMAIN) { "$env:USERDOMAIN\$env:USERNAME" } else { $env:USERNAME }
+$baslangic = (Get-Date).ToString('yyyy-MM-dd') + 'T' + $Saat + ':00'
 $aciklama = "KKTC MB para-banka verisini toplar ve repoya push eder (ayin 1'i ve 15'i, $Saat)."
+# Gorev ortaminda PATH farkli olabildigi icin tam yol kullanilir (0x80070002 onlemi).
+$powershell = Join-Path $env:SystemRoot 'System32\WindowsPowerShell\v1.0\powershell.exe'
 
-$kuruldu = $false
-foreach ($logon in @('S4U', 'Interactive')) {
-    try {
-        $principal = New-ScheduledTaskPrincipal -UserId $kullanici -LogonType $logon -RunLevel Limited
-        Register-ScheduledTask -TaskName $gorevAdi -Action $action -Trigger $trigger `
-            -Settings $settings -Principal $principal -Description $aciklama -Force | Out-Null
-        Write-Host "Gorev kuruldu: $gorevAdi (logon=$logon, gunler=1 ve 15, saat=$Saat, kullanici=$kullanici)"
-        $kuruldu = $true
-        break
-    }
-    catch {
-        Write-Warning ("logon={0} ile kurulamadi: {1}" -f $logon, $_.Exception.Message)
-    }
+# XML ile kurulum: PowerShell 5.1'in New-ScheduledTaskTrigger'i aylik tetikleyiciyi
+# desteklemez, schtasks /SC MONTHLY ise bu sistemde "/D 1,15" listesini reddediyor.
+# Aylik takvim + iki gun (1 ve 15) tek tetikleyicide, S4U ile birlikte tanimlanir.
+$xml = @"
+<?xml version="1.0" encoding="UTF-16"?>
+<Task version="1.2" xmlns="http://schemas.microsoft.com/windows/2004/02/mit/task">
+  <RegistrationInfo>
+    <Description>$aciklama</Description>
+  </RegistrationInfo>
+  <Triggers>
+    <CalendarTrigger>
+      <StartBoundary>$baslangic</StartBoundary>
+      <Enabled>true</Enabled>
+      <ScheduleByMonth>
+        <DaysOfMonth>
+          <Day>1</Day>
+          <Day>15</Day>
+        </DaysOfMonth>
+        <Months>
+          <January /><February /><March /><April /><May /><June />
+          <July /><August /><September /><October /><November /><December />
+        </Months>
+      </ScheduleByMonth>
+    </CalendarTrigger>
+  </Triggers>
+  <Principals>
+    <Principal id="Author">
+      <UserId>$kullanici</UserId>
+      <LogonType>S4U</LogonType>
+      <RunLevel>LeastPrivilege</RunLevel>
+    </Principal>
+  </Principals>
+  <Settings>
+    <MultipleInstancesPolicy>IgnoreNew</MultipleInstancesPolicy>
+    <DisallowStartIfOnBatteries>false</DisallowStartIfOnBatteries>
+    <StopIfGoingOnBatteries>false</StopIfGoingOnBatteries>
+    <StartWhenAvailable>true</StartWhenAvailable>
+    <RunOnlyIfNetworkAvailable>true</RunOnlyIfNetworkAvailable>
+    <AllowHardTerminate>true</AllowHardTerminate>
+    <ExecutionTimeLimit>PT3H</ExecutionTimeLimit>
+    <Enabled>true</Enabled>
+  </Settings>
+  <Actions Context="Author">
+    <Exec>
+      <Command>$powershell</Command>
+      <Arguments>$arguman</Arguments>
+      <WorkingDirectory>$PSScriptRoot</WorkingDirectory>
+    </Exec>
+  </Actions>
+</Task>
+"@
+
+try {
+    Register-ScheduledTask -TaskName $gorevAdi -Xml $xml -Force | Out-Null
+    Write-Host "Gorev kuruldu (S4U: oturum acik olmasa da calisir)."
+}
+catch {
+    # S4U yonetici hakki ister; yonetici degilsek "oturum acikken calis" moduna dus.
+    Write-Warning ("S4U ile kurulamadi: " + $_.Exception.Message)
+    $xml = $xml -replace '<LogonType>S4U</LogonType>', '<LogonType>InteractiveToken</LogonType>'
+    Register-ScheduledTask -TaskName $gorevAdi -Xml $xml -Force | Out-Null
+    Write-Host "Gorev kuruldu (oturum acikken calisir modu)."
+    Write-Host "  Not: bilgisayar kapali/oturum kapaliyken calismasi icin bu scripti"
+    Write-Host "       yonetici olarak bir kez calistirin (S4U moduna gecer)."
 }
 
-if (-not $kuruldu) { throw "Gorev kurulamadi. Yonetici olarak calistirmayi deneyin." }
-
 $g = Get-ScheduledTask -TaskName $gorevAdi
+Write-Host ("  durum: {0} | kullanici: {1} | logon: {2}" -f $g.State, $g.Principal.UserId, $g.Principal.LogonType)
 $g.Triggers | ForEach-Object {
-    Write-Host ("  tetikleyici: {0} {1}" -f $_.StartBoundary, ($_.DaysOfMonth -join ','))
+    Write-Host ("  tetikleyici: {0} | gunler: {1}" -f $_.StartBoundary, ($_.DaysOfMonth -join ','))
 }
 Write-Host ""
 Write-Host "Elle deneme:  Start-ScheduledTask -TaskName '$gorevAdi'"

@@ -79,13 +79,21 @@ Bu yüzden Actions içinde `scrape.py` çalıştırılamaz.
 **Kurulum (bir kez):**
 
 ```powershell
-.\gorev-kur.ps1              # ayın 1'i ve 15'i, 10:00 (parola sorulmaz)
+.\gorev-kur.ps1              # ayın 1'i ve 15'i, 10:00
 .\gorev-kur.ps1 -Saat 08:30  # farklı saat
 .\gorev-kur.ps1 -Kaldir      # görevi sil
 ```
 
-Görev `S4U` (oturum açık olmasa da çalış) modunda kurulur ve
-`StartWhenAvailable` ile bilgisayar kapalıysa açılışta telafi edilir.
+Görev `StartWhenAvailable` ile kurulur: bilgisayar kapalı/uykuda olduğu için
+kaçırılan çalışma, makine açılınca telafi edilir. `RunOnlyIfNetworkAvailable`
+açıktır, süre limiti 3 saattir.
+
+Çalışma modu:
+
+- **Yönetici olarak** çalıştırırsanız görev `S4U` ile kurulur → oturum açık
+  olmasa da çalışır.
+- **Normal kullanıcı** olarak çalıştırırsanız `InteractiveToken` ile kurulur →
+  yalnızca oturum açıkken çalışır (yönetici hakkı istemez).
 
 **Elle çalıştırma:**
 
@@ -117,6 +125,13 @@ Davranış:
 > **Not:** `.github/workflows/erisim-testi.yml` yalnızca elle çalışan bir tanı
 > aracıdır (kontrol siteleri + DNS + TCP 80/443 + MB URL'leri). Erişim engeli
 > kalkarsa toplama tekrar Actions'a taşınabilir.
+
+**Görev doğrulaması**
+
+```powershell
+Start-ScheduledTask -TaskName 'KKTCMB Dashboard Guncelle'
+Get-ScheduledTaskInfo -TaskName 'KKTCMB Dashboard Guncelle'   # LastTaskResult = 0
+```
 
 ### scrape.py seçenekleri
 
