@@ -136,6 +136,12 @@ ekleyebilirsiniz.
 
 ## Gereksinimler
 
-Python 3.10+ ve şu paketler: `requests`, `beautifulsoup4`, `lxml`, `pandas`, `plotly`
-(son ikisi yalnızca `build_dashboard.py` için; `plotly` paketi dashboard'a gömülecek
+Python 3.10+ ve şu paketler:
+
+```bash
+pip install -r requirements.txt
+```
+
+`requests`, `beautifulsoup4`, `lxml`, `pandas`, `plotly` (son ikisi yalnızca
+`build_dashboard.py` için; `plotly` paketi dashboard'a gömülecek
 `plotly.min.js` dosyasını sağlar).
