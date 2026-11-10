@@ -8,16 +8,32 @@ on:
 jobs:
   test:
     runs-on: ubuntu-latest
-    timeout-minutes: 5
+    timeout-minutes: 8
     steps:
+      - name: Kontrol (genel internet)
+        run: |
+          curl -sS -o /dev/null -w "example.com kod=%{http_code} sure=%{time_total}s\n" --max-time 15 https://example.com || echo "example.com HATA: cikis=$?"
+          curl -sS -o /dev/null -w "google.com  kod=%{http_code} sure=%{time_total}s\n" --max-time 15 https://www.google.com || echo "google.com HATA: cikis=$?"
+
+      - name: DNS ve rota
+        run: |
+          echo "== DNS"
+          getent ahosts mb.gov.ct.tr || echo "DNS cozulemedi"
+          echo "== ping"
+          ping -c 3 -W 3 mb.gov.ct.tr || echo "ping basarisiz"
+          echo "== TCP 443"
+          timeout 15 bash -c 'cat < /dev/null > /dev/tcp/mb.gov.ct.tr/443' && echo "443 acik" || echo "443 kapali/timeout"
+          echo "== TCP 80"
+          timeout 15 bash -c 'cat < /dev/null > /dev/tcp/mb.gov.ct.tr/80' && echo "80 acik" || echo "80 kapali/timeout"
+
       - name: MB sitesine erişim
         run: |
           for url in \
             "https://mb.gov.ct.tr/tr/veriler/istatistikiveriler/para-banka-eski" \
-            "https://mb.gov.ct.tr/tr/node/6061"
+            "https://mb.gov.ct.tr/tr/node/6061" \
+            "http://mb.gov.ct.tr/"
           do
             echo "== $url"
-            curl -sS -o /dev/null \
-              -w "kod=%{http_code} sure=%{time_total}s ip=%{remote_ip}\n" \
+            curl -sS -o /dev/null -w "kod=%{http_code} sure=%{time_total}s ip=%{remote_ip}\n" \
               --max-time 30 "$url" || echo "HATA: cikis=$?"
           done
