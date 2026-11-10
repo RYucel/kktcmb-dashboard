@@ -80,19 +80,20 @@ Bu yüzden Actions (veya Vercel/Cloudflare gibi bulut) içinden `scrape.py`
 **Kurulum (bir kez):**
 
 ```powershell
-.\gorev-kur.ps1              # her gün 10:00'da kontrol
+.\gorev-kur.ps1              # ayın 1'i ve 16'sı, 10:00
 .\gorev-kur.ps1 -Saat 08:30  # farklı saat
+.\gorev-kur.ps1 -Gunler 1,16 # günleri değiştir
 .\gorev-kur.ps1 -Kaldir      # görevi sil
 ```
 
-Görev **her gün** çalışır ama gerçek toplama 13 günde bir yapılır: script
-`output/.son_guncelleme` damgasına bakar. Veri değişmediyse damga yazılmaz ve
-ertesi gün yeniden denenir; böylece yeni veri yayınlandığı ilk gün yakalanır.
-Veri değiştiğinde damga yazılır ve 13 gün susulur.
+Görev **ayın 1'i ve 16'sında** çalışır (14–16 gün aralık). 15'i yerine 16'sı
+seçildi: hafta sonuna denk gelip bilgisayar kapalıysa gün kaybı olmasın diye.
+`StartWhenAvailable` sayesinde o gün makine kapalıysa çalışma, açıldığı ilk gün
+telafi edilir; `RunOnlyIfNetworkAvailable` açıktır, süre limiti 3 saattir.
 
-Bu tasarım "PC o gün kapalıydı" sorununu çözer: `StartWhenAvailable` sayesinde
-kaçırılan çalışma makine açılınca telafi edilir, damga dolmadığı için ertesi gün
-de yeniden denenir. `RunOnlyIfNetworkAvailable` açıktır, süre limiti 3 saattir.
+`guncelle.ps1` ayrıca 13 günlük bir bekleme kuralı uygular
+(`output/.son_guncelleme`): son başarılı toplamadan 13 gün geçmediyse hiçbir şey
+yapmaz, böylece elle yapılan bir güncellemeden hemen sonra tekrar tarama olmaz.
 
 Çalışma modu:
 
