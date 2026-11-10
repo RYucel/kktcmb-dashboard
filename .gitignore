@@ -1,0 +1,16 @@
+# Build çıktıları (Vercel'e CLI ile yüklenir, repoda tutulmaz)
+site/
+output/
+
+# İndirilen ham HTML sayfaları (CI'da actions/cache ile taşınır)
+data/raw/
+
+# Vercel bağlantı bilgileri
+.vercel/
+
+# Python
+__pycache__/
+*.pyc
+
+.vercel
+.env*

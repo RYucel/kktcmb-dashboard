@@ -1,0 +1,5823 @@
+{
+  "scrape_zamani": "2026-11-09T10:34:38",
+  "kaynak": "https://mb.gov.ct.tr/tr/veriler/istatistikiveriler/para-banka-eski",
+  "istatistik": {
+    "fetched": 190,
+    "from_cache": 0,
+    "skipped_offline": 0,
+    "failed": 0
+  },
+  "uyarilar": [],
+  "aileler": {
+    "kredi_kamu_ozel|toplam": {
+      "2010": {
+        "node": 570,
+        "tum_node'lar": [
+          570
+        ],
+        "birim": "BİN TL",
+        "kategoriler": [
+          "Kamu Kredileri",
+          "Özel Krediler",
+          "TOPLAM"
+        ],
+        "dolu_aylar": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12
+        ]
+      },
+      "2011": {
+        "node": 569,
+        "tum_node'lar": [
+          569
+        ],
+        "birim": "BİN TL",
+        "kategoriler": [
+          "Kamu Kredileri",
+          "Özel Krediler",
+          "TOPLAM"
+        ],
+        "dolu_aylar": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12
+        ]
+      },
+      "2012": {
+        "node": 568,
+        "tum_node'lar": [
+          568
+        ],
+        "birim": "BİN TL",
+        "kategoriler": [
+          "Kamu Kredileri",
+          "Özel Krediler",
+          "TOPLAM"
+        ],
+        "dolu_aylar": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12
+        ]
+      },
+      "2013": {
+        "node": 567,
+        "tum_node'lar": [
+          567
+        ],
+        "birim": "BİN TL",
+        "kategoriler": [
+          "Kamu Kredileri",
+          "Özel Krediler",
+          "TOPLAM"
+        ],
+        "dolu_aylar": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12
+        ]
+      },
+      "2014": {
+        "node": 1226,
+        "tum_node'lar": [
+          1226
+        ],
+        "birim": "BİN TL",
+        "kategoriler": [
+          "Kamu Kredileri",
+          "Özel Krediler",
+          "TOPLAM"
+        ],
+        "dolu_aylar": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12
+        ]
+      },
+      "2015": {
+        "node": 1756,
+        "tum_node'lar": [
+          1756
+        ],
+        "birim": "BİN TL",
+        "kategoriler": [
+          "Kamu Kredileri",
+          "Özel Krediler",
+          "TOPLAM"
+        ],
+        "dolu_aylar": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12
+        ]
+      },
+      "2016": {
+        "node": 2377,
+        "tum_node'lar": [
+          2377
+        ],
+        "birim": "BİN TL",
+        "kategoriler": [
+          "Kamu Kredileri",
+          "Özel Krediler",
+          "TOPLAM"
+        ],
+        "dolu_aylar": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12
+        ]
+      },
+      "2017": {
+        "node": 2804,
+        "tum_node'lar": [
+          2804
+        ],
+        "birim": "BİN TL",
+        "kategoriler": [
+          "Kamu Kredileri",
+          "Özel Krediler",
+          "TOPLAM"
+        ],
+        "dolu_aylar": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12
+        ]
+      },
+      "2018": {
+        "node": 3127,
+        "tum_node'lar": [
+          3127
+        ],
+        "birim": "BİN TL",
+        "kategoriler": [
+          "Kamu Kredileri",
+          "Özel Krediler",
+          "TOPLAM"
+        ],
+        "dolu_aylar": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12
+        ]
+      },
+      "2019": {
+        "node": 3918,
+        "tum_node'lar": [
+          3918
+        ],
+        "birim": "BİN TL",
+        "kategoriler": [
+          "Kamu Kredileri",
+          "Özel Krediler",
+          "TOPLAM"
+        ],
+        "dolu_aylar": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12
+        ]
+      },
+      "2020": {
+        "node": 3932,
+        "tum_node'lar": [
+          3932
+        ],
+        "birim": "BİN TL",
+        "kategoriler": [
+          "Kamu Kredileri",
+          "Özel Krediler",
+          "TOPLAM"
+        ],
+        "dolu_aylar": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12
+        ]
+      },
+      "2021": {
+        "node": 4132,
+        "tum_node'lar": [
+          4132
+        ],
+        "birim": "BİN TL",
+        "kategoriler": [
+          "Kamu Kredileri",
+          "Özel Krediler",
+          "TOPLAM"
+        ],
+        "dolu_aylar": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12
+        ]
+      },
+      "2022": {
+        "node": 4478,
+        "tum_node'lar": [
+          4478
+        ],
+        "birim": "BİN TL",
+        "kategoriler": [
+          "Kamu Kredileri",
+          "Özel Krediler",
+          "TOPLAM"
+        ],
+        "dolu_aylar": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12
+        ]
+      },
+      "2023": {
+        "node": 4898,
+        "tum_node'lar": [
+          4898
+        ],
+        "birim": "BİN TL",
+        "kategoriler": [
+          "Kamu Kredileri",
+          "Özel Krediler",
+          "TOPLAM"
+        ],
+        "dolu_aylar": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12
+        ]
+      },
+      "2024": {
+        "node": 5293,
+        "tum_node'lar": [
+          5293
+        ],
+        "birim": "BİN TL",
+        "kategoriler": [
+          "Kamu Kredileri",
+          "Özel Krediler",
+          "TOPLAM"
+        ],
+        "dolu_aylar": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12
+        ]
+      },
+      "2025": {
+        "node": 5708,
+        "tum_node'lar": [
+          5708
+        ],
+        "birim": "BİN TL",
+        "kategoriler": [
+          "Kamu Kredileri",
+          "Özel Krediler",
+          "TOPLAM"
+        ],
+        "dolu_aylar": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12
+        ]
+      },
+      "2026": {
+        "node": 6065,
+        "tum_node'lar": [
+          6065
+        ],
+        "birim": "BİN TL",
+        "kategoriler": [
+          "Kamu Kredileri",
+          "Özel Krediler",
+          "TOPLAM"
+        ],
+        "dolu_aylar": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ]
+      }
+    },
+    "kredi_sektor|toplam": {
+      "2010": {
+        "node": 542,
+        "tum_node'lar": [
+          542
+        ],
+        "birim": "BİN TL",
+        "kategoriler": [
+          "İskonto ve İştira Senetleri",
+          "İhracat Kredileri",
+          "İthalat Kredileri",
+          "İhracat Garantili Yatırım Kredileri",
+          "Diğer Yatırım Kredileri",
+          "İşletme Kredileri",
+          "İhtisas Kredileri",
+          "Fon Kaynaklı Krediler",
+          "Tüketici Kredileri",
+          "Kredi Kartları",
+          "Müşteri Adına Menkul Değer Alım Kredileri",
+          "KKTC Merkez Bankası Kaynaklı Krediler",
+          "KKTC Merkez Bankası Aracılığıyle Kul. Krd.",
+          "Diğer Krediler",
+          "Toplam Krediler (1+.......+14)"
+        ],
+        "dolu_aylar": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12
+        ]
+      },
+      "2011": {
+        "node": 545,
+        "tum_node'lar": [
+          545
+        ],
+        "birim": "BİN TL",
+        "kategoriler": [
+          "İskonto ve İştira Senetleri",
+          "İhracat Kredileri",
+          "İthalat Kredileri",
+          "İhracat Garantili Yatırım Kredileri",
+          "Diğer Yatırım Kredileri",
+          "İşletme Kredileri",
+          "İhtisas Kredileri",
+          "Fon Kaynaklı Krediler",
+          "Tüketici Kredileri",
+          "Kredi Kartları",
+          "Müşteri Adına Menkul Değer Alım Kredileri",
+          "KKTC Merkez Bankası Kaynaklı Krediler",
+          "KKTC Merkez Bankası Aracılığıyle Kul. Krd.",
+          "Diğer Krediler",
+          "Toplam Krediler (1+.......+14)"
+        ],
+        "dolu_aylar": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12
+        ]
+      },
+      "2012": {
+        "node": 540,
+        "tum_node'lar": [
+          540
+        ],
+        "birim": "BİN TL",
+        "kategoriler": [
+          "İskonto ve İştira Senetleri",
+          "İhracat Kredileri",
+          "İthalat Kredileri",
+          "İhracat Garantili Yatırım Kredileri",
+          "Diğer Yatırım Kredileri",
+          "İşletme Kredileri",
+          "İhtisas Kredileri",
+          "Fon Kaynaklı Krediler",
+          "Tüketici Kredileri",
+          "Kredi Kartları",
+          "Müşteri Adına Menkul Değer Alım Kredileri",
+          "KKTC Merkez Bankası Kaynaklı Krediler",
+          "KKTC Merkez Bankası Aracılığıyle Kul. Krd.",
+          "Diğer Krediler",
+          "Toplam Krediler (1+.......+14)"
+        ],
+        "dolu_aylar": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12
+        ]
+      },
+      "2013": {
+        "node": 535,
+        "tum_node'lar": [
+          535
+        ],
+        "birim": "BİN TL",
+        "kategoriler": [
+          "İskonto ve İştira Senetleri",
+          "İhracat Kredileri",
+          "İthalat Kredileri",
+          "İhracat Garantili Yatırım Kredileri",
+          "Diğer Yatırım Kredileri",
+          "İşletme Kredileri",
+          "İhtisas Kredileri",
+          "Fon Kaynaklı Krediler",
+          "Tüketici Kredileri",
+          "Kredi Kartları",
+          "Müşteri Adına Menkul Değer Alım Kredileri",
+          "KKTC Merkez Bankası Kaynaklı Krediler",
+          "KKTC Merkez Bankası Aracılığıyle Kul. Krd.",
+          "Diğer Krediler",
+          "Toplam Krediler (1+.......+14)"
+        ],
+        "dolu_aylar": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12
+        ]
+      },
+      "2014": {
+        "node": 1222,
+        "tum_node'lar": [
+          1222
+        ],
+        "birim": "BİN TL",
+        "kategoriler": [
+          "İskonto ve İştira Senetleri",
+          "İhracat Kredileri",
+          "İthalat Kredileri",
+          "İhracat Garantili Yatırım Kredileri",
+          "Diğer Yatırım Kredileri",
+          "İşletme Kredileri",
+          "İhtisas Kredileri",
+          "Fon Kaynaklı Krediler",
+          "Tüketici Kredileri",
+          "Kredi Kartları",
+          "Müşteri Adına Menkul Değer Alım Kredileri",
+          "KKTC Merkez Bankası Kaynaklı Krediler",
+          "KKTC Merkez Bankası Aracılığıyle Kul. Krd.",
+          "Diğer Krediler",
+          "Toplam Krediler (1+.......+14)"
+        ],
+        "dolu_aylar": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12
+        ]
+      },
+      "2015": {
+        "node": 1765,
+        "tum_node'lar": [
+          1765
+        ],
+        "birim": "BİN TL",
+        "kategoriler": [
+          "İskonto ve İştira Senetleri",
+          "İhracat Kredileri",
+          "İthalat Kredileri",
+          "İhracat Garantili Yatırım Kredileri",
+          "Diğer Yatırım Kredileri",
+          "İşletme Kredileri",
+          "İhtisas Kredileri",
+          "Fon Kaynaklı Krediler",
+          "Tüketici Kredileri",
+          "Kredi Kartları",
+          "Müşteri Adına Menkul Değer Alım Kredileri",
+          "KKTC Merkez Bankası Kaynaklı Krediler",
+          "KKTC Merkez Bankası Aracılığıyle Kul. Krd.",
+          "Diğer Krediler",
+          "Toplam Krediler (1+.......+14)"
+        ],
+        "dolu_aylar": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12
+        ]
+      },
+      "2016": {
+        "node": 2373,
+        "tum_node'lar": [
+          2373
+        ],
+        "birim": "BİN TL",
+        "kategoriler": [
+          "İskonto ve İştira Senetleri",
+          "İhracat Kredileri",
+          "İthalat Kredileri",
+          "İhracat Garantili Yatırım Kredileri",
+          "Diğer Yatırım Kredileri",
+          "İşletme Kredileri",
+          "İhtisas Kredileri",
+          "Fon Kaynaklı Krediler",
+          "Tüketici Kredileri",
+          "Kredi Kartları",
+          "Müşteri Adına Menkul Değer Alım Kredileri",
+          "KKTC Merkez Bankası Kaynaklı Krediler",
+          "KKTC Merkez Bankası Aracılığıyle Kul. Krd.",
+          "Diğer Krediler",
+          "Toplam Krediler (1+.......+14)"
+        ],
+        "dolu_aylar": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12
+        ]
+      },
+      "2017": {
+        "node": 2800,
+        "tum_node'lar": [
+          2800
+        ],
+        "birim": "BİN TL",
+        "kategoriler": [
+          "İskonto ve İştira Senetleri",
+          "İhracat Kredileri",
+          "İthalat Kredileri",
+          "İhracat Garantili Yatırım Kredileri",
+          "Diğer Yatırım Kredileri",
+          "İşletme Kredileri",
+          "İhtisas Kredileri",
+          "Fon Kaynaklı Krediler",
+          "Tüketici Kredileri",
+          "Kredi Kartları",
+          "Müşteri Adına Menkul Değer Alım Kredileri",
+          "KKTC Merkez Bankası Kaynaklı Krediler",
+          "KKTC Merkez Bankası Aracılığıyle Kul. Krd.",
+          "Diğer Krediler",
+          "Toplam Krediler (1+.......+14)"
+        ],
+        "dolu_aylar": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12
+        ]
+      },
+      "2018": {
+        "node": 3123,
+        "tum_node'lar": [
+          3123
+        ],
+        "birim": "BİN TL",
+        "kategoriler": [
+          "İskonto ve İştira Senetleri",
+          "İhracat Kredileri",
+          "İthalat Kredileri",
+          "İhracat Garantili Yatırım Kredileri",
+          "Diğer Yatırım Kredileri",
+          "İşletme Kredileri",
+          "İhtisas Kredileri",
+          "Fon Kaynaklı Krediler",
+          "Tüketici Kredileri",
+          "Kredi Kartları",
+          "Müşteri Adına Menkul Değer Alım Kredileri",
+          "KKTC Merkez Bankası Kaynaklı Krediler",
+          "KKTC Merkez Bankası Aracılığıyle Kul. Krd.",
+          "Diğer Krediler",
+          "Toplam Krediler (1+.......+14)"
+        ],
+        "dolu_aylar": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12
+        ]
+      },
+      "2019": {
+        "node": 3914,
+        "tum_node'lar": [
+          3914
+        ],
+        "birim": "BİN TL",
+        "kategoriler": [
+          "İskonto ve İştira Senetleri",
+          "İhracat Kredileri",
+          "İthalat Kredileri",
+          "İhracat Garantili Yatırım Kredileri",
+          "Diğer Yatırım Kredileri",
+          "İşletme Kredileri",
+          "İhtisas Kredileri",
+          "Fon Kaynaklı Krediler",
+          "Tüketici Kredileri",
+          "Kredi Kartları",
+          "Müşteri Adına Menkul Değer Alım Kredileri",
+          "KKTC Merkez Bankası Kaynaklı Krediler",
+          "KKTC Merkez Bankası Aracılığıyle Kul. Krd.",
+          "Diğer Krediler",
+          "Toplam Krediler (1+.......+14)"
+        ],
+        "dolu_aylar": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12
+        ]
+      },
+      "2020": {
+        "node": 3928,
+        "tum_node'lar": [
+          3928
+        ],
+        "birim": "BİN TL",
+        "kategoriler": [
+          "İskonto ve İştira Senetleri",
+          "İhracat Kredileri",
+          "İthalat Kredileri",
+          "İhracat Garantili Yatırım Kredileri",
+          "Diğer Yatırım Kredileri",
+          "İşletme Kredileri",
+          "İhtisas Kredileri",
+          "Fon Kaynaklı Krediler",
+          "Tüketici Kredileri",
+          "Kredi Kartları",
+          "Müşteri Adına Menkul Değer Alım Kredileri",
+          "KKTC Merkez Bankası Kaynaklı Krediler",
+          "KKTC Merkez Bankası Aracılığıyle Kul. Krd.",
+          "Diğer Krediler",
+          "Toplam Krediler (1+.......+14)"
+        ],
+        "dolu_aylar": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12
+        ]
+      },
+      "2021": {
+        "node": 4128,
+        "tum_node'lar": [
+          4128
+        ],
+        "birim": "BİN TL",
+        "kategoriler": [
+          "İskonto ve İştira Senetleri",
+          "İhracat Kredileri",
+          "İthalat Kredileri",
+          "İhracat Garantili Yatırım Kredileri",
+          "Diğer Yatırım Kredileri",
+          "İşletme Kredileri",
+          "İhtisas Kredileri",
+          "Fon Kaynaklı Krediler",
+          "Tüketici Kredileri",
+          "Kredi Kartları",
+          "Müşteri Adına Menkul Değer Alım Kredileri",
+          "KKTC Merkez Bankası Kaynaklı Krediler",
+          "KKTC Merkez Bankası Aracılığıyle Kul. Krd.",
+          "Diğer Krediler",
+          "Toplam Krediler (1+.......+14)"
+        ],
+        "dolu_aylar": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12
+        ]
+      },
+      "2022": {
+        "node": 4474,
+        "tum_node'lar": [
+          4474
+        ],
+        "birim": "BİN TL",
+        "kategoriler": [
+          "İskonto ve İştira Senetleri",
+          "İhracat Kredileri",
+          "İthalat Kredileri",
+          "İhracat Garantili Yatırım Kredileri",
+          "Diğer Yatırım Kredileri",
+          "İşletme Kredileri",
+          "İhtisas Kredileri",
+          "Fon Kaynaklı Krediler",
+          "Tüketici Kredileri",
+          "Kredi Kartları",
+          "Müşteri Adına Menkul Değer Alım Kredileri",
+          "KKTC Merkez Bankası Kaynaklı Krediler",
+          "KKTC Merkez Bankası Aracılığıyle Kul. Krd.",
+          "Diğer Krediler",
+          "Toplam Krediler (1+.......+14)"
+        ],
+        "dolu_aylar": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12
+        ]
+      },
+      "2023": {
+        "node": 4894,
+        "tum_node'lar": [
+          4894
+        ],
+        "birim": "BİN TL",
+        "kategoriler": [
+          "İskonto ve İştira Senetleri",
+          "İhracat Kredileri",
+          "İthalat Kredileri",
+          "İhracat Garantili Yatırım Kredileri",
+          "Diğer Yatırım Kredileri",
+          "İşletme Kredileri",
+          "İhtisas Kredileri",
+          "Fon Kaynaklı Krediler",
+          "Tüketici Kredileri",
+          "Kredi Kartları",
+          "Müşteri Adına Menkul Değer Alım Kredileri",
+          "KKTC Merkez Bankası Kaynaklı Krediler",
+          "KKTC Merkez Bankası Aracılığıyle Kul. Krd.",
+          "Diğer Krediler",
+          "Toplam Krediler (1+.......+14)"
+        ],
+        "dolu_aylar": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12
+        ]
+      },
+      "2024": {
+        "node": 5289,
+        "tum_node'lar": [
+          5289
+        ],
+        "birim": "BİN TL",
+        "kategoriler": [
+          "İskonto ve İştira Senetleri",
+          "İhracat Kredileri",
+          "İthalat Kredileri",
+          "İhracat Garantili Yatırım Kredileri",
+          "Diğer Yatırım Kredileri",
+          "İşletme Kredileri",
+          "İhtisas Kredileri",
+          "Fon Kaynaklı Krediler",
+          "Tüketici Kredileri",
+          "Kredi Kartları",
+          "Müşteri Adına Menkul Değer Alım Kredileri",
+          "KKTC Merkez Bankası Kaynaklı Krediler",
+          "KKTC Merkez Bankası Aracılığıyle Kul. Krd.",
+          "Diğer Krediler",
+          "Toplam Krediler (1+.......+14)"
+        ],
+        "dolu_aylar": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12
+        ]
+      },
+      "2025": {
+        "node": 5704,
+        "tum_node'lar": [
+          5704
+        ],
+        "birim": "BİN TL",
+        "kategoriler": [
+          "İskonto ve İştira Senetleri",
+          "İhracat Kredileri",
+          "İthalat Kredileri",
+          "İhracat Garantili Yatırım Kredileri",
+          "Diğer Yatırım Kredileri",
+          "İşletme Kredileri",
+          "İhtisas Kredileri",
+          "Fon Kaynaklı Krediler",
+          "Tüketici Kredileri",
+          "Kredi Kartları",
+          "Müşteri Adına Menkul Değer Alım Kredileri",
+          "KKTC Merkez Bankası Kaynaklı Krediler",
+          "KKTC Merkez Bankası Aracılığıyle Kul. Krd.",
+          "Diğer Krediler",
+          "Toplam Krediler (1+.......+14)"
+        ],
+        "dolu_aylar": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12
+        ]
+      },
+      "2026": {
+        "node": 6061,
+        "tum_node'lar": [
+          6061
+        ],
+        "birim": "BİN TL",
+        "kategoriler": [
+          "İskonto ve İştira Senetleri",
+          "İhracat Kredileri",
+          "İthalat Kredileri",
+          "İhracat Garantili Yatırım Kredileri",
+          "Diğer Yatırım Kredileri",
+          "İşletme Kredileri",
+          "İhtisas Kredileri",
+          "Fon Kaynaklı Krediler",
+          "Tüketici Kredileri",
+          "Kredi Kartları",
+          "Müşteri Adına Menkul Değer Alım Kredileri",
+          "KKTC Merkez Bankası Kaynaklı Krediler",
+          "KKTC Merkez Bankası Aracılığıyle Kul. Krd.",
+          "Diğer Krediler",
+          "Toplam Krediler (1+.......+14)"
+        ],
+        "dolu_aylar": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ]
+      }
+    },
+    "kredi_sektor|tp": {
+      "2010": {
+        "node": 554,
+        "tum_node'lar": [
+          554
+        ],
+        "birim": "BİN TL",
+        "kategoriler": [
+          "İskonto ve İştira Senetleri",
+          "İhracat Kredileri",
+          "İthalat Kredileri",
+          "İhracat Garantili Yatırım Kredileri",
+          "Diğer Yatırım Kredileri",
+          "İşletme Kredileri",
+          "İhtisas Kredileri",
+          "Fon Kaynaklı Krediler",
+          "Tüketici Kredileri",
+          "Kredi Kartları",
+          "Müşteri Adına Menkul Değer Alım Kredileri",
+          "KKTC Merkez Bankası Kaynaklı Krediler",
+          "KKTC Merkez Bankası Aracılığıyle Kul. Krd.",
+          "Diğer Krediler",
+          "Toplam Krediler (1+.......+14)"
+        ],
+        "dolu_aylar": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12
+        ]
+      },
+      "2011": {
+        "node": 553,
+        "tum_node'lar": [
+          553
+        ],
+        "birim": "BİN TL",
+        "kategoriler": [
+          "İskonto ve İştira Senetleri",
+          "İhracat Kredileri",
+          "İthalat Kredileri",
+          "İhracat Garantili Yatırım Kredileri",
+          "Diğer Yatırım Kredileri",
+          "İşletme Kredileri",
+          "İhtisas Kredileri",
+          "Fon Kaynaklı Krediler",
+          "Tüketici Kredileri",
+          "Kredi Kartları",
+          "Müşteri Adına Menkul Değer Alım Kredileri",
+          "KKTC Merkez Bankası Kaynaklı Krediler",
+          "KKTC Merkez Bankası Aracılığıyle Kul. Krd.",
+          "Diğer Krediler",
+          "Toplam Krediler (1+.......+14)"
+        ],
+        "dolu_aylar": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12
+        ]
+      },
+      "2012": {
+        "node": 547,
+        "tum_node'lar": [
+          547
+        ],
+        "birim": "BİN TL",
+        "kategoriler": [
+          "İskonto ve İştira Senetleri",
+          "İhracat Kredileri",
+          "İthalat Kredileri",
+          "İhracat Garantili Yatırım Kredileri",
+          "Diğer Yatırım Kredileri",
+          "İşletme Kredileri",
+          "İhtisas Kredileri",
+          "Fon Kaynaklı Krediler",
+          "Tüketici Kredileri",
+          "Kredi Kartları",
+          "Müşteri Adına Menkul Değer Alım Kredileri",
+          "KKTC Merkez Bankası Kaynaklı Krediler",
+          "KKTC Merkez Bankası Aracılığıyle Kul. Krd.",
+          "Diğer Krediler",
+          "Toplam Krediler (1+.......+14)"
+        ],
+        "dolu_aylar": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12
+        ]
+      },
+      "2013": {
+        "node": 546,
+        "tum_node'lar": [
+          546
+        ],
+        "birim": "BİN TL",
+        "kategoriler": [
+          "İskonto ve İştira Senetleri",
+          "İhracat Kredileri",
+          "İthalat Kredileri",
+          "İhracat Garantili Yatırım Kredileri",
+          "Diğer Yatırım Kredileri",
+          "İşletme Kredileri",
+          "İhtisas Kredileri",
+          "Fon Kaynaklı Krediler",
+          "Tüketici Kredileri",
+          "Kredi Kartları",
+          "Müşteri Adına Menkul Değer Alım Kredileri",
+          "KKTC Merkez Bankası Kaynaklı Krediler",
+          "KKTC Merkez Bankası Aracılığıyle Kul. Krd.",
+          "Diğer Krediler",
+          "Toplam Krediler (1+.......+14)"
+        ],
+        "dolu_aylar": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12
+        ]
+      },
+      "2014": {
+        "node": 1223,
+        "tum_node'lar": [
+          1223
+        ],
+        "birim": "BİN TL",
+        "kategoriler": [
+          "İskonto ve İştira Senetleri",
+          "İhracat Kredileri",
+          "İthalat Kredileri",
+          "İhracat Garantili Yatırım Kredileri",
+          "Diğer Yatırım Kredileri",
+          "İşletme Kredileri",
+          "İhtisas Kredileri",
+          "Fon Kaynaklı Krediler",
+          "Tüketici Kredileri",
+          "Kredi Kartları",
+          "Müşteri Adına Menkul Değer Alım Kredileri",
+          "KKTC Merkez Bankası Kaynaklı Krediler",
+          "KKTC Merkez Bankası Aracılığıyle Kul. Krd.",
+          "Diğer Krediler",
+          "Toplam Krediler (1+.......+14)"
+        ],
+        "dolu_aylar": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12
+        ]
+      },
+      "2015": {
+        "node": 1766,
+        "tum_node'lar": [
+          1766
+        ],
+        "birim": "BİN TL",
+        "kategoriler": [
+          "İskonto ve İştira Senetleri",
+          "İhracat Kredileri",
+          "İthalat Kredileri",
+          "İhracat Garantili Yatırım Kredileri",
+          "Diğer Yatırım Kredileri",
+          "İşletme Kredileri",
+          "İhtisas Kredileri",
+          "Fon Kaynaklı Krediler",
+          "Tüketici Kredileri",
+          "Kredi Kartları",
+          "Müşteri Adına Menkul Değer Alım Kredileri",
+          "KKTC Merkez Bankası Kaynaklı Krediler",
+          "KKTC Merkez Bankası Aracılığıyle Kul. Krd.",
+          "Diğer Krediler",
+          "Toplam Krediler (1+.......+14)"
+        ],
+        "dolu_aylar": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12
+        ]
+      },
+      "2016": {
+        "node": 2374,
+        "tum_node'lar": [
+          2374
+        ],
+        "birim": "BİN TL",
+        "kategoriler": [
+          "İskonto ve İştira Senetleri",
+          "İhracat Kredileri",
+          "İthalat Kredileri",
+          "İhracat Garantili Yatırım Kredileri",
+          "Diğer Yatırım Kredileri",
+          "İşletme Kredileri",
+          "İhtisas Kredileri",
+          "Fon Kaynaklı Krediler",
+          "Tüketici Kredileri",
+          "Kredi Kartları",
+          "Müşteri Adına Menkul Değer Alım Kredileri",
+          "KKTC Merkez Bankası Kaynaklı Krediler",
+          "KKTC Merkez Bankası Aracılığıyle Kul. Krd.",
+          "Diğer Krediler",
+          "Toplam Krediler (1+.......+14)"
+        ],
+        "dolu_aylar": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12
+        ]
+      },
+      "2017": {
+        "node": 2801,
+        "tum_node'lar": [
+          2801
+        ],
+        "birim": "BİN TL",
+        "kategoriler": [
+          "İskonto ve İştira Senetleri",
+          "İhracat Kredileri",
+          "İthalat Kredileri",
+          "İhracat Garantili Yatırım Kredileri",
+          "Diğer Yatırım Kredileri",
+          "İşletme Kredileri",
+          "İhtisas Kredileri",
+          "Fon Kaynaklı Krediler",
+          "Tüketici Kredileri",
+          "Kredi Kartları",
+          "Müşteri Adına Menkul Değer Alım Kredileri",
+          "KKTC Merkez Bankası Kaynaklı Krediler",
+          "KKTC Merkez Bankası Aracılığıyle Kul. Krd.",
+          "Diğer Krediler",
+          "Toplam Krediler (1+.......+14)"
+        ],
+        "dolu_aylar": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12
+        ]
+      },
+      "2018": {
+        "node": 3124,
+        "tum_node'lar": [
+          3124
+        ],
+        "birim": "BİN TL",
+        "kategoriler": [
+          "İskonto ve İştira Senetleri",
+          "İhracat Kredileri",
+          "İthalat Kredileri",
+          "İhracat Garantili Yatırım Kredileri",
+          "Diğer Yatırım Kredileri",
+          "İşletme Kredileri",
+          "İhtisas Kredileri",
+          "Fon Kaynaklı Krediler",
+          "Tüketici Kredileri",
+          "Kredi Kartları",
+          "Müşteri Adına Menkul Değer Alım Kredileri",
+          "KKTC Merkez Bankası Kaynaklı Krediler",
+          "KKTC Merkez Bankası Aracılığıyle Kul. Krd.",
+          "Diğer Krediler",
+          "Toplam Krediler (1+.......+14)"
+        ],
+        "dolu_aylar": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12
+        ]
+      },
+      "2019": {
+        "node": 3915,
+        "tum_node'lar": [
+          3915
+        ],
+        "birim": "BİN TL",
+        "kategoriler": [
+          "İskonto ve İştira Senetleri",
+          "İhracat Kredileri",
+          "İthalat Kredileri",
+          "İhracat Garantili Yatırım Kredileri",
+          "Diğer Yatırım Kredileri",
+          "İşletme Kredileri",
+          "İhtisas Kredileri",
+          "Fon Kaynaklı Krediler",
+          "Tüketici Kredileri",
+          "Kredi Kartları",
+          "Müşteri Adına Menkul Değer Alım Kredileri",
+          "KKTC Merkez Bankası Kaynaklı Krediler",
+          "KKTC Merkez Bankası Aracılığıyle Kul. Krd.",
+          "Diğer Krediler",
+          "Toplam Krediler (1+.......+14)"
+        ],
+        "dolu_aylar": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12
+        ]
+      },
+      "2020": {
+        "node": 3929,
+        "tum_node'lar": [
+          3929
+        ],
+        "birim": "BİN TL",
+        "kategoriler": [
+          "İskonto ve İştira Senetleri",
+          "İhracat Kredileri",
+          "İthalat Kredileri",
+          "İhracat Garantili Yatırım Kredileri",
+          "Diğer Yatırım Kredileri",
+          "İşletme Kredileri",
+          "İhtisas Kredileri",
+          "Fon Kaynaklı Krediler",
+          "Tüketici Kredileri",
+          "Kredi Kartları",
+          "Müşteri Adına Menkul Değer Alım Kredileri",
+          "KKTC Merkez Bankası Kaynaklı Krediler",
+          "KKTC Merkez Bankası Aracılığıyle Kul. Krd.",
+          "Diğer Krediler",
+          "Toplam Krediler (1+.......+14)"
+        ],
+        "dolu_aylar": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12
+        ]
+      },
+      "2021": {
+        "node": 4129,
+        "tum_node'lar": [
+          4129
+        ],
+        "birim": "BİN TL",
+        "kategoriler": [
+          "İskonto ve İştira Senetleri",
+          "İhracat Kredileri",
+          "İthalat Kredileri",
+          "İhracat Garantili Yatırım Kredileri",
+          "Diğer Yatırım Kredileri",
+          "İşletme Kredileri",
+          "İhtisas Kredileri",
+          "Fon Kaynaklı Krediler",
+          "Tüketici Kredileri",
+          "Kredi Kartları",
+          "Müşteri Adına Menkul Değer Alım Kredileri",
+          "KKTC Merkez Bankası Kaynaklı Krediler",
+          "KKTC Merkez Bankası Aracılığıyle Kul. Krd.",
+          "Diğer Krediler",
+          "Toplam Krediler (1+.......+14)"
+        ],
+        "dolu_aylar": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12
+        ]
+      },
+      "2022": {
+        "node": 4475,
+        "tum_node'lar": [
+          4475
+        ],
+        "birim": "BİN TL",
+        "kategoriler": [
+          "İskonto ve İştira Senetleri",
+          "İhracat Kredileri",
+          "İthalat Kredileri",
+          "İhracat Garantili Yatırım Kredileri",
+          "Diğer Yatırım Kredileri",
+          "İşletme Kredileri",
+          "İhtisas Kredileri",
+          "Fon Kaynaklı Krediler",
+          "Tüketici Kredileri",
+          "Kredi Kartları",
+          "Müşteri Adına Menkul Değer Alım Kredileri",
+          "KKTC Merkez Bankası Kaynaklı Krediler",
+          "KKTC Merkez Bankası Aracılığıyle Kul. Krd.",
+          "Diğer Krediler",
+          "Toplam Krediler (1+.......+14)"
+        ],
+        "dolu_aylar": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12
+        ]
+      },
+      "2023": {
+        "node": 4895,
+        "tum_node'lar": [
+          4895
+        ],
+        "birim": "BİN TL",
+        "kategoriler": [
+          "İskonto ve İştira Senetleri",
+          "İhracat Kredileri",
+          "İthalat Kredileri",
+          "İhracat Garantili Yatırım Kredileri",
+          "Diğer Yatırım Kredileri",
+          "İşletme Kredileri",
+          "İhtisas Kredileri",
+          "Fon Kaynaklı Krediler",
+          "Tüketici Kredileri",
+          "Kredi Kartları",
+          "Müşteri Adına Menkul Değer Alım Kredileri",
+          "KKTC Merkez Bankası Kaynaklı Krediler",
+          "KKTC Merkez Bankası Aracılığıyle Kul. Krd.",
+          "Diğer Krediler",
+          "Toplam Krediler (1+.......+14)"
+        ],
+        "dolu_aylar": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12
+        ]
+      },
+      "2024": {
+        "node": 5290,
+        "tum_node'lar": [
+          5290
+        ],
+        "birim": "BİN TL",
+        "kategoriler": [
+          "İskonto ve İştira Senetleri",
+          "İhracat Kredileri",
+          "İthalat Kredileri",
+          "İhracat Garantili Yatırım Kredileri",
+          "Diğer Yatırım Kredileri",
+          "İşletme Kredileri",
+          "İhtisas Kredileri",
+          "Fon Kaynaklı Krediler",
+          "Tüketici Kredileri",
+          "Kredi Kartları",
+          "Müşteri Adına Menkul Değer Alım Kredileri",
+          "KKTC Merkez Bankası Kaynaklı Krediler",
+          "KKTC Merkez Bankası Aracılığıyle Kul. Krd.",
+          "Diğer Krediler",
+          "Toplam Krediler (1+.......+14)"
+        ],
+        "dolu_aylar": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12
+        ]
+      },
+      "2025": {
+        "node": 5705,
+        "tum_node'lar": [
+          5705
+        ],
+        "birim": "BİN TL",
+        "kategoriler": [
+          "İskonto ve İştira Senetleri",
+          "İhracat Kredileri",
+          "İthalat Kredileri",
+          "İhracat Garantili Yatırım Kredileri",
+          "Diğer Yatırım Kredileri",
+          "İşletme Kredileri",
+          "İhtisas Kredileri",
+          "Fon Kaynaklı Krediler",
+          "Tüketici Kredileri",
+          "Kredi Kartları",
+          "Müşteri Adına Menkul Değer Alım Kredileri",
+          "KKTC Merkez Bankası Kaynaklı Krediler",
+          "KKTC Merkez Bankası Aracılığıyle Kul. Krd.",
+          "Diğer Krediler",
+          "Toplam Krediler (1+.......+14)"
+        ],
+        "dolu_aylar": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12
+        ]
+      },
+      "2026": {
+        "node": 6062,
+        "tum_node'lar": [
+          6062
+        ],
+        "birim": "BİN TL",
+        "kategoriler": [
+          "İskonto ve İştira Senetleri",
+          "İhracat Kredileri",
+          "İthalat Kredileri",
+          "İhracat Garantili Yatırım Kredileri",
+          "Diğer Yatırım Kredileri",
+          "İşletme Kredileri",
+          "İhtisas Kredileri",
+          "Fon Kaynaklı Krediler",
+          "Tüketici Kredileri",
+          "Kredi Kartları",
+          "Müşteri Adına Menkul Değer Alım Kredileri",
+          "KKTC Merkez Bankası Kaynaklı Krediler",
+          "KKTC Merkez Bankası Aracılığıyle Kul. Krd.",
+          "Diğer Krediler",
+          "Toplam Krediler (1+.......+14)"
+        ],
+        "dolu_aylar": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ]
+      }
+    },
+    "kredi_sektor|yp": {
+      "2010": {
+        "node": 559,
+        "tum_node'lar": [
+          559
+        ],
+        "birim": "BİN TL",
+        "kategoriler": [
+          "İskonto ve İştira Senetleri",
+          "İhracat Kredileri",
+          "İthalat Kredileri",
+          "İhracat Garantili Yatırım Kredileri",
+          "Diğer Yatırım Kredileri",
+          "İşletme Kredileri",
+          "İhtisas Kredileri",
+          "Fon Kaynaklı Krediler",
+          "Tüketici Kredileri",
+          "Kredi Kartları",
+          "Müşteri Adına Menkul Değer Alım Kredileri",
+          "KKTC Merkez Bankası Kaynaklı Krediler",
+          "KKTC Merkez Bankası Aracılığıyle Kul. Krd.",
+          "Diğer Krediler",
+          "Toplam Krediler (1+.......+14)"
+        ],
+        "dolu_aylar": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12
+        ]
+      },
+      "2011": {
+        "node": 558,
+        "tum_node'lar": [
+          558
+        ],
+        "birim": "BİN TL",
+        "kategoriler": [
+          "İskonto ve İştira Senetleri",
+          "İhracat Kredileri",
+          "İthalat Kredileri",
+          "İhracat Garantili Yatırım Kredileri",
+          "Diğer Yatırım Kredileri",
+          "İşletme Kredileri",
+          "İhtisas Kredileri",
+          "Fon Kaynaklı Krediler",
+          "Tüketici Kredileri",
+          "Kredi Kartları",
+          "Müşteri Adına Menkul Değer Alım Kredileri",
+          "KKTC Merkez Bankası Kaynaklı Krediler",
+          "KKTC Merkez Bankası Aracılığıyle Kul. Krd.",
+          "Diğer Krediler",
+          "Toplam Krediler (1+.......+14)"
+        ],
+        "dolu_aylar": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12
+        ]
+      },
+      "2012": {
+        "node": 557,
+        "tum_node'lar": [
+          557
+        ],
+        "birim": "BİN TL",
+        "kategoriler": [
+          "İskonto ve İştira Senetleri",
+          "İhracat Kredileri",
+          "İthalat Kredileri",
+          "İhracat Garantili Yatırım Kredileri",
+          "Diğer Yatırım Kredileri",
+          "İşletme Kredileri",
+          "İhtisas Kredileri",
+          "Fon Kaynaklı Krediler",
+          "Tüketici Kredileri",
+          "Kredi Kartları",
+          "Müşteri Adına Menkul Değer Alım Kredileri",
+          "KKTC Merkez Bankası Kaynaklı Krediler",
+          "KKTC Merkez Bankası Aracılığıyle Kul. Krd.",
+          "Diğer Krediler",
+          "Toplam Krediler (1+.......+14)"
+        ],
+        "dolu_aylar": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12
+        ]
+      },
+      "2013": {
+        "node": 555,
+        "tum_node'lar": [
+          555
+        ],
+        "birim": "BİN TL",
+        "kategoriler": [
+          "İskonto ve İştira Senetleri",
+          "İhracat Kredileri",
+          "İthalat Kredileri",
+          "İhracat Garantili Yatırım Kredileri",
+          "Diğer Yatırım Kredileri",
+          "İşletme Kredileri",
+          "İhtisas Kredileri",
+          "Fon Kaynaklı Krediler",
+          "Tüketici Kredileri",
+          "Kredi Kartları",
+          "Müşteri Adına Menkul Değer Alım Kredileri",
+          "KKTC Merkez Bankası Kaynaklı Krediler",
+          "KKTC Merkez Bankası Aracılığıyle Kul. Krd.",
+          "Diğer Krediler",
+          "Toplam Krediler (1+.......+14)"
+        ],
+        "dolu_aylar": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12
+        ]
+      },
+      "2014": {
+        "node": 1224,
+        "tum_node'lar": [
+          1224
+        ],
+        "birim": "BİN TL",
+        "kategoriler": [
+          "İskonto ve İştira Senetleri",
+          "İhracat Kredileri",
+          "İthalat Kredileri",
+          "İhracat Garantili Yatırım Kredileri",
+          "Diğer Yatırım Kredileri",
+          "İşletme Kredileri",
+          "İhtisas Kredileri",
+          "Fon Kaynaklı Krediler",
+          "Tüketici Kredileri",
+          "Kredi Kartları",
+          "Müşteri Adına Menkul Değer Alım Kredileri",
+          "KKTC Merkez Bankası Kaynaklı Krediler",
+          "KKTC Merkez Bankası Aracılığıyle Kul. Krd.",
+          "Diğer Krediler",
+          "Toplam Krediler (1+.......+14)"
+        ],
+        "dolu_aylar": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12
+        ]
+      },
+      "2015": {
+        "node": 1767,
+        "tum_node'lar": [
+          1767
+        ],
+        "birim": "BİN TL",
+        "kategoriler": [
+          "İskonto ve İştira Senetleri",
+          "İhracat Kredileri",
+          "İthalat Kredileri",
+          "İhracat Garantili Yatırım Kredileri",
+          "Diğer Yatırım Kredileri",
+          "İşletme Kredileri",
+          "İhtisas Kredileri",
+          "Fon Kaynaklı Krediler",
+          "Tüketici Kredileri",
+          "Kredi Kartları",
+          "Müşteri Adına Menkul Değer Alım Kredileri",
+          "KKTC Merkez Bankası Kaynaklı Krediler",
+          "KKTC Merkez Bankası Aracılığıyle Kul. Krd.",
+          "Diğer Krediler",
+          "Toplam Krediler (1+.......+14)"
+        ],
+        "dolu_aylar": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12
+        ]
+      },
+      "2016": {
+        "node": 2375,
+        "tum_node'lar": [
+          2375
+        ],
+        "birim": "BİN TL",
+        "kategoriler": [
+          "İskonto ve İştira Senetleri",
+          "İhracat Kredileri",
+          "İthalat Kredileri",
+          "İhracat Garantili Yatırım Kredileri",
+          "Diğer Yatırım Kredileri",
+          "İşletme Kredileri",
+          "İhtisas Kredileri",
+          "Fon Kaynaklı Krediler",
+          "Tüketici Kredileri",
+          "Kredi Kartları",
+          "Müşteri Adına Menkul Değer Alım Kredileri",
+          "KKTC Merkez Bankası Kaynaklı Krediler",
+          "KKTC Merkez Bankası Aracılığıyle Kul. Krd.",
+          "Diğer Krediler",
+          "Toplam Krediler (1+.......+14)"
+        ],
+        "dolu_aylar": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12
+        ]
+      },
+      "2017": {
+        "node": 2802,
+        "tum_node'lar": [
+          2802
+        ],
+        "birim": "BİN TL",
+        "kategoriler": [
+          "İskonto ve İştira Senetleri",
+          "İhracat Kredileri",
+          "İthalat Kredileri",
+          "İhracat Garantili Yatırım Kredileri",
+          "Diğer Yatırım Kredileri",
+          "İşletme Kredileri",
+          "İhtisas Kredileri",
+          "Fon Kaynaklı Krediler",
+          "Tüketici Kredileri",
+          "Kredi Kartları",
+          "Müşteri Adına Menkul Değer Alım Kredileri",
+          "KKTC Merkez Bankası Kaynaklı Krediler",
+          "KKTC Merkez Bankası Aracılığıyle Kul. Krd.",
+          "Diğer Krediler",
+          "Toplam Krediler (1+.......+14)"
+        ],
+        "dolu_aylar": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12
+        ]
+      },
+      "2018": {
+        "node": 3125,
+        "tum_node'lar": [
+          3125
+        ],
+        "birim": "BİN TL",
+        "kategoriler": [
+          "İskonto ve İştira Senetleri",
+          "İhracat Kredileri",
+          "İthalat Kredileri",
+          "İhracat Garantili Yatırım Kredileri",
+          "Diğer Yatırım Kredileri",
+          "İşletme Kredileri",
+          "İhtisas Kredileri",
+          "Fon Kaynaklı Krediler",
+          "Tüketici Kredileri",
+          "Kredi Kartları",
+          "Müşteri Adına Menkul Değer Alım Kredileri",
+          "KKTC Merkez Bankası Kaynaklı Krediler",
+          "KKTC Merkez Bankası Aracılığıyle Kul. Krd.",
+          "Diğer Krediler",
+          "Toplam Krediler (1+.......+14)"
+        ],
+        "dolu_aylar": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12
+        ]
+      },
+      "2019": {
+        "node": 3916,
+        "tum_node'lar": [
+          3916
+        ],
+        "birim": "BİN TL",
+        "kategoriler": [
+          "İskonto ve İştira Senetleri",
+          "İhracat Kredileri",
+          "İthalat Kredileri",
+          "İhracat Garantili Yatırım Kredileri",
+          "Diğer Yatırım Kredileri",
+          "İşletme Kredileri",
+          "İhtisas Kredileri",
+          "Fon Kaynaklı Krediler",
+          "Tüketici Kredileri",
+          "Kredi Kartları",
+          "Müşteri Adına Menkul Değer Alım Kredileri",
+          "KKTC Merkez Bankası Kaynaklı Krediler",
+          "KKTC Merkez Bankası Aracılığıyle Kul. Krd.",
+          "Diğer Krediler",
+          "Toplam Krediler (1+.......+14)"
+        ],
+        "dolu_aylar": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12
+        ]
+      },
+      "2020": {
+        "node": 3930,
+        "tum_node'lar": [
+          3930
+        ],
+        "birim": "BİN TL",
+        "kategoriler": [
+          "İskonto ve İştira Senetleri",
+          "İhracat Kredileri",
+          "İthalat Kredileri",
+          "İhracat Garantili Yatırım Kredileri",
+          "Diğer Yatırım Kredileri",
+          "İşletme Kredileri",
+          "İhtisas Kredileri",
+          "Fon Kaynaklı Krediler",
+          "Tüketici Kredileri",
+          "Kredi Kartları",
+          "Müşteri Adına Menkul Değer Alım Kredileri",
+          "KKTC Merkez Bankası Kaynaklı Krediler",
+          "KKTC Merkez Bankası Aracılığıyle Kul. Krd.",
+          "Diğer Krediler",
+          "Toplam Krediler (1+.......+14)"
+        ],
+        "dolu_aylar": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12
+        ]
+      },
+      "2021": {
+        "node": 4130,
+        "tum_node'lar": [
+          4130
+        ],
+        "birim": "BİN TL",
+        "kategoriler": [
+          "İskonto ve İştira Senetleri",
+          "İhracat Kredileri",
+          "İthalat Kredileri",
+          "İhracat Garantili Yatırım Kredileri",
+          "Diğer Yatırım Kredileri",
+          "İşletme Kredileri",
+          "İhtisas Kredileri",
+          "Fon Kaynaklı Krediler",
+          "Tüketici Kredileri",
+          "Kredi Kartları",
+          "Müşteri Adına Menkul Değer Alım Kredileri",
+          "KKTC Merkez Bankası Kaynaklı Krediler",
+          "KKTC Merkez Bankası Aracılığıyle Kul. Krd.",
+          "Diğer Krediler",
+          "Toplam Krediler (1+.......+14)"
+        ],
+        "dolu_aylar": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12
+        ]
+      },
+      "2022": {
+        "node": 4476,
+        "tum_node'lar": [
+          4476
+        ],
+        "birim": "BİN TL",
+        "kategoriler": [
+          "İskonto ve İştira Senetleri",
+          "İhracat Kredileri",
+          "İthalat Kredileri",
+          "İhracat Garantili Yatırım Kredileri",
+          "Diğer Yatırım Kredileri",
+          "İşletme Kredileri",
+          "İhtisas Kredileri",
+          "Fon Kaynaklı Krediler",
+          "Tüketici Kredileri",
+          "Kredi Kartları",
+          "Müşteri Adına Menkul Değer Alım Kredileri",
+          "KKTC Merkez Bankası Kaynaklı Krediler",
+          "KKTC Merkez Bankası Aracılığıyle Kul. Krd.",
+          "Diğer Krediler",
+          "Toplam Krediler (1+.......+14)"
+        ],
+        "dolu_aylar": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12
+        ]
+      },
+      "2023": {
+        "node": 4896,
+        "tum_node'lar": [
+          4896
+        ],
+        "birim": "BİN TL",
+        "kategoriler": [
+          "İskonto ve İştira Senetleri",
+          "İhracat Kredileri",
+          "İthalat Kredileri",
+          "İhracat Garantili Yatırım Kredileri",
+          "Diğer Yatırım Kredileri",
+          "İşletme Kredileri",
+          "İhtisas Kredileri",
+          "Fon Kaynaklı Krediler",
+          "Tüketici Kredileri",
+          "Kredi Kartları",
+          "Müşteri Adına Menkul Değer Alım Kredileri",
+          "KKTC Merkez Bankası Kaynaklı Krediler",
+          "KKTC Merkez Bankası Aracılığıyle Kul. Krd.",
+          "Diğer Krediler",
+          "Toplam Krediler (1+.......+14)"
+        ],
+        "dolu_aylar": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12
+        ]
+      },
+      "2024": {
+        "node": 5291,
+        "tum_node'lar": [
+          5291
+        ],
+        "birim": "BİN TL",
+        "kategoriler": [
+          "İskonto ve İştira Senetleri",
+          "İhracat Kredileri",
+          "İthalat Kredileri",
+          "İhracat Garantili Yatırım Kredileri",
+          "Diğer Yatırım Kredileri",
+          "İşletme Kredileri",
+          "İhtisas Kredileri",
+          "Fon Kaynaklı Krediler",
+          "Tüketici Kredileri",
+          "Kredi Kartları",
+          "Müşteri Adına Menkul Değer Alım Kredileri",
+          "KKTC Merkez Bankası Kaynaklı Krediler",
+          "KKTC Merkez Bankası Aracılığıyle Kul. Krd.",
+          "Diğer Krediler",
+          "Toplam Krediler (1+.......+14)"
+        ],
+        "dolu_aylar": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12
+        ]
+      },
+      "2025": {
+        "node": 5706,
+        "tum_node'lar": [
+          5706
+        ],
+        "birim": "BİN TL",
+        "kategoriler": [
+          "İskonto ve İştira Senetleri",
+          "İhracat Kredileri",
+          "İthalat Kredileri",
+          "İhracat Garantili Yatırım Kredileri",
+          "Diğer Yatırım Kredileri",
+          "İşletme Kredileri",
+          "İhtisas Kredileri",
+          "Fon Kaynaklı Krediler",
+          "Tüketici Kredileri",
+          "Kredi Kartları",
+          "Müşteri Adına Menkul Değer Alım Kredileri",
+          "KKTC Merkez Bankası Kaynaklı Krediler",
+          "KKTC Merkez Bankası Aracılığıyle Kul. Krd.",
+          "Diğer Krediler",
+          "Toplam Krediler (1+.......+14)"
+        ],
+        "dolu_aylar": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12
+        ]
+      },
+      "2026": {
+        "node": 6063,
+        "tum_node'lar": [
+          6063
+        ],
+        "birim": "BİN TL",
+        "kategoriler": [
+          "İskonto ve İştira Senetleri",
+          "İhracat Kredileri",
+          "İthalat Kredileri",
+          "İhracat Garantili Yatırım Kredileri",
+          "Diğer Yatırım Kredileri",
+          "İşletme Kredileri",
+          "İhtisas Kredileri",
+          "Fon Kaynaklı Krediler",
+          "Tüketici Kredileri",
+          "Kredi Kartları",
+          "Müşteri Adına Menkul Değer Alım Kredileri",
+          "KKTC Merkez Bankası Kaynaklı Krediler",
+          "KKTC Merkez Bankası Aracılığıyle Kul. Krd.",
+          "Diğer Krediler",
+          "Toplam Krediler (1+.......+14)"
+        ],
+        "dolu_aylar": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ]
+      }
+    },
+    "kredi_vade|toplam": {
+      "2010": {
+        "node": 563,
+        "tum_node'lar": [
+          563
+        ],
+        "birim": "BİN TL",
+        "kategoriler": [
+          "Kısa Vadeli",
+          "Orta Ve Uzun Vadeli",
+          "TOPLAM"
+        ],
+        "dolu_aylar": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12
+        ]
+      },
+      "2011": {
+        "node": 562,
+        "tum_node'lar": [
+          562
+        ],
+        "birim": "BİN TL",
+        "kategoriler": [
+          "Kısa Vadeli",
+          "Orta Ve Uzun Vadeli",
+          "TOPLAM"
+        ],
+        "dolu_aylar": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12
+        ]
+      },
+      "2012": {
+        "node": 561,
+        "tum_node'lar": [
+          561
+        ],
+        "birim": "BİN TL",
+        "kategoriler": [
+          "Kısa Vadeli",
+          "Orta Ve Uzun Vadeli",
+          "TOPLAM"
+        ],
+        "dolu_aylar": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12
+        ]
+      },
+      "2013": {
+        "node": 560,
+        "tum_node'lar": [
+          560
+        ],
+        "birim": "BİN TL",
+        "kategoriler": [
+          "Kısa Vadeli",
+          "Orta Ve Uzun Vadeli",
+          "TOPLAM"
+        ],
+        "dolu_aylar": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12
+        ]
+      },
+      "2014": {
+        "node": 1225,
+        "tum_node'lar": [
+          1225
+        ],
+        "birim": "BİN TL",
+        "kategoriler": [
+          "Kısa Vadeli",
+          "Orta Ve Uzun Vadeli",
+          "TOPLAM"
+        ],
+        "dolu_aylar": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12
+        ]
+      },
+      "2015": {
+        "node": 1768,
+        "tum_node'lar": [
+          1768
+        ],
+        "birim": "BİN TL",
+        "kategoriler": [
+          "Kısa Vadeli",
+          "Orta Ve Uzun Vadeli",
+          "TOPLAM"
+        ],
+        "dolu_aylar": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12
+        ]
+      },
+      "2016": {
+        "node": 2376,
+        "tum_node'lar": [
+          2376
+        ],
+        "birim": "BİN TL",
+        "kategoriler": [
+          "Kısa Vadeli",
+          "Orta Ve Uzun Vadeli",
+          "TOPLAM"
+        ],
+        "dolu_aylar": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12
+        ]
+      },
+      "2017": {
+        "node": 2803,
+        "tum_node'lar": [
+          2803
+        ],
+        "birim": "BİN TL",
+        "kategoriler": [
+          "Kısa Vadeli",
+          "Orta Ve Uzun Vadeli",
+          "TOPLAM"
+        ],
+        "dolu_aylar": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12
+        ]
+      },
+      "2018": {
+        "node": 3126,
+        "tum_node'lar": [
+          3126
+        ],
+        "birim": "BİN TL",
+        "kategoriler": [
+          "Kısa Vadeli",
+          "Orta Ve Uzun Vadeli",
+          "TOPLAM"
+        ],
+        "dolu_aylar": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12
+        ]
+      },
+      "2019": {
+        "node": 3917,
+        "tum_node'lar": [
+          3917
+        ],
+        "birim": "BİN TL",
+        "kategoriler": [
+          "Kısa Vadeli",
+          "Orta Ve Uzun Vadeli",
+          "TOPLAM"
+        ],
+        "dolu_aylar": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12
+        ]
+      },
+      "2020": {
+        "node": 3931,
+        "tum_node'lar": [
+          3931
+        ],
+        "birim": "BİN TL",
+        "kategoriler": [
+          "Kısa Vadeli",
+          "Orta Ve Uzun Vadeli",
+          "TOPLAM"
+        ],
+        "dolu_aylar": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12
+        ]
+      },
+      "2021": {
+        "node": 4131,
+        "tum_node'lar": [
+          4131
+        ],
+        "birim": "BİN TL",
+        "kategoriler": [
+          "Kısa Vadeli",
+          "Orta Ve Uzun Vadeli",
+          "TOPLAM"
+        ],
+        "dolu_aylar": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12
+        ]
+      },
+      "2022": {
+        "node": 4477,
+        "tum_node'lar": [
+          4477
+        ],
+        "birim": "BİN TL",
+        "kategoriler": [
+          "Kısa Vadeli",
+          "Orta Ve Uzun Vadeli",
+          "TOPLAM"
+        ],
+        "dolu_aylar": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12
+        ]
+      },
+      "2023": {
+        "node": 4897,
+        "tum_node'lar": [
+          4897
+        ],
+        "birim": "BİN TL",
+        "kategoriler": [
+          "Kısa Vadeli",
+          "Orta Ve Uzun Vadeli",
+          "TOPLAM"
+        ],
+        "dolu_aylar": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12
+        ]
+      },
+      "2024": {
+        "node": 5292,
+        "tum_node'lar": [
+          5292
+        ],
+        "birim": "BİN TL",
+        "kategoriler": [
+          "Kısa Vadeli",
+          "Orta Ve Uzun Vadeli",
+          "TOPLAM"
+        ],
+        "dolu_aylar": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12
+        ]
+      },
+      "2025": {
+        "node": 5707,
+        "tum_node'lar": [
+          5707
+        ],
+        "birim": "BİN TL",
+        "kategoriler": [
+          "Kısa Vadeli",
+          "Orta Ve Uzun Vadeli",
+          "TOPLAM"
+        ],
+        "dolu_aylar": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12
+        ]
+      },
+      "2026": {
+        "node": 6064,
+        "tum_node'lar": [
+          6064
+        ],
+        "birim": "BİN TL",
+        "kategoriler": [
+          "Kısa Vadeli",
+          "Orta Ve Uzun Vadeli",
+          "TOPLAM"
+        ],
+        "dolu_aylar": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ]
+      }
+    },
+    "mevduat_tur|toplam": {
+      "2010": {
+        "node": 526,
+        "tum_node'lar": [
+          526
+        ],
+        "birim": "BİN TL",
+        "kategoriler": [
+          "Resmi",
+          "Ticari",
+          "Tasarruf",
+          "Diğer Mevduat",
+          "Bankalar",
+          "TOPLAM"
+        ],
+        "dolu_aylar": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12
+        ]
+      },
+      "2011": {
+        "node": 525,
+        "tum_node'lar": [
+          525
+        ],
+        "birim": "BİN TL",
+        "kategoriler": [
+          "Resmi",
+          "Ticari",
+          "Tasarruf",
+          "Diğer Mevduat",
+          "Bankalar",
+          "TOPLAM"
+        ],
+        "dolu_aylar": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12
+        ]
+      },
+      "2012": {
+        "node": 524,
+        "tum_node'lar": [
+          524
+        ],
+        "birim": "BİN TL",
+        "kategoriler": [
+          "Resmi",
+          "Ticari",
+          "Tasarruf",
+          "Diğer Mevduat",
+          "Bankalar",
+          "TOPLAM"
+        ],
+        "dolu_aylar": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12
+        ]
+      },
+      "2013": {
+        "node": 522,
+        "tum_node'lar": [
+          522
+        ],
+        "birim": "BİN TL",
+        "kategoriler": [
+          "Resmi",
+          "Ticari",
+          "Tasarruf",
+          "Diğer Mevduat",
+          "Bankalar",
+          "TOPLAM"
+        ],
+        "dolu_aylar": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12
+        ]
+      },
+      "2014": {
+        "node": 1219,
+        "tum_node'lar": [
+          1219
+        ],
+        "birim": "BİN TL",
+        "kategoriler": [
+          "Resmi",
+          "Ticari",
+          "Tasarruf",
+          "Diğer Mevduat",
+          "TOPLAM",
+          "Bankalara Borçlar",
+          "GENEL TOPLAM"
+        ],
+        "dolu_aylar": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12
+        ]
+      },
+      "2015": {
+        "node": 1762,
+        "tum_node'lar": [
+          1762
+        ],
+        "birim": "BİN TL",
+        "kategoriler": [
+          "Resmi",
+          "Ticari",
+          "Tasarruf",
+          "Diğer Mevduat",
+          "TOPLAM",
+          "Bankalara Borçlar",
+          "GENEL TOPLAM"
+        ],
+        "dolu_aylar": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12
+        ]
+      },
+      "2016": {
+        "node": 2370,
+        "tum_node'lar": [
+          2370
+        ],
+        "birim": "BİN TL",
+        "kategoriler": [
+          "Resmi",
+          "Ticari",
+          "Tasarruf",
+          "Diğer Mevduat",
+          "TOPLAM",
+          "Bankalara Borçlar",
+          "GENEL TOPLAM"
+        ],
+        "dolu_aylar": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12
+        ]
+      },
+      "2017": {
+        "node": 2797,
+        "tum_node'lar": [
+          2797
+        ],
+        "birim": "BİN TL",
+        "kategoriler": [
+          "Resmi",
+          "Ticari",
+          "Tasarruf",
+          "Diğer Mevduat",
+          "TOPLAM",
+          "Bankalara Borçlar",
+          "GENEL TOPLAM"
+        ],
+        "dolu_aylar": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12
+        ]
+      },
+      "2018": {
+        "node": 3120,
+        "tum_node'lar": [
+          3120
+        ],
+        "birim": "BİN TL",
+        "kategoriler": [
+          "Resmi",
+          "Ticari",
+          "Tasarruf",
+          "Diğer Mevduat",
+          "TOPLAM",
+          "Bankalara Borçlar",
+          "GENEL TOPLAM"
+        ],
+        "dolu_aylar": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12
+        ]
+      },
+      "2019": {
+        "node": 3911,
+        "tum_node'lar": [
+          3911
+        ],
+        "birim": "BİN TL",
+        "kategoriler": [
+          "Resmi",
+          "Ticari",
+          "Tasarruf",
+          "Diğer Mevduat",
+          "TOPLAM",
+          "Bankalara Borçlar",
+          "GENEL TOPLAM"
+        ],
+        "dolu_aylar": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12
+        ]
+      },
+      "2020": {
+        "node": 3925,
+        "tum_node'lar": [
+          3925
+        ],
+        "birim": "BİN TL",
+        "kategoriler": [
+          "Resmi",
+          "Ticari",
+          "Tasarruf",
+          "Diğer Mevduat",
+          "TOPLAM",
+          "Bankalara Borçlar",
+          "GENEL TOPLAM"
+        ],
+        "dolu_aylar": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12
+        ]
+      },
+      "2021": {
+        "node": 4125,
+        "tum_node'lar": [
+          4125
+        ],
+        "birim": "BİN TL",
+        "kategoriler": [
+          "Resmi",
+          "Ticari",
+          "Tasarruf",
+          "Diğer Mevduat",
+          "TOPLAM",
+          "Bankalara Borçlar",
+          "GENEL TOPLAM"
+        ],
+        "dolu_aylar": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12
+        ]
+      },
+      "2022": {
+        "node": 4471,
+        "tum_node'lar": [
+          4471
+        ],
+        "birim": "BİN TL",
+        "kategoriler": [
+          "Resmi",
+          "Ticari",
+          "Tasarruf",
+          "Diğer Mevduat",
+          "TOPLAM",
+          "Bankalara Borçlar",
+          "GENEL TOPLAM"
+        ],
+        "dolu_aylar": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12
+        ]
+      },
+      "2023": {
+        "node": 4891,
+        "tum_node'lar": [
+          4891
+        ],
+        "birim": "BİN TL",
+        "kategoriler": [
+          "Resmi",
+          "Ticari",
+          "Tasarruf",
+          "Diğer Mevduat",
+          "TOPLAM",
+          "Bankalara Borçlar",
+          "GENEL TOPLAM"
+        ],
+        "dolu_aylar": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12
+        ]
+      },
+      "2024": {
+        "node": 5286,
+        "tum_node'lar": [
+          5286
+        ],
+        "birim": "BİN TL",
+        "kategoriler": [
+          "Resmi",
+          "Ticari",
+          "Tasarruf",
+          "Diğer Mevduat",
+          "TOPLAM",
+          "Bankalara Borçlar",
+          "GENEL TOPLAM"
+        ],
+        "dolu_aylar": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12
+        ]
+      },
+      "2025": {
+        "node": 5701,
+        "tum_node'lar": [
+          5701
+        ],
+        "birim": "BİN TL",
+        "kategoriler": [
+          "Resmi",
+          "Ticari",
+          "Tasarruf",
+          "Diğer Mevduat",
+          "TOPLAM",
+          "Bankalara Borçlar",
+          "GENEL TOPLAM"
+        ],
+        "dolu_aylar": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12
+        ]
+      },
+      "2026": {
+        "node": 6058,
+        "tum_node'lar": [
+          6058
+        ],
+        "birim": "BİN TL",
+        "kategoriler": [
+          "Resmi",
+          "Ticari",
+          "Tasarruf",
+          "Diğer Mevduat",
+          "TOPLAM",
+          "Bankalara Borçlar",
+          "GENEL TOPLAM"
+        ],
+        "dolu_aylar": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ]
+      }
+    },
+    "mevduat_tur|tp": {
+      "2010": {
+        "node": 530,
+        "tum_node'lar": [
+          530
+        ],
+        "birim": "BİN TL",
+        "kategoriler": [
+          "Resmi",
+          "Ticari",
+          "Tasarruf",
+          "Diğer Mevduat",
+          "Bankalar",
+          "TOPLAM"
+        ],
+        "dolu_aylar": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12
+        ]
+      },
+      "2011": {
+        "node": 529,
+        "tum_node'lar": [
+          529
+        ],
+        "birim": "BİN TL",
+        "kategoriler": [
+          "Resmi",
+          "Ticari",
+          "Tasarruf",
+          "Diğer Mevduat",
+          "Bankalar",
+          "TOPLAM"
+        ],
+        "dolu_aylar": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12
+        ]
+      },
+      "2012": {
+        "node": 528,
+        "tum_node'lar": [
+          528
+        ],
+        "birim": "BİN TL",
+        "kategoriler": [
+          "Resmi",
+          "Ticari",
+          "Tasarruf",
+          "Diğer Mevduat",
+          "Bankalar",
+          "TOPLAM"
+        ],
+        "dolu_aylar": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12
+        ]
+      },
+      "2013": {
+        "node": 527,
+        "tum_node'lar": [
+          527
+        ],
+        "birim": "BİN TL",
+        "kategoriler": [
+          "Resmi",
+          "Ticari",
+          "Tasarruf",
+          "Diğer Mevduat",
+          "Bankalar",
+          "TOPLAM"
+        ],
+        "dolu_aylar": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12
+        ]
+      },
+      "2014": {
+        "node": 1220,
+        "tum_node'lar": [
+          1220
+        ],
+        "birim": "BİN TL",
+        "kategoriler": [
+          "Resmi",
+          "Ticari",
+          "Tasarruf",
+          "Diğer Mevduat",
+          "TOPLAM",
+          "Bankalara Borçlar",
+          "GENEL TOPLAM"
+        ],
+        "dolu_aylar": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12
+        ]
+      },
+      "2015": {
+        "node": 1763,
+        "tum_node'lar": [
+          1763
+        ],
+        "birim": "BİN TL",
+        "kategoriler": [
+          "Resmi",
+          "Ticari",
+          "Tasarruf",
+          "Diğer Mevduat",
+          "TOPLAM",
+          "Bankalara Borçlar",
+          "GENEL TOPLAM"
+        ],
+        "dolu_aylar": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12
+        ]
+      },
+      "2016": {
+        "node": 2371,
+        "tum_node'lar": [
+          2371
+        ],
+        "birim": "BİN TL",
+        "kategoriler": [
+          "Resmi",
+          "Ticari",
+          "Tasarruf",
+          "Diğer Mevduat",
+          "TOPLAM",
+          "Bankalara Borçlar",
+          "GENEL TOPLAM"
+        ],
+        "dolu_aylar": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12
+        ]
+      },
+      "2017": {
+        "node": 2798,
+        "tum_node'lar": [
+          2798
+        ],
+        "birim": "BİN TL",
+        "kategoriler": [
+          "Resmi",
+          "Ticari",
+          "Tasarruf",
+          "Diğer Mevduat",
+          "TOPLAM",
+          "Bankalara Borçlar",
+          "GENEL TOPLAM"
+        ],
+        "dolu_aylar": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12
+        ]
+      },
+      "2018": {
+        "node": 3121,
+        "tum_node'lar": [
+          3121
+        ],
+        "birim": "BİN TL",
+        "kategoriler": [
+          "Resmi",
+          "Ticari",
+          "Tasarruf",
+          "Diğer Mevduat",
+          "TOPLAM",
+          "Bankalara Borçlar",
+          "GENEL TOPLAM"
+        ],
+        "dolu_aylar": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12
+        ]
+      },
+      "2019": {
+        "node": 3912,
+        "tum_node'lar": [
+          3912
+        ],
+        "birim": "BİN TL",
+        "kategoriler": [
+          "Resmi",
+          "Ticari",
+          "Tasarruf",
+          "Diğer Mevduat",
+          "TOPLAM",
+          "Bankalara Borçlar",
+          "GENEL TOPLAM"
+        ],
+        "dolu_aylar": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12
+        ]
+      },
+      "2020": {
+        "node": 3926,
+        "tum_node'lar": [
+          3926
+        ],
+        "birim": "BİN TL",
+        "kategoriler": [
+          "Resmi",
+          "Ticari",
+          "Tasarruf",
+          "Diğer Mevduat",
+          "TOPLAM",
+          "Bankalara Borçlar",
+          "GENEL TOPLAM"
+        ],
+        "dolu_aylar": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12
+        ]
+      },
+      "2021": {
+        "node": 4126,
+        "tum_node'lar": [
+          4126
+        ],
+        "birim": "BİN TL",
+        "kategoriler": [
+          "Resmi",
+          "Ticari",
+          "Tasarruf",
+          "Diğer Mevduat",
+          "TOPLAM",
+          "Bankalara Borçlar",
+          "GENEL TOPLAM"
+        ],
+        "dolu_aylar": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12
+        ]
+      },
+      "2022": {
+        "node": 4472,
+        "tum_node'lar": [
+          4472
+        ],
+        "birim": "BİN TL",
+        "kategoriler": [
+          "Resmi",
+          "Ticari",
+          "Tasarruf",
+          "Diğer Mevduat",
+          "TOPLAM",
+          "Bankalara Borçlar",
+          "GENEL TOPLAM"
+        ],
+        "dolu_aylar": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12
+        ]
+      },
+      "2023": {
+        "node": 4892,
+        "tum_node'lar": [
+          4892
+        ],
+        "birim": "BİN TL",
+        "kategoriler": [
+          "Resmi",
+          "Ticari",
+          "Tasarruf",
+          "Diğer Mevduat",
+          "TOPLAM",
+          "Bankalara Borçlar",
+          "GENEL TOPLAM"
+        ],
+        "dolu_aylar": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12
+        ]
+      },
+      "2024": {
+        "node": 5287,
+        "tum_node'lar": [
+          5287
+        ],
+        "birim": "BİN TL",
+        "kategoriler": [
+          "Resmi",
+          "Ticari",
+          "Tasarruf",
+          "Diğer Mevduat",
+          "TOPLAM",
+          "Bankalara Borçlar",
+          "GENEL TOPLAM"
+        ],
+        "dolu_aylar": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12
+        ]
+      },
+      "2025": {
+        "node": 5702,
+        "tum_node'lar": [
+          5702
+        ],
+        "birim": "BİN TL",
+        "kategoriler": [
+          "Resmi",
+          "Ticari",
+          "Tasarruf",
+          "Diğer Mevduat",
+          "TOPLAM",
+          "Bankalara Borçlar",
+          "GENEL TOPLAM"
+        ],
+        "dolu_aylar": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12
+        ]
+      },
+      "2026": {
+        "node": 6068,
+        "tum_node'lar": [
+          6068
+        ],
+        "birim": "BİN TL",
+        "kategoriler": [
+          "Resmi",
+          "Ticari",
+          "Tasarruf",
+          "Diğer Mevduat",
+          "TOPLAM",
+          "Bankalara Borçlar",
+          "GENEL TOPLAM"
+        ],
+        "dolu_aylar": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ]
+      }
+    },
+    "mevduat_tur|yp": {
+      "2010": {
+        "node": 534,
+        "tum_node'lar": [
+          534
+        ],
+        "birim": "BİN TL",
+        "kategoriler": [
+          "Resmi",
+          "Ticari",
+          "Tasarruf",
+          "Diğer Mevduat",
+          "Bankalar",
+          "TOPLAM"
+        ],
+        "dolu_aylar": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12
+        ]
+      },
+      "2011": {
+        "node": 533,
+        "tum_node'lar": [
+          533
+        ],
+        "birim": "BİN TL",
+        "kategoriler": [
+          "Resmi",
+          "Ticari",
+          "Tasarruf",
+          "Diğer Mevduat",
+          "Bankalar",
+          "TOPLAM"
+        ],
+        "dolu_aylar": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12
+        ]
+      },
+      "2012": {
+        "node": 532,
+        "tum_node'lar": [
+          532
+        ],
+        "birim": "BİN TL",
+        "kategoriler": [
+          "Resmi",
+          "Ticari",
+          "Tasarruf",
+          "Diğer Mevduat",
+          "Bankalar",
+          "TOPLAM"
+        ],
+        "dolu_aylar": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12
+        ]
+      },
+      "2013": {
+        "node": 531,
+        "tum_node'lar": [
+          531
+        ],
+        "birim": "BİN TL",
+        "kategoriler": [
+          "Resmi",
+          "Ticari",
+          "Tasarruf",
+          "Diğer Mevduat",
+          "Bankalar",
+          "TOPLAM"
+        ],
+        "dolu_aylar": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12
+        ]
+      },
+      "2014": {
+        "node": 1221,
+        "tum_node'lar": [
+          1221
+        ],
+        "birim": "BİN TL",
+        "kategoriler": [
+          "Resmi",
+          "Ticari",
+          "Tasarruf",
+          "Diğer Mevduat",
+          "TOPLAM",
+          "Bankalara Borçlar",
+          "GENEL TOPLAM"
+        ],
+        "dolu_aylar": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12
+        ]
+      },
+      "2015": {
+        "node": 1764,
+        "tum_node'lar": [
+          1764
+        ],
+        "birim": "BİN TL",
+        "kategoriler": [
+          "Resmi",
+          "Ticari",
+          "Tasarruf",
+          "Diğer Mevduat",
+          "TOPLAM",
+          "Bankalara Borçlar",
+          "GENEL TOPLAM"
+        ],
+        "dolu_aylar": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12
+        ]
+      },
+      "2016": {
+        "node": 2372,
+        "tum_node'lar": [
+          2372
+        ],
+        "birim": "BİN TL",
+        "kategoriler": [
+          "Resmi",
+          "Ticari",
+          "Tasarruf",
+          "Diğer Mevduat",
+          "TOPLAM",
+          "Bankalara Borçlar",
+          "GENEL TOPLAM"
+        ],
+        "dolu_aylar": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12
+        ]
+      },
+      "2017": {
+        "node": 2799,
+        "tum_node'lar": [
+          2799
+        ],
+        "birim": "BİN TL",
+        "kategoriler": [
+          "Resmi",
+          "Ticari",
+          "Tasarruf",
+          "Diğer Mevduat",
+          "TOPLAM",
+          "Bankalara Borçlar",
+          "GENEL TOPLAM"
+        ],
+        "dolu_aylar": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12
+        ]
+      },
+      "2018": {
+        "node": 3122,
+        "tum_node'lar": [
+          3122
+        ],
+        "birim": "BİN TL",
+        "kategoriler": [
+          "Resmi",
+          "Ticari",
+          "Tasarruf",
+          "Diğer Mevduat",
+          "TOPLAM",
+          "Bankalara Borçlar",
+          "GENEL TOPLAM"
+        ],
+        "dolu_aylar": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12
+        ]
+      },
+      "2019": {
+        "node": 3913,
+        "tum_node'lar": [
+          3913
+        ],
+        "birim": "BİN TL",
+        "kategoriler": [
+          "Resmi",
+          "Ticari",
+          "Tasarruf",
+          "Diğer Mevduat",
+          "TOPLAM",
+          "Bankalara Borçlar",
+          "GENEL TOPLAM"
+        ],
+        "dolu_aylar": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12
+        ]
+      },
+      "2020": {
+        "node": 3927,
+        "tum_node'lar": [
+          3927
+        ],
+        "birim": "BİN TL",
+        "kategoriler": [
+          "Resmi",
+          "Ticari",
+          "Tasarruf",
+          "Diğer Mevduat",
+          "TOPLAM",
+          "Bankalara Borçlar",
+          "GENEL TOPLAM"
+        ],
+        "dolu_aylar": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12
+        ]
+      },
+      "2021": {
+        "node": 4127,
+        "tum_node'lar": [
+          4127
+        ],
+        "birim": "BİN TL",
+        "kategoriler": [
+          "Resmi",
+          "Ticari",
+          "Tasarruf",
+          "Diğer Mevduat",
+          "TOPLAM",
+          "Bankalara Borçlar",
+          "GENEL TOPLAM"
+        ],
+        "dolu_aylar": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12
+        ]
+      },
+      "2022": {
+        "node": 4473,
+        "tum_node'lar": [
+          4473
+        ],
+        "birim": "BİN TL",
+        "kategoriler": [
+          "Resmi",
+          "Ticari",
+          "Tasarruf",
+          "Diğer Mevduat",
+          "TOPLAM",
+          "Bankalara Borçlar",
+          "GENEL TOPLAM"
+        ],
+        "dolu_aylar": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12
+        ]
+      },
+      "2023": {
+        "node": 4893,
+        "tum_node'lar": [
+          4893
+        ],
+        "birim": "BİN TL",
+        "kategoriler": [
+          "Resmi",
+          "Ticari",
+          "Tasarruf",
+          "Diğer Mevduat",
+          "TOPLAM",
+          "Bankalara Borçlar",
+          "GENEL TOPLAM"
+        ],
+        "dolu_aylar": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12
+        ]
+      },
+      "2024": {
+        "node": 5288,
+        "tum_node'lar": [
+          5288
+        ],
+        "birim": "BİN TL",
+        "kategoriler": [
+          "Resmi",
+          "Ticari",
+          "Tasarruf",
+          "Diğer Mevduat",
+          "TOPLAM",
+          "Bankalara Borçlar",
+          "GENEL TOPLAM"
+        ],
+        "dolu_aylar": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12
+        ]
+      },
+      "2025": {
+        "node": 5703,
+        "tum_node'lar": [
+          5703
+        ],
+        "birim": "BİN TL",
+        "kategoriler": [
+          "Resmi",
+          "Ticari",
+          "Tasarruf",
+          "Diğer Mevduat",
+          "TOPLAM",
+          "Bankalara Borçlar",
+          "GENEL TOPLAM"
+        ],
+        "dolu_aylar": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12
+        ]
+      },
+      "2026": {
+        "node": 6060,
+        "tum_node'lar": [
+          6060
+        ],
+        "birim": "BİN TL",
+        "kategoriler": [
+          "Resmi",
+          "Ticari",
+          "Tasarruf",
+          "Diğer Mevduat",
+          "TOPLAM",
+          "Bankalara Borçlar",
+          "GENEL TOPLAM"
+        ],
+        "dolu_aylar": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ]
+      }
+    },
+    "mevduat_vade|toplam": {
+      "2010": {
+        "node": 463,
+        "tum_node'lar": [
+          463
+        ],
+        "birim": "BİN TL",
+        "kategoriler": [
+          "Vadesiz",
+          "1 Ay Vadeli",
+          "3 Ay Vadeli",
+          "6 Ay Vadeli",
+          "1 Yıl Vadeli",
+          "TOPLAM"
+        ],
+        "dolu_aylar": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12
+        ]
+      },
+      "2011": {
+        "node": 462,
+        "tum_node'lar": [
+          462
+        ],
+        "birim": "BİN TL",
+        "kategoriler": [
+          "Vadesiz",
+          "1 Ay Vadeli",
+          "3 Ay Vadeli",
+          "6 Ay Vadeli",
+          "1 Yıl Vadeli",
+          "TOPLAM"
+        ],
+        "dolu_aylar": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12
+        ]
+      },
+      "2012": {
+        "node": 461,
+        "tum_node'lar": [
+          461
+        ],
+        "birim": "BİN TL",
+        "kategoriler": [
+          "Vadesiz",
+          "1 Ay Vadeli",
+          "3 Ay Vadeli",
+          "6 Ay Vadeli",
+          "1 Yıl Vadeli",
+          "TOPLAM"
+        ],
+        "dolu_aylar": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12
+        ]
+      },
+      "2013": {
+        "node": 395,
+        "tum_node'lar": [
+          395
+        ],
+        "birim": "BİN TL",
+        "kategoriler": [
+          "Vadesiz",
+          "1 Ay Vadeli",
+          "3 Ay Vadeli",
+          "6 Ay Vadeli",
+          "1 Yıl Vadeli",
+          "TOPLAM"
+        ],
+        "dolu_aylar": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12
+        ]
+      },
+      "2014": {
+        "node": 1216,
+        "tum_node'lar": [
+          1216
+        ],
+        "birim": "BİN TL",
+        "kategoriler": [
+          "Vadesiz",
+          "1 Ay Vadeli",
+          "3 Ay Vadeli",
+          "6 Ay Vadeli",
+          "1 Yıl Vadeli",
+          "TOPLAM"
+        ],
+        "dolu_aylar": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12
+        ]
+      },
+      "2015": {
+        "node": 1759,
+        "tum_node'lar": [
+          1759
+        ],
+        "birim": "BİN TL",
+        "kategoriler": [
+          "Vadesiz",
+          "1 Ay Vadeli",
+          "3 Ay Vadeli",
+          "6 Ay Vadeli",
+          "1 Yıl Vadeli",
+          "TOPLAM"
+        ],
+        "dolu_aylar": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12
+        ]
+      },
+      "2016": {
+        "node": 2367,
+        "tum_node'lar": [
+          2367
+        ],
+        "birim": "BİN TL",
+        "kategoriler": [
+          "Vadesiz",
+          "1 Ay Vadeli",
+          "3 Ay Vadeli",
+          "6 Ay Vadeli",
+          "1 Yıl Vadeli",
+          "TOPLAM"
+        ],
+        "dolu_aylar": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12
+        ]
+      },
+      "2017": {
+        "node": 2794,
+        "tum_node'lar": [
+          2794
+        ],
+        "birim": "BİN TL",
+        "kategoriler": [
+          "Vadesiz",
+          "1 Ay Vadeli",
+          "3 Ay Vadeli",
+          "6 Ay Vadeli",
+          "1 Yıl Vadeli",
+          "TOPLAM"
+        ],
+        "dolu_aylar": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12
+        ]
+      },
+      "2018": {
+        "node": 3117,
+        "tum_node'lar": [
+          3117
+        ],
+        "birim": "BİN TL",
+        "kategoriler": [
+          "Vadesiz",
+          "1 Ay Vadeli",
+          "3 Ay Vadeli",
+          "6 Ay Vadeli",
+          "1 Yıl Vadeli",
+          "TOPLAM"
+        ],
+        "dolu_aylar": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12
+        ]
+      },
+      "2019": {
+        "node": 3908,
+        "tum_node'lar": [
+          3908
+        ],
+        "birim": "BİN TL",
+        "kategoriler": [
+          "Vadesiz",
+          "1 Ay Vadeli",
+          "3 Ay Vadeli",
+          "6 Ay Vadeli",
+          "1 Yıl Vadeli",
+          "TOPLAM"
+        ],
+        "dolu_aylar": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12
+        ]
+      },
+      "2020": {
+        "node": 3922,
+        "tum_node'lar": [
+          3922
+        ],
+        "birim": "BİN TL",
+        "kategoriler": [
+          "Vadesiz",
+          "1 Ay Vadeli",
+          "3 Ay Vadeli",
+          "6 Ay Vadeli",
+          "1 Yıl Vadeli",
+          "TOPLAM"
+        ],
+        "dolu_aylar": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12
+        ]
+      },
+      "2021": {
+        "node": 4122,
+        "tum_node'lar": [
+          4122
+        ],
+        "birim": "BİN TL",
+        "kategoriler": [
+          "Vadesiz",
+          "1 Ay Vadeli",
+          "3 Ay Vadeli",
+          "6 Ay Vadeli",
+          "1 Yıl Vadeli",
+          "TOPLAM"
+        ],
+        "dolu_aylar": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12
+        ]
+      },
+      "2022": {
+        "node": 4468,
+        "tum_node'lar": [
+          4468
+        ],
+        "birim": "BİN TL",
+        "kategoriler": [
+          "Vadesiz",
+          "1 Ay Vadeli",
+          "3 Ay Vadeli",
+          "6 Ay Vadeli",
+          "1 Yıl Vadeli",
+          "TOPLAM"
+        ],
+        "dolu_aylar": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12
+        ]
+      },
+      "2023": {
+        "node": 4888,
+        "tum_node'lar": [
+          4888
+        ],
+        "birim": "BİN TL",
+        "kategoriler": [
+          "Vadesiz",
+          "1 Ay Vadeli",
+          "3 Ay Vadeli",
+          "6 Ay Vadeli",
+          "1 Yıl Vadeli",
+          "TOPLAM"
+        ],
+        "dolu_aylar": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12
+        ]
+      },
+      "2024": {
+        "node": 5283,
+        "tum_node'lar": [
+          5283
+        ],
+        "birim": "BİN TL",
+        "kategoriler": [
+          "Vadesiz",
+          "1 Ay Vadeli",
+          "3 Ay Vadeli",
+          "6 Ay Vadeli",
+          "1 Yıl Vadeli",
+          "TOPLAM"
+        ],
+        "dolu_aylar": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12
+        ]
+      },
+      "2025": {
+        "node": 5698,
+        "tum_node'lar": [
+          5698
+        ],
+        "birim": "BİN TL",
+        "kategoriler": [
+          "Vadesiz",
+          "1 Ay Vadeli",
+          "3 Ay Vadeli",
+          "6 Ay Vadeli",
+          "1 Yıl Vadeli",
+          "TOPLAM"
+        ],
+        "dolu_aylar": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12
+        ]
+      },
+      "2026": {
+        "node": 6055,
+        "tum_node'lar": [
+          6055,
+          6076
+        ],
+        "birim": "BİN TL",
+        "kategoriler": [
+          "Vadesiz",
+          "1 Ay Vadeli",
+          "3 Ay Vadeli",
+          "6 Ay Vadeli",
+          "1 Yıl Vadeli",
+          "TOPLAM"
+        ],
+        "dolu_aylar": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ]
+      }
+    },
+    "mevduat_vade|tp": {
+      "2010": {
+        "node": 467,
+        "tum_node'lar": [
+          467
+        ],
+        "birim": "BİN TL",
+        "kategoriler": [
+          "Vadesiz",
+          "1 Ay Vadeli",
+          "3 Ay Vadeli",
+          "6 Ay Vadeli",
+          "1 Yıl Vadeli",
+          "TOPLAM"
+        ],
+        "dolu_aylar": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12
+        ]
+      },
+      "2011": {
+        "node": 466,
+        "tum_node'lar": [
+          466
+        ],
+        "birim": "BİN TL",
+        "kategoriler": [
+          "Vadesiz",
+          "1 Ay Vadeli",
+          "3 Ay Vadeli",
+          "6 Ay Vadeli",
+          "1 Yıl Vadeli",
+          "TOPLAM"
+        ],
+        "dolu_aylar": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12
+        ]
+      },
+      "2012": {
+        "node": 465,
+        "tum_node'lar": [
+          465
+        ],
+        "birim": "BİN TL",
+        "kategoriler": [
+          "Vadesiz",
+          "1 Ay Vadeli",
+          "3 Ay Vadeli",
+          "6 Ay Vadeli",
+          "1 Yıl Vadeli",
+          "TOPLAM"
+        ],
+        "dolu_aylar": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12
+        ]
+      },
+      "2013": {
+        "node": 464,
+        "tum_node'lar": [
+          464
+        ],
+        "birim": "BİN TL",
+        "kategoriler": [
+          "Vadesiz",
+          "1 Ay Vadeli",
+          "3 Ay Vadeli",
+          "6 Ay Vadeli",
+          "1 Yıl Vadeli",
+          "TOPLAM"
+        ],
+        "dolu_aylar": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12
+        ]
+      },
+      "2014": {
+        "node": 1217,
+        "tum_node'lar": [
+          1217
+        ],
+        "birim": "BİN TL",
+        "kategoriler": [
+          "Vadesiz",
+          "1 Ay Vadeli",
+          "3 Ay Vadeli",
+          "6 Ay Vadeli",
+          "1 Yıl Vadeli",
+          "TOPLAM"
+        ],
+        "dolu_aylar": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12
+        ]
+      },
+      "2015": {
+        "node": 1760,
+        "tum_node'lar": [
+          1760
+        ],
+        "birim": "BİN TL",
+        "kategoriler": [
+          "Vadesiz",
+          "1 Ay Vadeli",
+          "3 Ay Vadeli",
+          "6 Ay Vadeli",
+          "1 Yıl Vadeli",
+          "TOPLAM"
+        ],
+        "dolu_aylar": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12
+        ]
+      },
+      "2016": {
+        "node": 2368,
+        "tum_node'lar": [
+          2368
+        ],
+        "birim": "BİN TL",
+        "kategoriler": [
+          "Vadesiz",
+          "1 Ay Vadeli",
+          "3 Ay Vadeli",
+          "6 Ay Vadeli",
+          "1 Yıl Vadeli",
+          "TOPLAM"
+        ],
+        "dolu_aylar": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12
+        ]
+      },
+      "2017": {
+        "node": 2795,
+        "tum_node'lar": [
+          2795
+        ],
+        "birim": "BİN TL",
+        "kategoriler": [
+          "Vadesiz",
+          "1 Ay Vadeli",
+          "3 Ay Vadeli",
+          "6 Ay Vadeli",
+          "1 Yıl Vadeli",
+          "TOPLAM"
+        ],
+        "dolu_aylar": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12
+        ]
+      },
+      "2018": {
+        "node": 3118,
+        "tum_node'lar": [
+          3118
+        ],
+        "birim": "BİN TL",
+        "kategoriler": [
+          "Vadesiz",
+          "1 Ay Vadeli",
+          "3 Ay Vadeli",
+          "6 Ay Vadeli",
+          "1 Yıl Vadeli",
+          "TOPLAM"
+        ],
+        "dolu_aylar": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12
+        ]
+      },
+      "2019": {
+        "node": 3909,
+        "tum_node'lar": [
+          3909
+        ],
+        "birim": "BİN TL",
+        "kategoriler": [
+          "Vadesiz",
+          "1 Ay Vadeli",
+          "3 Ay Vadeli",
+          "6 Ay Vadeli",
+          "1 Yıl Vadeli",
+          "TOPLAM"
+        ],
+        "dolu_aylar": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12
+        ]
+      },
+      "2020": {
+        "node": 3923,
+        "tum_node'lar": [
+          3923
+        ],
+        "birim": "BİN TL",
+        "kategoriler": [
+          "Vadesiz",
+          "1 Ay Vadeli",
+          "3 Ay Vadeli",
+          "6 Ay Vadeli",
+          "1 Yıl Vadeli",
+          "TOPLAM"
+        ],
+        "dolu_aylar": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12
+        ]
+      },
+      "2021": {
+        "node": 4123,
+        "tum_node'lar": [
+          4123
+        ],
+        "birim": "BİN TL",
+        "kategoriler": [
+          "Vadesiz",
+          "1 Ay Vadeli",
+          "3 Ay Vadeli",
+          "6 Ay Vadeli",
+          "1 Yıl Vadeli",
+          "TOPLAM"
+        ],
+        "dolu_aylar": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12
+        ]
+      },
+      "2022": {
+        "node": 4469,
+        "tum_node'lar": [
+          4469
+        ],
+        "birim": "BİN TL",
+        "kategoriler": [
+          "Vadesiz",
+          "1 Ay Vadeli",
+          "3 Ay Vadeli",
+          "6 Ay Vadeli",
+          "1 Yıl Vadeli",
+          "TOPLAM"
+        ],
+        "dolu_aylar": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12
+        ]
+      },
+      "2023": {
+        "node": 4889,
+        "tum_node'lar": [
+          4889
+        ],
+        "birim": "BİN TL",
+        "kategoriler": [
+          "Vadesiz",
+          "1 Ay Vadeli",
+          "3 Ay Vadeli",
+          "6 Ay Vadeli",
+          "1 Yıl Vadeli",
+          "TOPLAM"
+        ],
+        "dolu_aylar": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12
+        ]
+      },
+      "2024": {
+        "node": 5284,
+        "tum_node'lar": [
+          5284
+        ],
+        "birim": "BİN TL",
+        "kategoriler": [
+          "Vadesiz",
+          "1 Ay Vadeli",
+          "3 Ay Vadeli",
+          "6 Ay Vadeli",
+          "1 Yıl Vadeli",
+          "TOPLAM"
+        ],
+        "dolu_aylar": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12
+        ]
+      },
+      "2025": {
+        "node": 5699,
+        "tum_node'lar": [
+          5699
+        ],
+        "birim": "BİN TL",
+        "kategoriler": [
+          "Vadesiz",
+          "1 Ay Vadeli",
+          "3 Ay Vadeli",
+          "6 Ay Vadeli",
+          "1 Yıl Vadeli",
+          "TOPLAM"
+        ],
+        "dolu_aylar": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12
+        ]
+      },
+      "2026": {
+        "node": 6056,
+        "tum_node'lar": [
+          6056,
+          6077
+        ],
+        "birim": "BİN TL",
+        "kategoriler": [
+          "Vadesiz",
+          "1 Ay Vadeli",
+          "3 Ay Vadeli",
+          "6 Ay Vadeli",
+          "1 Yıl Vadeli",
+          "TOPLAM"
+        ],
+        "dolu_aylar": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ]
+      }
+    },
+    "mevduat_vade|yp": {
+      "2010": {
+        "node": 471,
+        "tum_node'lar": [
+          471
+        ],
+        "birim": "BİN TL",
+        "kategoriler": [
+          "Vadesiz",
+          "1 Ay Vadeli",
+          "3 Ay Vadeli",
+          "6 Ay Vadeli",
+          "1 Yıl Vadeli",
+          "TOPLAM"
+        ],
+        "dolu_aylar": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12
+        ]
+      },
+      "2011": {
+        "node": 470,
+        "tum_node'lar": [
+          470
+        ],
+        "birim": "BİN TL",
+        "kategoriler": [
+          "Vadesiz",
+          "1 Ay Vadeli",
+          "3 Ay Vadeli",
+          "6 Ay Vadeli",
+          "1 Yıl Vadeli",
+          "TOPLAM"
+        ],
+        "dolu_aylar": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12
+        ]
+      },
+      "2012": {
+        "node": 469,
+        "tum_node'lar": [
+          469
+        ],
+        "birim": "BİN TL",
+        "kategoriler": [
+          "Vadesiz",
+          "1 Ay Vadeli",
+          "3 Ay Vadeli",
+          "6 Ay Vadeli",
+          "1 Yıl Vadeli",
+          "TOPLAM"
+        ],
+        "dolu_aylar": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12
+        ]
+      },
+      "2013": {
+        "node": 468,
+        "tum_node'lar": [
+          468
+        ],
+        "birim": "BİN TL",
+        "kategoriler": [
+          "Vadesiz",
+          "1 Ay Vadeli",
+          "3 Ay Vadeli",
+          "6 Ay Vadeli",
+          "1 Yıl Vadeli",
+          "TOPLAM"
+        ],
+        "dolu_aylar": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12
+        ]
+      },
+      "2014": {
+        "node": 1218,
+        "tum_node'lar": [
+          1218
+        ],
+        "birim": "BİN TL",
+        "kategoriler": [
+          "Vadesiz",
+          "1 Ay Vadeli",
+          "3 Ay Vadeli",
+          "6 Ay Vadeli",
+          "1 Yıl Vadeli",
+          "TOPLAM"
+        ],
+        "dolu_aylar": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12
+        ]
+      },
+      "2015": {
+        "node": 1761,
+        "tum_node'lar": [
+          1761
+        ],
+        "birim": "BİN TL",
+        "kategoriler": [
+          "Vadesiz",
+          "1 Ay Vadeli",
+          "3 Ay Vadeli",
+          "6 Ay Vadeli",
+          "1 Yıl Vadeli",
+          "TOPLAM"
+        ],
+        "dolu_aylar": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12
+        ]
+      },
+      "2016": {
+        "node": 2369,
+        "tum_node'lar": [
+          2369
+        ],
+        "birim": "BİN TL",
+        "kategoriler": [
+          "Vadesiz",
+          "1 Ay Vadeli",
+          "3 Ay Vadeli",
+          "6 Ay Vadeli",
+          "1 Yıl Vadeli",
+          "TOPLAM"
+        ],
+        "dolu_aylar": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12
+        ]
+      },
+      "2017": {
+        "node": 2796,
+        "tum_node'lar": [
+          2796
+        ],
+        "birim": "BİN TL",
+        "kategoriler": [
+          "Vadesiz",
+          "1 Ay Vadeli",
+          "3 Ay Vadeli",
+          "6 Ay Vadeli",
+          "1 Yıl Vadeli",
+          "TOPLAM"
+        ],
+        "dolu_aylar": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12
+        ]
+      },
+      "2018": {
+        "node": 3119,
+        "tum_node'lar": [
+          3119
+        ],
+        "birim": "BİN TL",
+        "kategoriler": [
+          "Vadesiz",
+          "1 Ay Vadeli",
+          "3 Ay Vadeli",
+          "6 Ay Vadeli",
+          "1 Yıl Vadeli",
+          "TOPLAM"
+        ],
+        "dolu_aylar": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12
+        ]
+      },
+      "2019": {
+        "node": 3910,
+        "tum_node'lar": [
+          3910
+        ],
+        "birim": "BİN TL",
+        "kategoriler": [
+          "Vadesiz",
+          "1 Ay Vadeli",
+          "3 Ay Vadeli",
+          "6 Ay Vadeli",
+          "1 Yıl Vadeli",
+          "TOPLAM"
+        ],
+        "dolu_aylar": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12
+        ]
+      },
+      "2020": {
+        "node": 3924,
+        "tum_node'lar": [
+          3924
+        ],
+        "birim": "BİN TL",
+        "kategoriler": [
+          "Vadesiz",
+          "1 Ay Vadeli",
+          "3 Ay Vadeli",
+          "6 Ay Vadeli",
+          "1 Yıl Vadeli",
+          "TOPLAM"
+        ],
+        "dolu_aylar": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12
+        ]
+      },
+      "2021": {
+        "node": 4124,
+        "tum_node'lar": [
+          4124
+        ],
+        "birim": "BİN TL",
+        "kategoriler": [
+          "Vadesiz",
+          "1 Ay Vadeli",
+          "3 Ay Vadeli",
+          "6 Ay Vadeli",
+          "1 Yıl Vadeli",
+          "TOPLAM"
+        ],
+        "dolu_aylar": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12
+        ]
+      },
+      "2022": {
+        "node": 4470,
+        "tum_node'lar": [
+          4470
+        ],
+        "birim": "BİN TL",
+        "kategoriler": [
+          "Vadesiz",
+          "1 Ay Vadeli",
+          "3 Ay Vadeli",
+          "6 Ay Vadeli",
+          "1 Yıl Vadeli",
+          "TOPLAM"
+        ],
+        "dolu_aylar": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12
+        ]
+      },
+      "2023": {
+        "node": 4890,
+        "tum_node'lar": [
+          4890
+        ],
+        "birim": "BİN TL",
+        "kategoriler": [
+          "Vadesiz",
+          "1 Ay Vadeli",
+          "3 Ay Vadeli",
+          "6 Ay Vadeli",
+          "1 Yıl Vadeli",
+          "TOPLAM"
+        ],
+        "dolu_aylar": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12
+        ]
+      },
+      "2024": {
+        "node": 5285,
+        "tum_node'lar": [
+          5285
+        ],
+        "birim": "BİN TL",
+        "kategoriler": [
+          "Vadesiz",
+          "1 Ay Vadeli",
+          "3 Ay Vadeli",
+          "6 Ay Vadeli",
+          "1 Yıl Vadeli",
+          "TOPLAM"
+        ],
+        "dolu_aylar": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12
+        ]
+      },
+      "2025": {
+        "node": 5700,
+        "tum_node'lar": [
+          5700
+        ],
+        "birim": "BİN TL",
+        "kategoriler": [
+          "Vadesiz",
+          "1 Ay Vadeli",
+          "3 Ay Vadeli",
+          "6 Ay Vadeli",
+          "1 Yıl Vadeli",
+          "TOPLAM"
+        ],
+        "dolu_aylar": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12
+        ]
+      },
+      "2026": {
+        "node": 6057,
+        "tum_node'lar": [
+          6057
+        ],
+        "birim": "BİN TL",
+        "kategoriler": [
+          "Vadesiz",
+          "1 Ay Vadeli",
+          "3 Ay Vadeli",
+          "6 Ay Vadeli",
+          "1 Yıl Vadeli",
+          "TOPLAM"
+        ],
+        "dolu_aylar": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ]
+      }
+    }
+  }
+}

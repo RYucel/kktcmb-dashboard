@@ -1,0 +1,96 @@
+name: Veriyi güncelle
+
+# Ayda iki kez: ayın 1'i ve 15'i, 06:00 UTC (KKTC saatiyle 09:00).
+# Cron "iki haftada bir" ifadesini desteklemez; 1 + 15 pratikte 14-16 gün aralık verir.
+on:
+  schedule:
+    - cron: "0 6 1,15 * *"
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+concurrency:
+  group: veri-guncelle
+  cancel-in-progress: false
+
+jobs:
+  guncelle:
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - name: Bağımlılıklar
+        run: pip install requests beautifulsoup4 lxml pandas plotly
+
+      - name: Ham sayfa önbelleği
+        uses: actions/cache@v4
+        with:
+          path: data/raw
+          key: mb-raw-${{ github.run_id }}
+          restore-keys: mb-raw-
+
+      - name: Önceki veri parmak izi
+        id: once
+        run: |
+          if [ -f data/kktcmb.csv ]; then
+            echo "hash=$(sha256sum data/kktcmb.csv | cut -d' ' -f1)" >> "$GITHUB_OUTPUT"
+          else
+            echo "hash=yok" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Veriyi topla
+        run: python scrape.py
+
+      - name: Yeni veri parmak izi ve son ay
+        id: sonra
+        run: |
+          echo "hash=$(sha256sum data/kktcmb.csv | cut -d' ' -f1)" >> "$GITHUB_OUTPUT"
+          python - <<'PY' >> "$GITHUB_OUTPUT"
+          import csv
+          with open("data/kktcmb.csv", encoding="utf-8") as f:
+              ay = max(r["tarih"] for r in csv.DictReader(f) if r["deger"].strip())[:7]
+          print("ay=" + ay)
+          PY
+
+      - name: Değişiklik var mı
+        id: fark
+        run: |
+          if [ "${{ steps.once.outputs.hash }}" = "${{ steps.sonra.outputs.hash }}" ]; then
+            echo "var=false" >> "$GITHUB_OUTPUT"
+            echo "Veri değişmedi, yayın atlandı."
+          else
+            echo "var=true" >> "$GITHUB_OUTPUT"
+            echo "Yeni veri var, son ay: ${{ steps.sonra.outputs.ay }}"
+          fi
+
+      - name: Dashboard üret
+        if: steps.fark.outputs.var == 'true'
+        run: python build_dashboard.py
+
+      - name: Vercel'e yayınla
+        if: steps.fark.outputs.var == 'true'
+        env:
+          VERCEL_TOKEN: ${{ secrets.VERCEL_TOKEN }}
+          VERCEL_ORG_ID: ${{ secrets.VERCEL_ORG_ID }}
+          VERCEL_PROJECT_ID: ${{ secrets.VERCEL_PROJECT_ID }}
+        run: npx --yes vercel@latest deploy site --prod --yes --project kktcmb-dashboard --token "$VERCEL_TOKEN"
+
+      - name: Veri izini commit et
+        if: steps.fark.outputs.var == 'true'
+        run: |
+          git config user.name "kktcmb-bot"
+          git config user.email "bot@users.noreply.github.com"
+          git add data/kktcmb.csv data/scrape_meta.json
+          if git diff --cached --quiet; then
+            echo "Commit edilecek değişiklik yok."
+          else
+            git commit -m "veri: ${{ steps.sonra.outputs.ay }}"
+            git push
+          fi

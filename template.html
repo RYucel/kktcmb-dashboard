@@ -1,0 +1,865 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>KKTC MB Para-Banka Verileri</title>
+<meta name="description" content="KKTC Merkez Bankası aylık para-banka verileri: mevduat, krediler, kamu-özel ayrımı ve kredi/mevduat oranı, 2010'dan bugüne.">
+<style>
+/* Hallmark · v2.0.0 · scope: app · theme: Dusk (dealt, manual) · shape: app screen · nav: sticky slate-glass top bar, wordmark and month range · footer: ruled mast · posture: committed · signals: periwinkle-apricot · surface: slate panels, one glass bar */
+/* Hallmark · pre-emit critique: P4 H5 E5 S4 R4 V4 · weakest: V, dashboards drift to stat tiles; led with one ruled tally and a section rail instead */
+:root{
+  --color-paper:oklch(17.5% 0.014 268); --color-paper-2:oklch(21% 0.016 268); --color-paper-3:oklch(25% 0.017 268);
+  --color-ink:oklch(96% 0.006 75); --color-ink-2:oklch(85% 0.010 262); --color-muted:oklch(70% 0.016 262);
+  --color-rule:oklch(30% 0.016 266); --color-light:oklch(99% 0.005 268); --color-shade:oklch(10% 0.022 268);
+  --color-accent:oklch(77% 0.10 274); --color-accent-ink:oklch(19% 0.035 274); --color-accent-hi:oklch(84% 0.085 274);
+  --color-accent-deep:oklch(44% 0.13 274); --color-accent-soft:oklch(91% 0.038 274); --color-focus:oklch(80% 0.10 274);
+  --color-accent-2:oklch(83% 0.095 62); --color-dusk:oklch(70% 0.12 330);
+  --color-day-ink:oklch(22% 0.022 268); --color-day-muted:oklch(38% 0.022 266); --color-fog:oklch(94% 0.012 70);
+  --color-well:oklch(95.5% 0.008 75); --color-well-2:oklch(92% 0.010 75); --color-well-ink:oklch(21% 0.016 268); --color-well-muted:oklch(47% 0.016 265); --color-well-rule:oklch(87.5% 0.009 75); --color-card:oklch(99.5% 0.003 75);
+  --glass:oklch(22% 0.018 268 / 0.58); --glass-blur:22px;
+  --glass-hi:inset 0 1px 0 oklch(100% 0 0 / 0.10), inset 0 0 0 1px oklch(100% 0 0 / 0.06);
+  --shadow-card:0 1px 0 oklch(100% 0 0 / 0.06) inset, 0 40px 80px -32px oklch(8% 0.02 268 / 0.7);
+  --font-display:"Wix Madefor Display", ui-sans-serif, system-ui, sans-serif;
+  --font-body:"Wix Madefor Text", ui-sans-serif, system-ui, sans-serif;
+  --radius-card:18px; --radius-inner:10px; --radius-pill:999px; --rule-hair:1px;
+  --tracking-display:-0.022em; --display-weight:500;
+  --text-label:0.8125rem; --text-body:1rem; --text-lead:1.125rem; --text-title:1.2656rem;
+  --text-h3:1.4238rem; --text-h2:1.6018rem; --text-h1:1.802rem; --text-figure:2.0273rem; --text-display:2.2807rem;
+  --space-1:4px; --space-2:8px; --space-3:12px; --space-4:16px; --space-5:20px; --space-6:24px;
+  --space-7:32px; --space-8:40px; --space-9:48px; --space-10:64px; --space-11:80px; --space-12:96px;
+  --gutter:clamp(var(--space-5), 4vw, var(--space-9));
+  --wrap:1480px; --topbar-h:64px;
+  --color-transparent:oklch(0% 0 0 / 0);
+  --ghost:color-mix(in oklab, var(--color-light) 4%, var(--color-transparent));
+  --ghost-2:color-mix(in oklab, var(--color-light) 7%, var(--color-transparent));
+  --chip-on:color-mix(in oklab, var(--color-accent) 14%, var(--color-paper-2));
+  --seg-hover:color-mix(in oklab, var(--color-light) 5%, var(--color-transparent));
+  --bar-bg:color-mix(in oklab, var(--color-paper) 82%, var(--color-transparent));
+  --btn-hi:inset 0 1px 0 color-mix(in oklab, var(--color-light) 35%, var(--color-transparent));
+  --shadow-bar:inset 0 1px 0 oklch(100% 0 0 / 0.06), 0 18px 40px -28px oklch(8% 0.02 268 / 0.7);
+  --chart-1:#c1ceff; --chart-2:#facea9; --chart-3:#8999e3; --chart-4:#e4b1df;
+  --chart-5:#a3b3f8; --chart-6:#cb8747; --chart-7:#6573c1; --chart-8:#b570af;
+  --chart-9:#707fce; --chart-10:#e6a973; --chart-11:#4e5baa; --chart-12:#ca8cc4;
+  --chart-13:#ac6820; --chart-14:#93548e;
+  --dur-micro:120ms; --dur-short:180ms; --ease-out:cubic-bezier(.2,.7,.3,1);
+}
+*,*::before,*::after{box-sizing:border-box}
+html{color-scheme:dark; scrollbar-color:var(--color-rule) var(--color-paper); scroll-behavior:smooth; scroll-padding-top:calc(var(--topbar-h) + var(--space-4)); overflow-x:clip}
+body{margin:0; overflow-x:clip; background:var(--color-paper); color:var(--color-ink); font:400 var(--text-body)/1.55 var(--font-body); -webkit-font-smoothing:antialiased; text-rendering:optimizeLegibility}
+h1,h2,h3{text-wrap:balance; font-family:var(--font-display); font-weight:var(--display-weight); letter-spacing:var(--tracking-display); line-height:1.15; overflow-wrap:break-word; min-width:0; margin:0}
+p{margin:0; max-width:68ch; text-wrap:pretty}
+a{color:var(--color-accent)}
+button,input{font:inherit; color:inherit}
+::selection{background:var(--color-accent); color:var(--color-accent-ink)}
+:focus-visible{outline:2px solid var(--color-focus); outline-offset:2px}
+input{caret-color:var(--color-accent)}
+.skip{position:absolute; left:var(--space-4); top:calc(var(--space-4) * -8); z-index:50; background:var(--color-accent); color:var(--color-accent-ink); padding:var(--space-2) var(--space-4); border-radius:var(--radius-pill); text-decoration:none; font-size:var(--text-label)}
+.skip:focus{top:var(--space-4)}
+.wrap{max-width:var(--wrap); margin-inline:auto; padding-inline:var(--gutter)}
+/* top bar */
+.topbar{position:sticky; top:0; z-index:20; background:var(--bar-bg); -webkit-backdrop-filter:blur(var(--glass-blur)) saturate(1.2); backdrop-filter:blur(var(--glass-blur)) saturate(1.2); border-bottom:1px solid var(--color-rule); box-shadow:var(--shadow-bar)}
+.topbar__inner{max-width:var(--wrap); margin-inline:auto; padding:var(--space-2) var(--gutter); display:flex; align-items:center; gap:var(--space-5); flex-wrap:wrap; min-height:var(--topbar-h)}
+.brand{display:flex; align-items:baseline; gap:var(--space-2); text-decoration:none; color:var(--color-ink); white-space:nowrap}
+.brand__mark{font-family:var(--font-display); font-weight:600; font-size:var(--text-lead); letter-spacing:-0.01em}
+.brand__name{font-size:var(--text-label); color:var(--color-muted)}
+.range{display:flex; align-items:flex-end; gap:var(--space-2); margin-left:auto; flex-wrap:wrap}
+.field{display:flex; flex-direction:column; gap:var(--space-1)}
+.field span{font-size:var(--text-label); color:var(--color-muted)}
+.field input{width:132px; max-width:100%}
+input[type=month]{min-height:40px; padding:0 var(--space-3); background:var(--color-paper-2); color:var(--color-ink); border:1px solid var(--color-muted); border-radius:var(--radius-inner); font-size:var(--text-label)}
+input[type=month]:hover{border-color:var(--color-ink-2)}
+input[type=month]:focus-visible{outline:2px solid var(--color-focus); outline-offset:2px; border-color:var(--color-muted)}
+input[type=month]:disabled{opacity:.45; cursor:not-allowed}
+input[type=month]::-webkit-calendar-picker-indicator{opacity:.7; cursor:pointer}
+.topbar__meta{margin-left:var(--space-3); font-size:var(--text-label); color:var(--color-muted); white-space:nowrap}
+.topbar__meta b{font-weight:500; color:var(--color-ink-2)}
+/* buttons */
+.btn{display:inline-flex; align-items:center; justify-content:center; min-height:40px; padding-inline:var(--space-4); border:1px solid var(--color-transparent); border-radius:var(--radius-pill); font:500 var(--text-label)/1 var(--font-body); text-decoration:none; cursor:pointer; white-space:nowrap; transition:background-color var(--dur-micro) var(--ease-out), color var(--dur-micro) var(--ease-out), border-color var(--dur-micro) var(--ease-out)}
+.btn--primary{background:var(--color-accent); color:var(--color-accent-ink); box-shadow:var(--btn-hi)}
+.btn--primary:hover{background:var(--color-accent-hi)}
+.btn--ghost{background:var(--ghost); color:var(--color-ink-2); border-color:var(--color-rule)}
+.btn--ghost:hover{background:var(--ghost-2)}
+.btn:active{transform:translateY(1px)}
+.btn:disabled{opacity:.45; cursor:not-allowed}
+/* overview */
+.overview{padding-block:var(--space-8) var(--space-9); border-bottom:1px solid var(--color-rule)}
+.overview__head{display:flex; align-items:flex-end; justify-content:space-between; gap:var(--space-6); flex-wrap:wrap; margin-bottom:var(--space-7)}
+.overview h1{font-size:var(--text-h1); margin-bottom:var(--space-2)}
+.overview p{font-size:var(--text-body); color:var(--color-muted); max-width:62ch}
+.tally{display:grid; grid-template-columns:repeat(6,minmax(0,1fr)); gap:var(--rule-hair); background:var(--color-rule); border-block:1px solid var(--color-rule); margin:0}
+.stat{background:var(--color-paper); padding:var(--space-4) var(--space-4) var(--space-3); min-width:0}
+.stat dt{font-size:var(--text-label); color:var(--color-muted); margin:0 0 var(--space-1); font-weight:500}
+.stat dd{margin:0}
+.stat__value{display:block; font-family:var(--font-display); font-weight:var(--display-weight); font-size:var(--text-figure); letter-spacing:var(--tracking-display); line-height:1.1; font-variant-numeric:tabular-nums; color:var(--color-ink)}
+.stat__value small{font-family:var(--font-body); font-weight:400; font-size:var(--text-label); color:var(--color-muted); letter-spacing:0; margin-left:var(--space-2)}
+.stat__sub{display:flex; flex-wrap:wrap; gap:var(--space-2); margin:var(--space-1) 0 0; font-size:var(--text-label); color:var(--color-muted); max-width:none}
+.stat__sub span+span{border-left:1px solid var(--color-rule); padding-left:var(--space-2)}
+.stat__date{font-size:var(--text-label); color:var(--color-muted); margin:var(--space-1) 0 0; opacity:.85}
+.stat b{font-weight:500}
+.stat b.up{color:var(--color-accent)}
+.stat b.dn{color:var(--color-accent-2)}
+/* shell + rail */
+.shell{display:grid; grid-template-columns:200px minmax(0,1fr); gap:var(--space-8); align-items:start; padding-block:var(--space-10)}
+.rail{position:sticky; top:calc(var(--topbar-h) + var(--space-4)); align-self:start; display:flex; flex-direction:column; gap:var(--space-1); border-left:1px solid var(--color-rule); padding-left:var(--space-4)}
+.rail__title{font-size:var(--text-label); color:var(--color-muted); margin:0 0 var(--space-2); max-width:none}
+.rail__link{display:inline-flex; align-items:center; gap:var(--space-2); min-height:36px; padding-inline:var(--space-2); margin-left:calc(var(--space-2) * -1); color:var(--color-muted); text-decoration:none; font-size:var(--text-body); border-radius:var(--radius-inner); white-space:nowrap; transition:background-color var(--dur-micro) var(--ease-out), color var(--dur-micro) var(--ease-out)}
+.rail__link::before{content:""; width:6px; height:6px; border-radius:50%; background:transparent; flex:none}
+.rail__link:hover{background:var(--seg-hover); color:var(--color-ink-2)}
+.rail__link.on{color:var(--color-ink)}
+.rail__link.on::before{background:var(--color-accent)}
+.rail__link:active{transform:translateY(1px)}
+/* panels */
+.panels{display:flex; flex-direction:column; gap:var(--space-12); min-width:0}
+.panel{scroll-margin-top:calc(var(--topbar-h) + var(--space-4)); min-width:0}
+.panel__head{margin-bottom:var(--space-6)}
+.panel h2{font-size:var(--text-h2); margin-bottom:var(--space-2)}
+.panel__head p{font-size:var(--text-body); color:var(--color-muted); max-width:66ch}
+/* controls */
+.controls{display:flex; flex-wrap:wrap; gap:var(--space-5) var(--space-6); align-items:flex-end; margin-bottom:var(--space-4)}
+.control{display:flex; flex-direction:column; gap:var(--space-1); min-width:0}
+.control__label{font-size:var(--text-label); color:var(--color-muted); font-weight:500}
+.seg{display:flex; flex-wrap:wrap; border-bottom:1px solid var(--color-rule)}
+.seg button{position:relative; display:inline-flex; align-items:center; min-height:40px; padding:0 var(--space-3) 0 var(--space-5); border:0; background:none; color:var(--color-muted); font:500 var(--text-label)/1 var(--font-body); cursor:pointer; white-space:nowrap; border-radius:var(--radius-inner) var(--radius-inner) 0 0; transition:background-color var(--dur-micro) var(--ease-out), color var(--dur-micro) var(--ease-out)}
+.seg button::before{content:""; position:absolute; left:var(--space-2); top:50%; width:6px; height:6px; transform:translateY(-50%); border-radius:50%; background:transparent}
+.seg button::after{content:""; position:absolute; inset:-2px}
+.seg button:hover{background:var(--seg-hover); color:var(--color-ink-2)}
+.seg button.on{color:var(--color-ink)}
+.seg button.on::before{border:3px solid var(--color-accent)}
+.seg button:active{transform:translateY(1px)}
+.seg button:disabled{opacity:.45; cursor:not-allowed}
+.chips{display:flex; flex-wrap:wrap; gap:var(--space-2); margin-bottom:var(--space-4)}
+.chip{position:relative; display:inline-flex; align-items:center; gap:var(--space-2); min-height:32px; padding:0 var(--space-3); border:1px solid var(--color-rule); border-radius:var(--radius-pill); background:var(--ghost); color:var(--color-ink-2); font:400 var(--text-label)/1.2 var(--font-body); cursor:pointer; white-space:nowrap; transition:background-color var(--dur-micro) var(--ease-out), color var(--dur-micro) var(--ease-out), border-color var(--dur-micro) var(--ease-out)}
+.chip::before{content:""; width:6px; height:6px; border-radius:50%; background:transparent; flex:none}
+.chip::after{content:""; position:absolute; inset:-6px; border-radius:var(--radius-pill)}
+.chip:hover{border-color:var(--color-muted); color:var(--color-ink)}
+.chip.on{border-color:var(--color-accent); background:var(--chip-on); color:var(--color-ink)}
+.chip.on::before{background:var(--color-accent)}
+.chip:active{transform:translateY(1px)}
+.chip:disabled{opacity:.45; cursor:not-allowed}
+/* charts */
+.grid{display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:var(--space-4)}
+.grid--wide{grid-template-columns:minmax(0,0.9fr) minmax(0,1.4fr)}
+.grid--full{grid-template-columns:minmax(0,1fr)}
+.grid + .grid{margin-top:var(--space-4)}
+.chart-panel .chips{margin-bottom:var(--space-3)}
+.chart-panel{background:var(--color-paper-2); color:var(--color-ink); border:1px solid var(--color-rule); border-radius:var(--radius-card); padding:var(--space-4) var(--space-4) var(--space-2); min-width:0}
+.chart-panel h3{font-size:var(--text-h3); line-height:1.2; margin-bottom:var(--space-2); text-wrap:balance}
+.unit{display:block; font-family:var(--font-body); font-weight:400; font-size:var(--text-label); color:var(--color-muted); letter-spacing:0; margin-top:var(--space-1)}
+.chart{width:100%; height:340px}
+.chart--sm{height:300px}
+.note{font-size:var(--text-label); color:var(--color-muted); border-top:1px solid var(--color-rule); padding-top:var(--space-2); margin-top:var(--space-2); max-width:80ch}
+.noscript{font-size:var(--text-body); color:var(--color-ink-2); border:1px solid var(--color-rule); border-radius:var(--radius-card); background:var(--color-paper-2); padding:var(--space-4); margin-block:var(--space-6)}
+/* footer */
+.footer{border-top:1px solid var(--color-rule); margin-top:var(--space-12); padding-block:var(--space-9) var(--space-12)}
+.footer__mast{display:flex; justify-content:space-between; gap:var(--space-6); flex-wrap:wrap; margin-bottom:var(--space-6)}
+.footer__brand{font-family:var(--font-display); font-weight:var(--display-weight); font-size:var(--text-lead); letter-spacing:var(--tracking-display)}
+.footer__brand span{display:block; font-family:var(--font-body); font-size:var(--text-label); font-weight:400; color:var(--color-muted); letter-spacing:0; margin-top:var(--space-1)}
+.footer__links{display:flex; gap:var(--space-4); flex-wrap:wrap; align-items:flex-start}
+.footer a{color:var(--color-accent); text-decoration:underline; text-decoration-thickness:1px; text-underline-offset:.18em; text-decoration-color:var(--color-rule)}
+.footer a:hover{text-decoration-color:var(--color-accent)}
+.footer__notes p{font-size:var(--text-label); color:var(--color-muted); max-width:72ch; margin-bottom:var(--space-2); line-height:1.6}
+.footer__notes b{color:var(--color-ink-2); font-weight:500}
+/* responsive */
+@media (max-width:1199px){.tally{grid-template-columns:repeat(3,minmax(0,1fr))}}
+@media (max-width:1023px){.shell{grid-template-columns:minmax(0,1fr); gap:var(--space-8); padding-block:var(--space-8)}.rail{position:static; flex-direction:row; flex-wrap:wrap; border-left:0; border-bottom:1px solid var(--color-rule); padding-left:0; padding-bottom:var(--space-2)}.rail__title{display:none}}
+@media (max-width:900px){.grid,.grid--wide{grid-template-columns:minmax(0,1fr)}}
+@media (max-width:899px){.tally{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width:640px){.tally{grid-template-columns:minmax(0,1fr)}.topbar__inner{gap:var(--space-3)}.range{margin-left:0}.topbar__meta{margin-left:0}.overview__head{flex-direction:column; align-items:flex-start}.chart{height:300px}.chart--sm{height:260px}}
+__FONTCSS__
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{transition-duration:0.01ms!important; animation-duration:0.01ms!important; animation-iteration-count:1!important}}
+</style>
+</head>
+<body>
+<a class="skip" href="#genel">İçeriğe geç</a>
+
+<header class="topbar">
+  <div class="topbar__inner">
+    <a class="brand" href="#genel" aria-label="Sayfa başı"><span class="brand__mark">KKTC MB</span><span class="brand__name">Para-Banka verileri</span></a>
+    <div class="range">
+      <label class="field" for="filtreFrom"><span>Başlangıç</span><input type="month" id="filtreFrom" pattern="\d{4}-\d{2}"></label>
+      <label class="field" for="filtreTo"><span>Bitiş</span><input type="month" id="filtreTo" pattern="\d{4}-\d{2}"></label>
+      <button class="btn btn--ghost" id="filtreReset" type="button">Sıfırla</button>
+    </div>
+    <div class="topbar__meta">Son veri <b id="sonVeriYazi">…</b></div>
+  </div>
+</header>
+
+<main id="genel" class="wrap">
+  <section class="overview" aria-labelledby="baslik">
+    <div class="overview__head">
+      <div>
+        <h1 id="baslik">Para ve banka verileri</h1>
+        <p>KKTC Merkez Bankası aylık tabloları, <span id="aralikYazi">2010-01 ile 2026-09</span> aralığında.</p>
+      </div>
+      <a class="btn btn--primary" href="__KAYNAKURL__" target="_blank" rel="noopener">Kaynak verileri aç</a>
+    </div>
+    <dl class="tally">
+      <div class="stat"><dt>Toplam krediler</dt><dd><span class="stat__value" id="kpiKredi">…</span><p class="stat__sub" id="kpiKrediAlt">…</p><p class="stat__date" id="kpiKrediT">…</p></dd></div>
+      <div class="stat"><dt>Toplam mevduat, bankalar hariç</dt><dd><span class="stat__value" id="kpiMev">…</span><p class="stat__sub" id="kpiMevAlt">…</p><p class="stat__date" id="kpiMevT">…</p></dd></div>
+      <div class="stat"><dt>Kredi / mevduat</dt><dd><span class="stat__value" id="kpiOran">…</span><p class="stat__sub" id="kpiOranAlt">…</p><p class="stat__date" id="kpiOranT">…</p></dd></div>
+      <div class="stat"><dt>YP kredi payı</dt><dd><span class="stat__value" id="kpiYpKredi">…</span><p class="stat__sub" id="kpiYpKrediAlt">…</p><p class="stat__date" id="kpiYpKrediT">…</p></dd></div>
+      <div class="stat"><dt>YP mevduat payı</dt><dd><span class="stat__value" id="kpiYpMev">…</span><p class="stat__sub" id="kpiYpMevAlt">…</p><p class="stat__date" id="kpiYpMevT">…</p></dd></div>
+      <div class="stat"><dt>Tüketici ve kart payı</dt><dd><span class="stat__value" id="kpiHane">…</span><p class="stat__sub" id="kpiHaneAlt">…</p><p class="stat__date" id="kpiHaneT">…</p></dd></div>
+    </dl>
+  </section>
+
+  <div class="shell">
+    <nav class="rail" aria-label="Bölümler">
+      <p class="rail__title">Bölümler</p>
+      <a class="rail__link" href="#krediler" data-target="krediler">Krediler</a>
+      <a class="rail__link" href="#mevduat" data-target="mevduat">Mevduat</a>
+      <a class="rail__link" href="#kamu" data-target="kamu">Kamu ve özel</a>
+      <a class="rail__link" href="#karsilastirma" data-target="karsilastirma">Karşılaştırma</a>
+    </nav>
+
+    <div class="panels">
+      <section class="panel" id="krediler" aria-labelledby="h-krediler">
+        <div class="panel__head">
+          <h2 id="h-krediler">Krediler, sektörlere göre</h2>
+          <p>Bankaların kredi stoku; 14 sektör, toplam ve para birimi kırılımında.</p>
+        </div>
+        <div class="controls">
+          <div class="control"><span class="control__label" id="lbl-kredi-kirim">Kırılım</span><div class="seg" id="krediKirim" role="group" aria-labelledby="lbl-kredi-kirim"><button type="button" data-v="toplam" class="on">Toplam</button><button type="button" data-v="tp">TL (TP)</button><button type="button" data-v="yp">Döviz (YP)</button></div></div>
+          <div class="control"><span class="control__label" id="lbl-kredi-olcek">Ölçek</span><div class="seg" id="krediOlcek" role="group" aria-labelledby="lbl-kredi-olcek"><button type="button" data-v="lin" class="on">Lineer</button><button type="button" data-v="log">Log</button></div></div>
+          <div class="control"><span class="control__label" id="lbl-kredi-mod">Sektör grafiği</span><div class="seg" id="krediMod" role="group" aria-labelledby="lbl-kredi-mod"><button type="button" data-v="yigin" class="on">Yığın alan</button><button type="button" data-v="pay">Pay %</button><button type="button" data-v="cizgi">Çizgiler</button></div></div>
+        </div>
+        <div class="chips" id="krediChips"></div>
+        <div class="grid grid--wide">
+          <div class="chart-panel"><h3>Toplam krediler <span class="unit">milyar TL</span></h3><div id="cKrediAna" class="chart" role="img" aria-label="Toplam kredilerin aylık seyri"></div></div>
+          <div class="chart-panel"><h3 id="krediSektorBaslik">Sektör dağılımı <span class="unit">milyar TL</span></h3><div id="cKrediSektor" class="chart" role="img" aria-label="Kredi sektörlerinin dağılımı"></div></div>
+        </div>
+      </section>
+      <section class="panel" id="mevduat" aria-labelledby="h-mevduat">
+        <div class="panel__head">
+          <h2 id="h-mevduat">Mevduat</h2>
+          <p>Tür ve vade kırılımları; ana seri 2014 tanım değişikliğine göre düzeltilmiştir.</p>
+        </div>
+        <div class="controls">
+          <div class="control"><span class="control__label" id="lbl-mev-kirim">Kırılım</span><div class="seg" id="mevKirim" role="group" aria-labelledby="lbl-mev-kirim"><button type="button" data-v="toplam" class="on">Toplam</button><button type="button" data-v="tp">TL (TP)</button><button type="button" data-v="yp">Döviz (YP)</button></div></div>
+          <div class="control"><span class="control__label" id="lbl-mev-olcek">Ölçek</span><div class="seg" id="mevOlcek" role="group" aria-labelledby="lbl-mev-olcek"><button type="button" data-v="lin" class="on">Lineer</button><button type="button" data-v="log">Log</button></div></div>
+          <div class="control"><span class="control__label" id="lbl-mev-tur">Tür grafiği</span><div class="seg" id="mevTurMod" role="group" aria-labelledby="lbl-mev-tur"><button type="button" data-v="yigin" class="on">Yığın alan</button><button type="button" data-v="pay">Pay %</button><button type="button" data-v="cizgi">Çizgiler</button></div></div>
+          <div class="control"><span class="control__label" id="lbl-mev-vade">Vade grafiği</span><div class="seg" id="mevVadeMod" role="group" aria-labelledby="lbl-mev-vade"><button type="button" data-v="yigin" class="on">Yığın alan</button><button type="button" data-v="pay">Pay %</button><button type="button" data-v="cizgi">Çizgiler</button></div></div>
+        </div>
+        <div class="grid grid--wide">
+          <div class="chart-panel">
+            <h3>Toplam mevduat <span class="unit">milyar TL</span></h3>
+            <div class="chips" id="mevAnaChips"></div>
+            <div id="cMevAna" class="chart" role="img" aria-label="Toplam mevduatın aylık seyri"></div>
+            <p class="note">2014'ten itibaren TOPLAM, bankalararası mevduatı kapsamaz. 2010-2013 için bankalar kalemi düşülerek tutarlı seri kuruldu.</p>
+          </div>
+          <div class="chart-panel">
+            <h3 id="mevTurBaslik">Türüne göre dağılım <span class="unit">milyar TL</span></h3>
+            <div class="chips" id="mevTurChips"></div>
+            <div id="cMevTur" class="chart" role="img" aria-label="Mevduatın türlerine göre dağılımı"></div>
+          </div>
+        </div>
+        <div class="grid grid--full">
+          <div class="chart-panel">
+            <h3 id="mevVadeBaslik">Vade gruplarına göre dağılım <span class="unit">milyar TL</span></h3>
+            <div class="chips" id="mevVadeChips"></div>
+            <div id="cMevVade" class="chart chart--sm" role="img" aria-label="Mevduatın vade gruplarına göre dağılımı"></div>
+            <p class="note">2010-2013 vade dağılımı, kaynak tablo yapısı gereği bankalararası mevduatı da kapsar.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="panel" id="kamu" aria-labelledby="h-kamu">
+        <div class="panel__head">
+          <h2 id="h-kamu">Kamu ve özel sektör kredileri</h2>
+          <p>Kamu ve özel kredilerin aylık seyri.</p>
+        </div>
+        <div class="controls">
+          <div class="control"><span class="control__label" id="lbl-kamu-olcek">Ölçek</span><div class="seg" id="kamuOlcek" role="group" aria-labelledby="lbl-kamu-olcek"><button type="button" data-v="lin" class="on">Lineer</button><button type="button" data-v="log">Log</button></div></div>
+        </div>
+        <div class="chips" id="kamuChips"></div>
+        <div class="grid grid--full">
+          <div class="chart-panel"><h3>Kamu ve özel krediler <span class="unit">milyar TL</span></h3><div id="cKamu" class="chart" role="img" aria-label="Kamu ve özel sektör kredilerinin aylık seyri"></div></div>
+        </div>
+      </section>
+
+      <section class="panel" id="karsilastirma" aria-labelledby="h-karsilastirma">
+        <div class="panel__head">
+          <h2 id="h-karsilastirma">Kredi ile mevduat</h2>
+          <p>İki stokun karşılaştırması, kredi/mevduat oranı ve yıllık değişim.</p>
+        </div>
+        <div class="controls">
+          <div class="control"><span class="control__label" id="lbl-kar-olcek">Ölçek</span><div class="seg" id="karOlcek" role="group" aria-labelledby="lbl-kar-olcek"><button type="button" data-v="lin" class="on">Lineer</button><button type="button" data-v="log">Log</button></div></div>
+          <div class="control"><span class="control__label">Yıllık büyüme serileri</span><div class="chips" id="karYoyChips"></div></div>
+        </div>
+        <div class="grid">
+          <div class="chart-panel"><h3>Toplam krediler ve mevduat <span class="unit">milyar TL</span></h3><div id="cKarAna" class="chart" role="img" aria-label="Toplam krediler ve mevduatın karşılaştırması"></div></div>
+          <div class="chart-panel"><h3>Kredi / mevduat oranı <span class="unit">%</span></h3><div id="cKarOran" class="chart" role="img" aria-label="Kredi mevduat oranının aylık seyri"></div></div>
+        </div>
+        <div class="grid grid--full">
+          <div class="chart-panel"><h3>Yıllık değişim <span class="unit">%</span></h3><div id="cKarYoy" class="chart chart--sm" role="img" aria-label="Kredi ve mevduatın yıllık değişimi"></div></div>
+        </div>
+        <p class="note">Oran, toplam kredilerin bankalar hariç toplam mevduata bölümüdür.</p>
+      </section>
+    </div>
+  </div>
+</main>
+
+<footer class="footer">
+  <div class="wrap">
+    <div class="footer__mast">
+      <div class="footer__brand">KKTC MB<span>Para-Banka verileri</span></div>
+      <div class="footer__links"><a href="__KAYNAKURL__" target="_blank" rel="noopener">Kaynak veriler</a><a href="#genel">Başa dön</a></div>
+    </div>
+    <div class="footer__notes">
+      <p><b>Kaynak:</b> KKTC Merkez Bankası Para Banka Verileri, aylık istatistikler. Veriler <span id="scrapeYazi">…</span> tarihinde toplandı.</p>
+      <p><b>Uyarı:</b> KKTC Merkez Bankası verileri geçici mali tablolara dayanır; sonraki dönemlerde revize edilebilir. Bu sayfa resmî bir KKTC MB ürünü değildir.</p>
+      <p><b>Yöntem:</b> Mevduat ana serisi 2014 öncesi için TOPLAM eksi Bankalar olarak yeniden hesaplandı. 2014'ten itibaren tablo doğrudan bankalar hariç değeri verir. Kaynak değerler bin TL, gösterim milyar TL’dir.</p>
+      <p><b>Arayüz:</b> Hallmark Dusk teması. Grafikler Plotly ile çizilir; sayfa çevrimdışı çalışır.</p>
+    </div>
+  </div>
+</footer>
+
+<noscript><p class="wrap noscript">Grafikler JavaScript ile çizilir. Veriler bu dosyaya gömülüdür; sayfa çevrimdışı açılabilir.</p></noscript>
+
+<script>__PLOTLYJS__</script>
+<script>
+"use strict";
+const DATA = __DATA__;
+const META = __META__;
+
+const CSSV = getComputedStyle(document.documentElement);
+const tok = n => CSSV.getPropertyValue(n).trim();
+const PALET = Array.from({length:14}, (_,i)=>tok("--chart-"+(i+1)));
+const C = {
+  ink:tok("--color-ink"), ink2:tok("--color-ink-2"), muted:tok("--color-muted"),
+  rule:tok("--color-rule"), paper2:tok("--color-paper-2"), paper3:tok("--color-paper-3"),
+  accent:tok("--color-accent"), accent2:tok("--color-accent-2"),
+  transparent:tok("--color-transparent")
+};
+const FONT = tok("--font-body");
+const nf1 = new Intl.NumberFormat("tr-TR",{minimumFractionDigits:1,maximumFractionDigits:1});
+const nf2 = new Intl.NumberFormat("tr-TR",{minimumFractionDigits:2,maximumFractionDigits:2});
+const el = id => document.getElementById(id);
+const milyar = v => v/1e6;
+function pct(v){ const s=v>=0?"+":"−"; return s+"%"+nf1.format(Math.abs(v)); }
+function yuzde(v){ return "%"+nf1.format(v); }
+function ayEkle(ymd,k){
+  const y=+ymd.slice(0,4), m=+ymd.slice(5,7);
+  const d=new Date(y,m-1+k,1);
+  return d.getFullYear()+"-"+String(d.getMonth()+1).padStart(2,"0")+"-01";
+}
+function aralikIcinde(ym){ return ym>=state.from && ym<=state.to; }
+
+function filtre(id){
+  const s=DATA[id]; const x=[],y=[];
+  if(!s){ console.warn("Seri yok:",id); return {x,y}; }
+  for(let i=0;i<s.d.length;i++){
+    if(s.v[i]!=null && aralikIcinde(s.d[i].slice(0,7))){ x.push(s.d[i]); y.push(s.v[i]); }
+  }
+  return {x,y};
+}
+function ham(id){ const s=DATA[id]||{d:[],v:[]}; return new Map(s.d.map((d,i)=>[d,s.v[i]])); }
+
+function degisim(id,lag){
+  const s=DATA[id]; if(!s) return {x:[],y:[]};
+  const m=ham(id); const x=[],y=[];
+  for(let i=0;i<s.d.length;i++){
+    const v=s.v[i]; if(v==null) continue;
+    const pv=m.get(ayEkle(s.d[i],-lag));
+    if(pv!=null && pv!==0){ x.push(s.d[i]); y.push((v/pv-1)*100); }
+  }
+  return aralikla({x,y});
+}
+function aralikla(xy){
+  const x=[],y=[];
+  for(let i=0;i<xy.x.length;i++){
+    if(xy.y[i]!=null && aralikIcinde(xy.x[i].slice(0,7))){ x.push(xy.x[i]); y.push(xy.y[i]); }
+  }
+  return {x,y};
+}
+function oranSeri(pay,payda,carpim){
+  const a=ham(pay), b=ham(payda); const x=[],y=[];
+  a.forEach((v,d)=>{
+    const p=b.get(d);
+    if(v!=null && p){ x.push(d); y.push(v/p*(carpim||100)); }
+  });
+  return aralikla({x,y});
+}
+function paySerisi(pay,payda){ return oranSeri(pay,payda,100); }
+
+const state = {
+  from: META.ilkAy, to: META.sonAy,
+  kredi:{kirim:"toplam", log:false, mod:"yigin", secili:{}},
+  mevduat:{kirim:"toplam", log:false, turMod:"yigin", vadeMod:"yigin",
+           ana:{}, tur:{}, vade:{}},
+  kamu:{log:false, secili:{}},
+  kar:{log:false, yoy:{}}
+};
+
+function ksId(slug){ const k=state.kredi.kirim; return k==="toplam" ? "ks_"+slug : "ks_"+k+"_"+slug; }
+function mtId(slug){ const k=state.mevduat.kirim; return k==="toplam" ? "mt_"+slug : "mt_"+k+"_"+slug; }
+function mvId(slug){ const k=state.mevduat.kirim; return k==="toplam" ? "mv_"+slug : "mv_"+k+"_"+slug; }
+function krediToplamId(){ return state.kredi.kirim==="toplam" ? "kredi_total" : "kredi_total_"+state.kredi.kirim; }
+function mevHaricId(){ return state.mevduat.kirim==="toplam" ? "mev_haric" : "mev_haric_"+state.mevduat.kirim; }
+function mevGenelId(){ return state.mevduat.kirim==="toplam" ? "mev_genel" : "mev_genel_"+state.mevduat.kirim; }
+function mevBankalarId(){ return state.mevduat.kirim==="toplam" ? "mev_bankalar" : "mev_bankalar_"+state.mevduat.kirim; }
+function mvToplamId(){ return state.mevduat.kirim==="toplam" ? "mv_toplam" : "mv_"+state.mevduat.kirim+"_toplam"; }
+
+function temelLayout(ek){
+  ek = ek || {};
+  const l = {
+    margin:{l:56,r:12,t:24,b:36},
+    showlegend: ek.showlegend!==false,
+    legend:{orientation:"h",y:1.12,x:0,font:{size:11,family:FONT,color:C.muted},itemwidth:100,bgcolor:C.transparent},
+    hovermode:"x unified",
+    hoverlabel:{bgcolor:C.paper3,bordercolor:C.rule,font:{family:FONT,size:12,color:C.ink}},
+    paper_bgcolor:C.transparent, plot_bgcolor:C.transparent,
+    font:{family:FONT,size:12,color:C.muted},
+    modebar:{bgcolor:C.transparent,color:C.muted,activecolor:C.ink},
+    xaxis:{type:"date",tickformat:"%Y-%m",gridcolor:C.rule,zeroline:false,linecolor:C.rule,
+           rangeslider:{visible:false},tickfont:{size:11,color:C.muted}},
+    yaxis:{gridcolor:C.rule,zeroline:false,tickfont:{size:11,color:C.muted},
+           ticksuffix:ek.ticksuffix||"", exponentformat:"B", linecolor:C.rule}
+  };
+  if(ek.log) l.yaxis.type="log";
+  if(ek.titleY) l.yaxis.title={text:ek.titleY,font:{size:11,color:C.muted}};
+  if(ek.annotations) l.annotations=ek.annotations;
+  if(ek.shapes) l.shapes=ek.shapes;
+  if(ek.hline!=null){
+    l.shapes=[{type:"line",x0:0,x1:1,xref:"paper",y0:ek.hline,y1:ek.hline,yref:"y",
+               line:{color:C.muted,width:1,dash:"dot"}}];
+  }
+  return l;
+}
+const CONFIG = {responsive:true, displaylogo:false, displayModeBar:"hover",
+                toImageButtonOptions:{format:"png",scale:2}};
+
+function ciz(div,traces,layout){
+  traces.forEach(t=>{
+    if(t.mode==="lines" && t.x && t.x.length===1){
+      t.mode="lines+markers";
+      if(!t.marker) t.marker={size:5, color:t.line && t.line.color ? t.line.color : C.accent};
+    }
+  });
+  Plotly.react(div,traces,layout,CONFIG);
+}
+
+function cizgiTrace(id,ad,renk,opts){
+  opts=opts||{};
+  const f=filtre(id);
+  const t={type:"scatter",mode:"lines",name:ad,x:f.x,y:f.y.map(milyar),
+           line:{width:opts.width||2,color:renk}, connectgaps:false,
+           hovertemplate:"%{fullData.name}: %{y:,.1f} milyar TL<extra></extra>"};
+  if(opts.dash) t.line.dash=opts.dash;
+  return t;
+}
+function alanTrace(xy,ad,renk,yFmt,grp){
+  return {type:"scatter",mode:"lines",name:ad,x:xy.x,y:xy.y,
+          line:{width:0.4,color:renk}, stackgroup:grp,
+          fillcolor:renk+"cc",
+          hovertemplate:"%{fullData.name}: "+yFmt+"<extra></extra>"};
+}
+
+function sonDeger(id){
+  const s=DATA[id]; if(!s) return null;
+  for(let i=s.d.length-1;i>=0;i--){
+    const ym=s.d[i].slice(0,7);
+    if(ym<state.from) break;
+    if(ym<=state.to && s.v[i]!=null) return {tarih:s.d[i], v:s.v[i]};
+  }
+  return null;
+}
+function degerAt(id,tarih){ const m=ham(id); return m.get(tarih); }
+function ikiSpan(items){
+  if(!items.length) return "…";
+  return items.map(x=>"<span>"+x+"</span>").join("");
+}
+
+function kpiDoldur(){
+  const kd=sonDeger("kredi_total"), md=sonDeger("mev_haric");
+  const fmt = v => nf1.format(milyar(v))+"<small>milyar TL</small>";
+
+  if(kd){
+    el("kpiKredi").innerHTML = fmt(kd.v);
+    const once1=degerAt("kredi_total",ayEkle(kd.tarih,-1));
+    const once12=degerAt("kredi_total",ayEkle(kd.tarih,-12));
+    let s=[];
+    if(once1) s.push("Aylık <b class='"+(kd.v>=once1?"up":"dn")+"'>"+pct((kd.v/once1-1)*100)+"</b>");
+    if(once12) s.push("Yıllık <b class='"+(kd.v>=once12?"up":"dn")+"'>"+pct((kd.v/once12-1)*100)+"</b>");
+    el("kpiKrediAlt").innerHTML = ikiSpan(s);
+    el("kpiKrediT").textContent = "Veri: "+kd.tarih.slice(0,7);
+  }
+  if(md){
+    el("kpiMev").innerHTML = fmt(md.v);
+    const o1=degerAt("mev_haric",ayEkle(md.tarih,-1));
+    const o12=degerAt("mev_haric",ayEkle(md.tarih,-12));
+    let s=[];
+    if(o1) s.push("Aylık <b class='"+(md.v>=o1?"up":"dn")+"'>"+pct((md.v/o1-1)*100)+"</b>");
+    if(o12) s.push("Yıllık <b class='"+(md.v>=o12?"up":"dn")+"'>"+pct((md.v/o12-1)*100)+"</b>");
+    el("kpiMevAlt").innerHTML = ikiSpan(s);
+    el("kpiMevT").textContent = "Veri: "+md.tarih.slice(0,7);
+  }
+  if(kd && md){
+    const oran=kd.v/md.v*100;
+    const k12=degerAt("kredi_total",ayEkle(kd.tarih,-12));
+    const m12=degerAt("mev_haric",ayEkle(kd.tarih,-12));
+    el("kpiOran").innerHTML = yuzde(oran);
+    if(k12 && m12){
+      const o12=k12/m12*100, fark=oran-o12;
+      el("kpiOranAlt").innerHTML = ikiSpan([
+        "12 ay önce "+yuzde(o12),
+        "Değişim <b class='"+(fark>=0?"up":"dn")+"'>"+(fark>=0?"+":"")+nf1.format(fark)+" puan</b>"
+      ]);
+    } else el("kpiOranAlt").textContent="…";
+    el("kpiOranT").textContent = "Veri: "+kd.tarih.slice(0,7);
+  }
+  const ypk=oranSeri("kredi_total_yp","kredi_total");
+  if(ypk.x.length){
+    const v=ypk.y[ypk.y.length-1];
+    el("kpiYpKredi").innerHTML = yuzde(v);
+    const i12=ypk.x.indexOf(ayEkle(ypk.x[ypk.x.length-1],-12));
+    if(i12>=0){ const f=v-ypk.y[i12];
+      el("kpiYpKrediAlt").innerHTML=ikiSpan([
+        "12 ay önce "+yuzde(ypk.y[i12]),
+        "Değişim <b class='"+(f>=0?"up":"dn")+"'>"+(f>=0?"+":"")+nf1.format(f)+" puan</b>"
+      ]);
+    }
+    el("kpiYpKrediT").textContent="Veri: "+ypk.x[ypk.x.length-1].slice(0,7);
+  }
+  const ypm=oranSeri("mev_haric_yp","mev_haric");
+  if(ypm.x.length){
+    const v=ypm.y[ypm.y.length-1];
+    el("kpiYpMev").innerHTML = yuzde(v);
+    const i12=ypm.x.indexOf(ayEkle(ypm.x[ypm.x.length-1],-12));
+    if(i12>=0){ const f=v-ypm.y[i12];
+      el("kpiYpMevAlt").innerHTML=ikiSpan([
+        "12 ay önce "+yuzde(ypm.y[i12]),
+        "Değişim <b class='"+(f>=0?"up":"dn")+"'>"+(f>=0?"+":"")+nf1.format(f)+" puan</b>"
+      ]);
+    }
+    el("kpiYpMevT").textContent="Veri: "+ypm.x[ypm.x.length-1].slice(0,7);
+  }
+  if(kd){
+    const t=degerAt("ks_tuketici_kredileri",kd.tarih);
+    const k=degerAt("ks_kredi_kartlari",kd.tarih);
+    if(t!=null && k!=null){
+      const pay=(t+k)/kd.v*100;
+      el("kpiHane").innerHTML = yuzde(pay);
+      const t12=degerAt("ks_tuketici_kredileri",ayEkle(kd.tarih,-12));
+      const k12=degerAt("ks_kredi_kartlari",ayEkle(kd.tarih,-12));
+      const kd12=degerAt("kredi_total",ayEkle(kd.tarih,-12));
+      if(t12!=null && k12!=null && kd12){
+        const p12=(t12+k12)/kd12*100, f=pay-p12;
+        el("kpiHaneAlt").innerHTML=ikiSpan([
+          "12 ay önce "+yuzde(p12),
+          "Değişim <b class='"+(f>=0?"up":"dn")+"'>"+(f>=0?"+":"")+nf1.format(f)+" puan</b>"
+        ]);
+      }
+      el("kpiHaneT").textContent="Veri: "+kd.tarih.slice(0,7);
+    }
+  }
+}
+function bosDurum(div,metin){
+  ciz(div,[],temelLayout({showlegend:false,annotations:[{
+    text:metin, xref:"paper", yref:"paper", x:0.5, y:0.5, showarrow:false,
+    font:{family:FONT,size:13,color:C.muted}
+  }]}));
+}
+
+function renderKrediAna(){
+  const id=krediToplamId();
+  const ad = state.kredi.kirim==="toplam"?"Toplam krediler":
+             state.kredi.kirim==="tp"?"Toplam krediler, TL":"Toplam krediler, döviz";
+  const f=filtre(id);
+  if(!f.x.length){ bosDurum("cKrediAna","Bu aralıkta veri yok."); return; }
+  const t={type:"scatter",mode:"lines",name:ad,x:f.x,y:f.y.map(milyar),
+           line:{width:2,color:PALET[0]}, connectgaps:false,
+           hovertemplate:"%{fullData.name}: %{y:,.1f} milyar TL<extra></extra>"};
+  if(!state.kredi.log){ t.fill="tozeroy"; t.fillcolor=PALET[0]+"1f"; }
+  ciz("cKrediAna",[t],temelLayout({log:state.kredi.log,showlegend:false,titleY:"milyar TL"}));
+}
+
+function renderKrediSektor(){
+  const secili=META.krediSektorler.filter(s=>state.kredi.secili[s.slug]);
+  const baslikEl=el("krediSektorBaslik");
+  const kirAd = state.kredi.kirim==="toplam"?"":(state.kredi.kirim==="tp"?", TL":", döviz");
+  if(!secili.length){
+    baslikEl.innerHTML="Sektör dağılımı"+kirAd+" <span class='unit'>milyar TL</span>";
+    bosDurum("cKrediSektor","Aşağıdan en az bir sektör seçin.");
+    return;
+  }
+  const traces=[];
+  if(state.kredi.mod==="yigin"||state.kredi.mod==="pay"){
+    const payda = state.kredi.mod==="pay" ? krediToplamId() : null;
+    secili.forEach((s,i)=>{
+      const id=ksId(s.slug);
+      let xy=filtre(id);
+      if(payda) xy=paySerisi(id,payda);
+      else xy={x:xy.x,y:xy.y.map(milyar)};
+      traces.push(alanTrace(xy,s.ad,PALET[i%PALET.length],
+                 state.kredi.mod==="pay"?"%{y:,.1f}%":"%{y:,.1f} milyar TL","a"));
+    });
+    baslikEl.innerHTML="Sektör dağılımı"+kirAd+" <span class='unit'>"+
+      (state.kredi.mod==="pay"?"pay, %":"milyar TL")+"</span>";
+    ciz("cKrediSektor",traces,temelLayout({
+      titleY: state.kredi.mod==="pay"?"pay, %":"milyar TL", showlegend:true}));
+  }else{
+    secili.forEach((s,i)=>{
+      traces.push(cizgiTrace(ksId(s.slug),s.ad,PALET[i%PALET.length]));
+    });
+    baslikEl.innerHTML="Sektör dağılımı"+kirAd+" <span class='unit'>milyar TL</span>";
+    ciz("cKrediSektor",traces,temelLayout({log:state.kredi.log,titleY:"milyar TL",showlegend:true}));
+  }
+}
+
+/* mevduat */
+function renderMevAna(){
+  const traces=[];
+  const items=[
+    {id:mevHaricId(), ad:"Bankalar hariç", c:PALET[1], on:()=>state.mevduat.ana.haric, w:2},
+    {id:mevGenelId(), ad:"Bankalar dahil", c:C.muted, on:()=>state.mevduat.ana.genel, dash:"dot", w:1.5},
+    {id:mevBankalarId(), ad:"Bankalara borçlar", c:PALET[3], on:()=>state.mevduat.ana.bankalar, w:1.5}
+  ];
+  const kirAd = state.mevduat.kirim==="toplam"?"":(state.mevduat.kirim==="tp"?", TL":", döviz");
+  items.forEach(it=>{
+    if(it.on()) traces.push(cizgiTrace(it.id,it.ad+kirAd,it.c,{dash:it.dash,width:it.w}));
+  });
+  if(!traces.length){ bosDurum("cMevAna","Aşağıdan en az bir seri seçin."); return; }
+  ciz("cMevAna",traces,temelLayout({log:state.mevduat.log,titleY:"milyar TL",showlegend:true}));
+}
+
+function kompozisyonGrafik(div,items,seciliMap,mod,paydaId,baslikEl,baslikAd,log,kirAd){
+  const secili=items.filter(s=>seciliMap[s.slug] && !(mod==="pay" && s.slug==="toplam"));
+  if(!secili.length){
+    baslikEl.innerHTML=baslikAd+" <span class='unit'>milyar TL</span>";
+    bosDurum(div,"Aşağıdan en az bir kalem seçin.");
+    return;
+  }
+  const traces=[];
+  if(mod==="yigin"||mod==="pay"){
+    secili.forEach((s,i)=>{
+      let xy=filtre(s.idFn(s.slug));
+      if(mod==="pay") xy=paySerisi(s.idFn(s.slug),paydaId);
+      else xy={x:xy.x,y:xy.y.map(milyar)};
+      traces.push(alanTrace(xy,s.ad,PALET[i%PALET.length],
+                mod==="pay"?"%{y:,.1f}%":"%{y:,.1f} milyar TL","a"));
+    });
+    baslikEl.innerHTML=baslikAd+" <span class='unit'>"+(mod==="pay"?"pay, %":"milyar TL")+"</span>";
+    ciz(div,traces,temelLayout({titleY:mod==="pay"?"pay, %":"milyar TL",showlegend:true}));
+  }else{
+    secili.forEach((s,i)=>traces.push(cizgiTrace(s.idFn(s.slug),s.ad,PALET[i%PALET.length])));
+    baslikEl.innerHTML=baslikAd+" <span class='unit'>milyar TL</span>";
+    ciz(div,traces,temelLayout({log:log,titleY:"milyar TL",showlegend:true}));
+  }
+}
+
+function renderMevTur(){
+  const kirAd = state.mevduat.kirim==="toplam"?"":(state.mevduat.kirim==="tp"?", TL":", döviz");
+  const items=META.mevduatTurler.map(s=>({slug:s.slug,ad:s.ad,idFn:mtId}));
+  kompozisyonGrafik("cMevTur",items,state.mevduat.tur,state.mevduat.turMod,
+                    mevHaricId(),el("mevTurBaslik"),"Türüne göre dağılım"+kirAd,false,kirAd);
+}
+function renderMevVade(){
+  const kirAd = state.mevduat.kirim==="toplam"?"":(state.mevduat.kirim==="tp"?", TL":", döviz");
+  const items=META.mevduatVadeler.map(s=>({slug:s.slug,ad:s.ad,idFn:mvId}));
+  kompozisyonGrafik("cMevVade",items,state.mevduat.vade,state.mevduat.vadeMod,
+                    mvToplamId(),el("mevVadeBaslik"),"Vade gruplarına göre dağılım"+kirAd,false,kirAd);
+}
+
+/* kamu / ozel */
+function renderKamu(){
+  const traces=[];
+  if(state.kamu.secili.kredi_kamu_kredileri)
+    traces.push(cizgiTrace("kredi_kamu","Kamu kredileri",PALET[4],{width:2}));
+  if(state.kamu.secili.ozel_kredileri)
+    traces.push(cizgiTrace("kredi_ozel","Özel krediler",PALET[5],{width:2}));
+  if(state.kamu.secili.toplam)
+    traces.push(cizgiTrace("kredi_ko_toplam","Toplam",C.muted,{dash:"dot",width:1.5}));
+  if(!traces.length){ bosDurum("cKamu","Aşağıdan en az bir seri seçin."); return; }
+  ciz("cKamu",traces,temelLayout({log:state.kamu.log,titleY:"milyar TL",showlegend:true}));
+}
+
+/* karsilastirma */
+function renderKarAna(){
+  const t1=cizgiTrace("kredi_total","Toplam krediler",PALET[0],{width:2});
+  const t2=cizgiTrace("mev_haric","Toplam mevduat, bankalar hariç",PALET[2],{width:2});
+  ciz("cKarAna",[t1,t2],temelLayout({log:state.kar.log,titleY:"milyar TL",showlegend:true}));
+}
+function renderKarOran(){
+  const o=oranSeri("kredi_total","mev_haric",100);
+  if(!o.x.length){ bosDurum("cKarOran","Bu aralıkta veri yok."); return; }
+  const t={type:"scatter",mode:"lines",name:"Kredi / mevduat",x:o.x,y:o.y,
+           line:{width:2,color:PALET[4]},fill:"tozeroy",fillcolor:PALET[4]+"1a",
+           hovertemplate:"%{fullData.name}: %{y:,.1f}%<extra></extra>"};
+  ciz("cKarOran",[t],temelLayout({titleY:"%",hline:100,showlegend:false}));
+}
+function renderKarYoy(){
+  const tanimlar=[
+    {k:"kredi", id:"kredi_total", ad:"Krediler", c:PALET[0]},
+    {k:"mevduat", id:"mev_haric", ad:"Mevduat", c:PALET[2]},
+    {k:"krediYp", id:"kredi_total_yp", ad:"Krediler, döviz", c:PALET[1]},
+    {k:"mevduatYp", id:"mev_haric_yp", ad:"Mevduat, döviz", c:PALET[3]}
+  ];
+  const traces=[];
+  tanimlar.forEach(t=>{
+    if(!state.kar.yoy[t.k]) return;
+    const d=degisim(t.id,12);
+    traces.push({type:"scatter",mode:"lines",name:t.ad,x:d.x,y:d.y,
+                 line:{width:2,color:t.c},connectgaps:false,
+                 hovertemplate:"%{fullData.name}: %{y:,.1f}%<extra></extra>"});
+  });
+  if(!traces.length){ bosDurum("cKarYoy","Aşağıdan en az bir seri seçin."); return; }
+  ciz("cKarYoy",traces,temelLayout({titleY:"yıllık değişim, %",hline:0,showlegend:true}));
+}
+
+/* arayuz kurulumu */
+function segKur(id,onChange){
+  const grup=el(id); if(!grup) return;
+  grup.querySelectorAll("button").forEach(b=>{
+    b.setAttribute("aria-pressed", b.classList.contains("on") ? "true" : "false");
+    b.addEventListener("click",()=>{
+      grup.querySelectorAll("button").forEach(x=>{
+        x.classList.remove("on"); x.setAttribute("aria-pressed","false");
+      });
+      b.classList.add("on"); b.setAttribute("aria-pressed","true");
+      onChange(b.dataset.v);
+    });
+  });
+}
+function chipsKur(kapsayici,items,seciliMap,onChange){
+  const k=el(kapsayici); if(!k) return;
+  k.innerHTML="";
+  items.forEach(s=>{
+    const b=document.createElement("button");
+    b.type="button"; b.className="chip"+(seciliMap[s.slug]?" on":"");
+    b.setAttribute("aria-pressed", seciliMap[s.slug]?"true":"false");
+    b.textContent=s.ad;
+    b.addEventListener("click",()=>{
+      seciliMap[s.slug]=!seciliMap[s.slug];
+      b.classList.toggle("on",seciliMap[s.slug]);
+      b.setAttribute("aria-pressed", seciliMap[s.slug]?"true":"false");
+      onChange();
+    });
+    k.appendChild(b);
+  });
+}
+
+function hepsiniCiz(){
+  el("sonVeriYazi").textContent = state.to;
+  kpiDoldur(); renderKrediAna(); renderKrediSektor();
+  renderMevAna(); renderMevTur(); renderMevVade();
+  renderKamu(); renderKarAna(); renderKarOran(); renderKarYoy();
+}
+
+function urlYaz(){
+  if(!history.replaceState) return;
+  const p=new URLSearchParams();
+  if(state.from!==META.ilkAy) p.set("from",state.from);
+  if(state.to!==META.sonAy) p.set("to",state.to);
+  const q=p.toString();
+  history.replaceState(null,"",location.pathname+(q?"?"+q:"")+location.hash);
+}
+function urlOku(){
+  const p=new URLSearchParams(location.search);
+  const ay=s=>/^\d{4}-\d{2}$/.test(s)?s:null;
+  const f=ay(p.get("from")), t=ay(p.get("to"));
+  if(f && f>=META.ilkAy && f<=META.sonAy) state.from=f;
+  if(t && t>=META.ilkAy && t<=META.sonAy) state.to=t;
+  if(state.from>state.to) state.from=META.ilkAy;
+}
+
+function geriYaz(){
+  el("filtreFrom").value=state.from;
+  el("filtreTo").value=state.to;
+}
+function filtreOku(){
+  const f0=el("filtreFrom").value, t0=el("filtreTo").value;
+  if(!/^\d{4}-\d{2}$/.test(f0) || !/^\d{4}-\d{2}$/.test(t0) || f0>t0){ geriYaz(); return; }
+  let f=f0, t=t0;
+  if(f<META.ilkAy) f=META.ilkAy;
+  if(t>META.sonAy) t=META.sonAy;
+  if(f>t){ geriYaz(); return; }
+  state.from=f; state.to=t;
+  el("filtreFrom").value=f; el("filtreTo").value=t;
+  urlYaz();
+  hepsiniCiz();
+}
+
+function railKur(){
+  const linkler=Array.from(document.querySelectorAll(".rail__link"));
+  if(!linkler.length) return;
+  const hedef=linkler.map(a=>document.getElementById(a.dataset.target)).filter(Boolean);
+  if(!hedef.length) return;
+  linkler.forEach(a=>{
+    a.addEventListener("click",()=>{
+      linkler.forEach(x=>x.classList.remove("on"));
+      a.classList.add("on");
+    });
+  });
+  function isaretle(){
+    const esik=window.innerHeight*0.34;
+    let aktif=hedef[0].id;
+    hedef.forEach(h=>{ if(h.getBoundingClientRect().top<=esik) aktif=h.id; });
+    linkler.forEach(a=>a.classList.toggle("on", a.dataset.target===aktif));
+  }
+  let bekliyor=false;
+  window.addEventListener("scroll",()=>{
+    if(bekliyor) return;
+    bekliyor=true;
+    requestAnimationFrame(()=>{ bekliyor=false; isaretle(); });
+  },{passive:true});
+  window.addEventListener("resize",isaretle,{passive:true});
+  isaretle();
+}
+
+function init(){
+  el("aralikYazi").textContent = META.ilkAy+" ile "+META.sonAy;
+  el("sonVeriYazi").textContent = META.sonAy;
+  el("scrapeYazi").textContent = META.scrapeZamani;
+
+  META.krediSektorler.forEach(s=>{ state.kredi.secili[s.slug]=s.varsayilan; });
+  META.mevduatTurler.forEach(s=>{ state.mevduat.tur[s.slug]=true; });
+  META.mevduatVadeler.forEach(s=>{ state.mevduat.vade[s.slug]=s.varsayilan!==false; });
+  state.mevduat.ana={haric:true, genel:true, bankalar:false};
+  state.kamu.secili={kredi_kamu_kredileri:true, ozel_kredileri:true, toplam:false};
+  state.kar.yoy={kredi:true, mevduat:true, krediYp:true, mevduatYp:true};
+
+  urlOku();
+  el("filtreFrom").value=state.from;
+  el("filtreTo").value=state.to;
+  el("filtreFrom").min=META.ilkAy; el("filtreFrom").max=META.sonAy;
+  el("filtreTo").min=META.ilkAy; el("filtreTo").max=META.sonAy;
+  el("filtreFrom").addEventListener("change",filtreOku);
+  el("filtreTo").addEventListener("change",filtreOku);
+  el("filtreReset").addEventListener("click",()=>{
+    el("filtreFrom").value=META.ilkAy; el("filtreTo").value=META.sonAy;
+    filtreOku();
+  });
+
+  segKur("krediKirim",v=>{ state.kredi.kirim=v; renderKrediAna(); renderKrediSektor(); });
+  segKur("krediOlcek",v=>{ state.kredi.log=(v==="log"); renderKrediAna(); renderKrediSektor(); });
+  segKur("krediMod",v=>{ state.kredi.mod=v; renderKrediSektor(); });
+  segKur("mevKirim",v=>{ state.mevduat.kirim=v; renderMevAna(); renderMevTur(); renderMevVade(); });
+  segKur("mevOlcek",v=>{ state.mevduat.log=(v==="log"); renderMevAna(); });
+  segKur("mevTurMod",v=>{ state.mevduat.turMod=v; renderMevTur(); });
+  segKur("mevVadeMod",v=>{ state.mevduat.vadeMod=v; renderMevVade(); });
+  segKur("kamuOlcek",v=>{ state.kamu.log=(v==="log"); renderKamu(); });
+  segKur("karOlcek",v=>{ state.kar.log=(v==="log"); renderKarAna(); });
+
+  chipsKur("krediChips",META.krediSektorler,state.kredi.secili,renderKrediSektor);
+  chipsKur("mevAnaChips",
+    [{slug:"haric",ad:"Bankalar hariç"},{slug:"genel",ad:"Bankalar dahil"},{slug:"bankalar",ad:"Bankalara borçlar"}],
+    state.mevduat.ana,renderMevAna);
+  chipsKur("mevTurChips",META.mevduatTurler,state.mevduat.tur,renderMevTur);
+  chipsKur("mevVadeChips",META.mevduatVadeler,state.mevduat.vade,renderMevVade);
+  chipsKur("kamuChips",
+    [{slug:"kredi_kamu_kredileri",ad:"Kamu"},{slug:"ozel_kredileri",ad:"Özel"},{slug:"toplam",ad:"Toplam"}],
+    state.kamu.secili,renderKamu);
+  chipsKur("karYoyChips",
+    [{slug:"kredi",ad:"Kredi"},{slug:"mevduat",ad:"Mevduat"},{slug:"krediYp",ad:"Kredi, döviz"},{slug:"mevduatYp",ad:"Mevduat, döviz"}],
+    state.kar.yoy,renderKarYoy);
+
+  railKur();
+  hepsiniCiz();
+}
+
+document.addEventListener("DOMContentLoaded",init);
+</script>
+</body>
+</html>
