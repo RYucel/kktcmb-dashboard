@@ -1,0 +1,23 @@
+name: Erişim testi
+
+# MB sitesinin GitHub runner'larından erişilebilir olduğunu doğrular.
+# Yalnızca elle çalıştırılır.
+on:
+  workflow_dispatch: {}
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: MB sitesine erişim
+        run: |
+          for url in \
+            "https://mb.gov.ct.tr/tr/veriler/istatistikiveriler/para-banka-eski" \
+            "https://mb.gov.ct.tr/tr/node/6061"
+          do
+            echo "== $url"
+            curl -sS -o /dev/null \
+              -w "kod=%{http_code} sure=%{time_total}s ip=%{remote_ip}\n" \
+              --max-time 30 "$url" || echo "HATA: cikis=$?"
+          done
