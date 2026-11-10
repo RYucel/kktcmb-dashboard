@@ -3,18 +3,21 @@
     Iki haftalik otomatik guncelleme icin Windows Gorev Zamanlayici gorevini kurar.
 
 .DESCRIPTION
-    Her ayin 1'i ve 15'inde 10:00'da guncelle.ps1 calisir; veri degistiyse
-    commit + push edilir, GitHub Actions build + Vercel yayinini yapar.
+    Her gun 10:00'da guncelle.ps1 calisir. Script 13 gunluk bekleme kuralini
+    kendi uygular: veri degistiyse damga yazar ve 13 gun susar, degismediyse
+    ertesi gun yeniden dener. Boylece bilgisayar planlanan gunde kapali olsa
+    bile acildigi ilk gun guncelleme kendiliginden yapilir.
 
-    Gorev "kullanici oturum acmis olmasa da calis" (S4U) modunda kurulur;
-    parola sorulmaz. Bilgisayar kapaliysa gorev, acildiginda telafi edilir
+    Commit + push sonrasi GitHub Actions build + Vercel yayinini yapar.
+
+    Bilgisayar kapaliyken kacirilan calisma, makine acilinca telafi edilir
     (StartWhenAvailable).
 
 .PARAMETER Kaldir
     Kurulu gorevi siler.
 
 .PARAMETER Saat
-    Calisma saati (varsayilan 10:00).
+    Gunluk kontrol saati (varsayilan 10:00).
 
 .EXAMPLE
     .\gorev-kur.ps1
@@ -44,13 +47,13 @@ if (-not (Test-Path -LiteralPath $script)) { throw "guncelle.ps1 bulunamadi: $sc
 $arguman = '-NoProfile -ExecutionPolicy Bypass -File "{0}"' -f $script
 $kullanici = if ($env:USERDOMAIN) { "$env:USERDOMAIN\$env:USERNAME" } else { $env:USERNAME }
 $baslangic = (Get-Date).ToString('yyyy-MM-dd') + 'T' + $Saat + ':00'
-$aciklama = "KKTC MB para-banka verisini toplar ve repoya push eder (ayin 1'i ve 15'i, $Saat)."
+$aciklama = "KKTC MB para-banka verisini her gun kontrol eder, 13 gunde bir toplar ve repoya push eder (kontrol saati: $Saat)."
 # Gorev ortaminda PATH farkli olabildigi icin tam yol kullanilir (0x80070002 onlemi).
 $powershell = Join-Path $env:SystemRoot 'System32\WindowsPowerShell\v1.0\powershell.exe'
 
 # XML ile kurulum: PowerShell 5.1'in New-ScheduledTaskTrigger'i aylik tetikleyiciyi
-# desteklemez, schtasks /SC MONTHLY ise bu sistemde "/D 1,15" listesini reddediyor.
-# Aylik takvim + iki gun (1 ve 15) tek tetikleyicide, S4U ile birlikte tanimlanir.
+# desteklemez. Gunluk tetikleyici + StartWhenAvailable ile kacirilan gun telafi edilir;
+# gercek toplama sikligini guncelle.ps1'in 13 gunluk bekleme kurali belirler.
 $xml = @"
 <?xml version="1.0" encoding="UTF-16"?>
 <Task version="1.2" xmlns="http://schemas.microsoft.com/windows/2004/02/mit/task">
@@ -61,16 +64,9 @@ $xml = @"
     <CalendarTrigger>
       <StartBoundary>$baslangic</StartBoundary>
       <Enabled>true</Enabled>
-      <ScheduleByMonth>
-        <DaysOfMonth>
-          <Day>1</Day>
-          <Day>15</Day>
-        </DaysOfMonth>
-        <Months>
-          <January /><February /><March /><April /><May /><June />
-          <July /><August /><September /><October /><November /><December />
-        </Months>
-      </ScheduleByMonth>
+      <ScheduleByDay>
+        <DaysInterval>1</DaysInterval>
+      </ScheduleByDay>
     </CalendarTrigger>
   </Triggers>
   <Principals>
@@ -117,7 +113,8 @@ catch {
 $g = Get-ScheduledTask -TaskName $gorevAdi
 Write-Host ("  durum: {0} | kullanici: {1} | logon: {2}" -f $g.State, $g.Principal.UserId, $g.Principal.LogonType)
 $g.Triggers | ForEach-Object {
-    Write-Host ("  tetikleyici: {0} | gunler: {1}" -f $_.StartBoundary, ($_.DaysOfMonth -join ','))
+    $gun = if ($_.DaysInterval) { "her $($_.DaysInterval) gun" } else { ($_.DaysOfMonth -join ',') }
+    Write-Host ("  tetikleyici: {0} | {1}" -f $_.StartBoundary, $gun)
 }
 Write-Host ""
 Write-Host "Elle deneme:  Start-ScheduledTask -TaskName '$gorevAdi'"

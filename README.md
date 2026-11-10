@@ -67,9 +67,10 @@ Cloudflare Pages — hepsi `site/index.html` statik dosyasını servis eder).
 ### Otomatik güncelleme (iki haftada bir)
 
 Toplama ile yayın **iki ayrı yerde** çalışır. Sebebi ölçülmüş bir kısıt:
-MB sunucusu (`mb.gov.ct.tr` → 185.64.80.30) GitHub runner'larının IP'lerini ağ
+MB sunucusu (`mb.gov.ct.tr` → 185.64.80.30) yurt dışı/veri merkezi IP'lerini ağ
 seviyesinde düşürüyor — DNS çözülüyor ama TCP 80/443 timeout, ping yok.
-Bu yüzden Actions içinde `scrape.py` çalıştırılamaz.
+Bu yüzden Actions (veya Vercel/Cloudflare gibi bulut) içinden `scrape.py`
+çalıştırılamaz; toplama KKTC/TR IP'sinden yapılmalı.
 
 | Adım | Nerede | Ne yapar |
 |---|---|---|
@@ -79,14 +80,19 @@ Bu yüzden Actions içinde `scrape.py` çalıştırılamaz.
 **Kurulum (bir kez):**
 
 ```powershell
-.\gorev-kur.ps1              # ayın 1'i ve 15'i, 10:00
+.\gorev-kur.ps1              # her gün 10:00'da kontrol
 .\gorev-kur.ps1 -Saat 08:30  # farklı saat
 .\gorev-kur.ps1 -Kaldir      # görevi sil
 ```
 
-Görev `StartWhenAvailable` ile kurulur: bilgisayar kapalı/uykuda olduğu için
-kaçırılan çalışma, makine açılınca telafi edilir. `RunOnlyIfNetworkAvailable`
-açıktır, süre limiti 3 saattir.
+Görev **her gün** çalışır ama gerçek toplama 13 günde bir yapılır: script
+`output/.son_guncelleme` damgasına bakar. Veri değişmediyse damga yazılmaz ve
+ertesi gün yeniden denenir; böylece yeni veri yayınlandığı ilk gün yakalanır.
+Veri değiştiğinde damga yazılır ve 13 gün susulur.
+
+Bu tasarım "PC o gün kapalıydı" sorununu çözer: `StartWhenAvailable` sayesinde
+kaçırılan çalışma makine açılınca telafi edilir, damga dolmadığı için ertesi gün
+de yeniden denenir. `RunOnlyIfNetworkAvailable` açıktır, süre limiti 3 saattir.
 
 Çalışma modu:
 
@@ -99,20 +105,23 @@ açıktır, süre limiti 3 saattir.
 
 ```powershell
 .\guncelle.ps1               # topla + build + commit + push
-.\guncelle.ps1 -Force        # önbelleği yok say
+.\guncelle.ps1 -KontrolAtla  # 13 günlük beklemeyi yok say, hemen topla
+.\guncelle.ps1 -Force        # önbelleği yok say, her sayfayı yeniden indir
 .\guncelle.ps1 -NoPush       # sadece topla + build (deneme)
 .\guncelle.ps1 -Deploy       # push'a ek olarak yerel Vercel yayını da yap
 ```
 
 Davranış:
 
-- `data/kktcmb.csv` parmak izi (sha256) değişmediyse build ve push atlanır.
+- `data/kktcmb.csv` parmak izi (sha256) değişmediyse build ve push atlanır,
+  `data/scrape_meta.json` geri alınır (çalışma ağacı temiz kalır).
 - Değişiklik varsa `data/kktcmb.csv` + `data/scrape_meta.json` commit edilir
   (veri geçmişi) ve `main`'e push edilir → Actions yayını tetiklenir.
 - `site/` ve `output/` `.gitignore` içindedir; 5 MB'lık HTML repoya girmez.
 - Loglar: `output/logs/guncelle-YYYYMMDD-HHmmss.log`.
 - Actions'ta başarısız koşu olursa GitHub e-posta bildirimi gönderir; yerel
   yayın için `-Deploy` kullanılabilir.
+
 
 **Actions secret'ları** (Settings → Secrets and variables → Actions):
 

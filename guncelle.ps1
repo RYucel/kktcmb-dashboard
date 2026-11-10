@@ -20,16 +20,21 @@
 .PARAMETER Deploy
     Push'a ek olarak yerel Vercel CLI ile de yayinla (Actions'a bagimli kalmamak icin).
 
+.PARAMETER KontrolAtla
+    13 gunluk bekleme kuralini yok say, hemen topla (zamanlanmis gorev kullanmaz).
+
 .EXAMPLE
     .\guncelle.ps1
     .\guncelle.ps1 -Force
     .\guncelle.ps1 -NoPush
+    .\guncelle.ps1 -KontrolAtla
 #>
 [CmdletBinding()]
 param(
     [switch]$Force,
     [switch]$NoPush,
-    [switch]$Deploy
+    [switch]$Deploy,
+    [switch]$KontrolAtla
 )
 
 $ErrorActionPreference = 'Stop'
@@ -72,6 +77,19 @@ try {
 
     $oncekiHash = VeriHash
     Yaz "Onceki veri parmak izi: $oncekiHash"
+
+    # 0) Bekleme kurali ----------------------------------------------------
+    # Gorev her gun calisir; gercek toplama en fazla 13 gunde bir yapilir.
+    # Veri degismediyse damga yazilmaz, ertesi gun yeniden denenir.
+    $damga = Join-Path $PSScriptRoot 'output\.son_guncelleme'
+    if (-not $Force -and -not $KontrolAtla -and (Test-Path -LiteralPath $damga)) {
+        $son = (Get-Item -LiteralPath $damga).LastWriteTime
+        $gecen = ((Get-Date) - $son).TotalDays
+        if ($gecen -lt 13) {
+            Yaz ("Son basarili guncelleme {0:yyyy-MM-dd HH:mm} ({1:N1} gun once); 13 gun dolmadi, atlandi." -f $son, $gecen)
+            return
+        }
+    }
 
     # 1) Veriyi topla ------------------------------------------------------
     Yaz "--- Veri toplaniyor"
@@ -128,6 +146,14 @@ try {
         & npx --yes vercel@latest deploy site --prod --yes --project kktcmb-dashboard
         if ($LASTEXITCODE -ne 0) { throw "vercel deploy basarisiz" }
         Yaz "Yerel yayin tamam: https://kktcmb-dashboard.vercel.app"
+    }
+
+    # 6) Bekleme damgasi ---------------------------------------------------
+    # Yalnizca veri gercekten degistiginde yazilir; boylece yeni veri
+    # beklenirken ertesi gun yeniden denenir, bulundugunda ise 13 gun susulur.
+    if (-not $NoPush) {
+        Set-Content -LiteralPath $damga -Value ((Get-Date).ToString('s')) -Encoding utf8
+        Yaz ("Bekleme damgasi yazildi: {0} (sonraki toplama en erken {1:yyyy-MM-dd})" -f $damga, (Get-Date).AddDays(13))
     }
 
     Yaz "=== Guncelleme tamam"
