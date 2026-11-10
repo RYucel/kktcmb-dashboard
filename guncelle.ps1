@@ -84,6 +84,11 @@ try {
 
     if ($yeniHash -eq $oncekiHash -and -not $Force) {
         Yaz "Veri degismedi; build/push atlandi."
+        # scrape_meta.json her taramada yeniden yazilir; veri degismediyse
+        # calisma agacini kirli birakmamak icin geri al.
+        if (Test-Path -LiteralPath (Join-Path $PSScriptRoot '.git')) {
+            & git checkout -- data/scrape_meta.json 2>$null
+        }
         return
     }
 
